@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "file": "Prototype.md",
+                "mode": "preview",
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Prototype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Prototype.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "ee56969337868ca2",
   "lastOpenFiles": [
+    "README.md",
     "this.md",
     "cs/patternAndParadigm/Singleton Pattern.md",
     "[[this]].md",
@@ -156,7 +157,6 @@
     "cs/patternAndParadigm/Pattern.md",
     "().md",
     "Untitled.canvas",
-    "README.md",
     "create a link.md",
     "Untitled.md",
     "패턴.md",
