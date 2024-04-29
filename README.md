@@ -4,8 +4,9 @@
 
 ## index
 
-#### JS <detali><summary>
-[[this]]
+#### JS 
+<detali><summary>
+[this](https://github.com/sladhe01/lab/blob/main/this.md)
 </summary></detail>
 
 

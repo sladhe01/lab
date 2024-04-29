@@ -11,12 +11,8 @@
             "id": "ee56969337868ca2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prototype.md",
-                "mode": "preview",
-                "source": true
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Prototype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Prototype.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -149,14 +141,14 @@
   "active": "ee56969337868ca2",
   "lastOpenFiles": [
     "README.md",
+    "Untitled.canvas",
     "this.md",
+    "Prototype.md",
     "cs/patternAndParadigm/Singleton Pattern.md",
     "[[this]].md",
-    "Prototype.md",
     "this^.md",
     "cs/patternAndParadigm/Pattern.md",
     "().md",
-    "Untitled.canvas",
     "create a link.md",
     "Untitled.md",
     "패턴.md",
