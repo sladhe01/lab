@@ -5,11 +5,10 @@
 ## index
 
 #### JS 
-<detali><summary>
-[this](https://github.com/sladhe01/lab/blob/main/this.md)
-[Primitive type](https://github.com/sladhe01/lab/blob/main/Primitive%20type.md)
-[Constructor And 'new' operator](https://github.com/sladhe01/lab/blob/main/Constructor%20And%20'new'%20operator.md)
-</summary></detail>
+
+[this](https://github.com/sladhe01/lab/blob/main/this.md)<br/>
+[Primitive type](https://github.com/sladhe01/lab/blob/main/Primitive%20type.md)<br/>
+[Constructor And 'new' operator](https://github.com/sladhe01/lab/blob/main/Constructor%20And%20'new'%20operator.md)<br/>
 
 
 #### CS
