@@ -32,8 +32,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Constructor And 'new' operator.md",
+                "file": "Prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Constructor And 'new' operator.md",
+                "file": "Prototype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Constructor And 'new' operator.md"
+                "file": "Prototype.md"
               }
             }
           }
@@ -160,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c2573fb37235da94",
+  "active": "ee56969337868ca2",
   "lastOpenFiles": [
-    "Prototype.md",
     "Constructor And 'new' operator.md",
+    "Primitive type.md",
+    "Prototype.md",
     "this.md",
     "README.md",
     "cs/patternAndParadigm/Singleton Pattern.md",

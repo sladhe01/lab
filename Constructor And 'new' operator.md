@@ -31,4 +31,47 @@ new 연산자를 통해 함수를 호출하면 다음과 같은 알고리즘을 
 생성자 함수엔 보통 retrun문이 없다. new 연산자를 이용하여 호출 시 자동으로 this를 반환한다.
 하지만 생성자 함수에 return문을 추가하면
 - 객체를 반환하면 this 대신 그 객체가 반환된다.
-- 원시형을 반환하면 return은 무시되고 원래대로 this가 반환된다.
+- [[Primitive type]]을 반환하면 return은 무시되고 원래대로 this가 반환된다.
+
+```js
+function BigUser() {
+	this.name = "monkey";
+	return { name: "gorilla"};
+}
+
+console.log(new BigUser().name)// goriila
+```
+
+```js
+function SmallUser() {
+	this.name = "monkey"
+	return "gorilla" //원시형인 문자열을 반환하면 return문이 무시됨
+}
+
+console.log(new SmallUser().name)// monkey
+```
+
+### 생성자 내 메서드
+
+생성자 함수에 메서드를 더해주는 것도 가능하다.
+
+```js
+function User(name) {
+	this.name = name;
+
+	this.sayHi = function() {
+		alert("Hi, my name is " + this.name + ".");
+	};
+}
+
+let user1 = new User("Jeong")
+
+user1.sayHi();// Hi, my name is Jeong.
+
+/*
+user1 = {
+	name: "Jeong",
+	sayHi: function() {...}
+}
+*/
+```
