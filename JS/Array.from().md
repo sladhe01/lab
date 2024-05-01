@@ -48,3 +48,29 @@ Array.from(mapper.keys());
 // ['1', '2'];
 ```
 
+#### [[arguments]]
+```js
+function f() {
+  return Array.from(arguments);
+}
+
+f(1, 2, 3);
+
+// [ 1, 2, 3 ]
+```
+
+#### mapFunc(optional)
+```
+Array.from([1, 2, 3], (x) => x + x);
+// [2, 4, 6]
+
+Array.from({ length: 5 }, (v, i) => i);
+// [0, 1, 2, 3, 4]
+/* 
+Array.from은 첫번째 인자(arrayLike)의 .length property를 가져오게 
+되어있는데 length라는 속성이 5라는 값을 가지도록 만든 fake array를 사용하여
+배열의 길이가 5인 임의의 유사 배열 객체를 이용했고
+mapFunc의 첫번째 매개변수는 요소, 두번째 매개변수는 인덱스로 이 예시의 mpaFunc은
+배열의 인덱스를 반환하도록 하고있다 
+*/
+```
