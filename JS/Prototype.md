@@ -47,6 +47,9 @@ console.log(Person.__proto__ === Function.prototype); //true
 console.log(Person.prototype === foo.__proto__); //true
 ```
 
+### Prototype Chain
+
+
 ### constructor property
 
 prototype 객체는 constructor라는 속성을 갖는데 객체를 생성한 객체를 지칭한다.
