@@ -42,7 +42,7 @@ console.log(Person.__proto__ === Function.prototype); //true
 ```
 - prototype property
 	- 함수 객체만 가지고 있는 속성이다.
-	- 함수 객체가 생성자로 사용될 때 이 함수를 통해 생성되는 객체의 부모 역할을 하는 객체(prototype 객체)를 지칭한다.
+	- 함수 객체가 생성자로 사용될 때 이 함수를 통해 생성될 객체의 부모 역할을 하는 객체(prototype 객체)를 지칭한다.
 ```js
 console.log(Person.prototype === foo.__proto__); //true
 ```
@@ -57,5 +57,12 @@ fucntion Person(name) {
 
 let foo = new Person("Jeong");
 
+console.log(Person.prototype.constructor === Person); //true
+/*
+위에서 언급한 것과 같이 Person.prototype이 Person 함수를 통해 생성될 객체의 
+부모역할을 하는 프로토타입 객체를 지칭하고 생성될 객체의 프로토타입 객체를 생성한 
+객체는 Person 함수이기 떄문이다.
+*/
 
+console.log(foo.constructor)
 ```
