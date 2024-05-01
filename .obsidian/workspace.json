@@ -13,38 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Array.from().md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e14546e2368c78b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JS/Set.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "831be71adf5266e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Todo.md",
+                "file": "JS/Prototype.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Todo.md",
+                "file": "JS/Prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Todo.md",
+                "file": "JS/Prototype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Todo.md"
+                "file": "JS/Prototype.md"
               }
             }
           }
@@ -171,18 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "831be71adf5266e0",
+  "active": "1ad30c6792112391",
   "lastOpenFiles": [
+    "JS/Array.from().md",
     "JS/Set.md",
     "Todo.md",
-    "JS/Array.from().md",
-    "JS/arguments.md",
     "JS/Prototype.md",
+    "JS/this.md",
+    "JS/Primitive type.md",
+    "JS/Constructor And 'new' operator.md",
+    "JS/arguments.md",
     "JS",
     "README.md",
-    "JS/Constructor And 'new' operator.md",
-    "JS/Primitive type.md",
-    "JS/this.md",
     "cs/patternAndParadigm/Singleton Pattern.md",
     "Untitled.canvas",
     "[[this]].md",
