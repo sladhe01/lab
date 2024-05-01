@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Prototype.md",
+                "file": "JS/Array.from().md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Prototype.md",
+                "file": "JS/Array.from().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JS/Prototype.md",
+                "file": "JS/Array.from().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JS/Prototype.md"
+                "file": "JS/Array.from().md"
               }
             }
           }
@@ -148,10 +148,10 @@
   },
   "active": "1ad30c6792112391",
   "lastOpenFiles": [
+    "JS/Prototype.md",
     "JS/Array.from().md",
     "JS",
     "README.md",
-    "JS/Prototype.md",
     "JS/Constructor And 'new' operator.md",
     "JS/Primitive type.md",
     "JS/this.md",
