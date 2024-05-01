@@ -11,8 +11,12 @@
             "id": "1ad30c6792112391",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "JS/Prototype.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "JS/Prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "JS/Prototype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "JS/Prototype.md"
               }
             }
           }
@@ -142,13 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "392afdf222983c85",
+  "active": "1ad30c6792112391",
   "lastOpenFiles": [
-    "Prototype.md",
-    "Constructor And 'new' operator.md",
+    "JS/Array.from().md",
+    "JS",
     "README.md",
-    "Primitive type.md",
-    "this.md",
+    "JS/Prototype.md",
+    "JS/Constructor And 'new' operator.md",
+    "JS/Primitive type.md",
+    "JS/this.md",
     "cs/patternAndParadigm/Singleton Pattern.md",
     "Untitled.canvas",
     "[[this]].md",
@@ -157,7 +163,6 @@
     "().md",
     "create a link.md",
     "패턴.md",
-    "Untitled",
     "cs/patternAndParadigm",
     "cs"
   ]
