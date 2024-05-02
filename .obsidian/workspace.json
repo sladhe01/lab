@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "JS/Prototype.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -148,15 +148,15 @@
   },
   "active": "5d8d77bd6991f90d",
   "lastOpenFiles": [
-    "cs/Complexity/Complexity.md",
-    "cs/Complexity",
-    "cs/Pattern",
-    "cs/Pattern/Pattern.md",
     "cs/Pattern/Singleton Pattern.md",
+    "cs/Complexity/Complexity.md",
     "cs/Complexity/Space Complexity.md",
     "cs/Complexity/Time Complexity.md",
-    "Untitled.md",
+    "cs/Pattern/Pattern.md",
     "JS/Prototype.md",
+    "cs/Complexity",
+    "cs/Pattern",
+    "Untitled.md",
     "JS/Array.from().md",
     "JS/Set.md",
     "Todo.md",
