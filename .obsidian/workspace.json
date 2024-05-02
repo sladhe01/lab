@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "fefdd19a0bae98a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cs/Complexity.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,10 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fefdd19a0bae98a2",
+  "active": "392afdf222983c85",
   "lastOpenFiles": [
-    "JS/Prototype.md",
+    "cs/patternAndParadigm/Pattern.md",
+    "cs/patternAndParadigm/Singleton Pattern.md",
     "cs/Complexity.md",
+    "Untitled.md",
+    "JS/Prototype.md",
     "JS/Array.from().md",
     "JS/Set.md",
     "Todo.md",
@@ -172,11 +162,9 @@
     "JS/arguments.md",
     "JS",
     "README.md",
-    "cs/patternAndParadigm/Singleton Pattern.md",
     "Untitled.canvas",
     "[[this]].md",
     "this^.md",
-    "cs/patternAndParadigm/Pattern.md",
     "().md",
     "create a link.md",
     "패턴.md",
