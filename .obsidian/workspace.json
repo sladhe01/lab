@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fefdd19a0bae98a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Complexity.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Prototype.md",
+                "file": "Complexity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JS/Prototype.md",
+                "file": "Complexity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JS/Prototype.md"
+                "file": "Complexity.md"
               }
             }
           }
@@ -146,12 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1ad30c6792112391",
+  "active": "fefdd19a0bae98a2",
   "lastOpenFiles": [
+    "JS/Prototype.md",
+    "Complexity.md",
     "JS/Array.from().md",
     "JS/Set.md",
     "Todo.md",
-    "JS/Prototype.md",
     "JS/this.md",
     "JS/Primitive type.md",
     "JS/Constructor And 'new' operator.md",
