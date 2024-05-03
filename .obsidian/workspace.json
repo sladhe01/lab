@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cs/DataStructure/Data structure.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0dfaef900d7639c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Linked List.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cs/DataStructure/Data structure.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Linked List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cs/DataStructure/Data structure.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Linked List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cs/DataStructure/Data structure.md"
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Linked List.md"
               }
             }
           }
@@ -146,18 +159,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5d8d77bd6991f90d",
+  "active": "0dfaef900d7639c5",
   "lastOpenFiles": [
+    "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
+    "cs/DataStructure/Data Structure/Linear Data Structure/Linked List.md",
+    "cs/DataStructure/Data Structure/Data Structure.md",
+    "cs/DataStructure/Data Structure/Linear Data Structure",
     "JS/Prototype.md",
-    "cs/DataStructure/Data structure.md",
-    "cs/DataStructure/Untitled",
+    "cs/DataStructure/Data Structure",
     "cs/DataStructure",
     "cs/Pattern/Singleton Pattern.md",
-    "cs/DataStructure/Complexity/Complexity.md",
-    "cs/DataStructure/Complexity/Space Complexity.md",
-    "cs/DataStructure/Complexity/Time Complexity.md",
+    "cs/DataStructure/Data Structure/Complexity/Complexity.md",
+    "cs/DataStructure/Data Structure/Complexity/Space Complexity.md",
+    "cs/DataStructure/Data Structure/Complexity/Time Complexity.md",
     "cs/Pattern/Pattern.md",
-    "cs/DataStructure/Complexity",
+    "cs/DataStructure/Data Structure/Complexity",
     "cs/Pattern",
     "Untitled.md",
     "JS/Array.from().md",
