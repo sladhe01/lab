@@ -17,10 +17,10 @@ C++에는 앞에서 부터 요소를 넣는 `push_front()`함수와 뒤에서부
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-	list<int> a;
-	for (int i = 0; i < 10; i++)a.push_back(i);
-	for (int i = 0; i < 10; i++)a.push_front(i);
-	auto it = a.begin(); it++;
+	list<int> a; // 안에 정수를 담는 a라는 이름의 리스트 선언
+	for (int i = 0; i < 10; i++)a.push_back(i); // 0~9까지 리스트 끝부터 추가
+	for (int i = 0; i < 10; i++)a.push_front(i); // 0~9까지 리스트 앞부터 추가
+	auto it = a.begin(); it++; // a 리스트의 시작점을 가리키는 반복자 it 선언
 	a.insert(it, 1000);
 	for (auto it : a) cout << it << " ";
 	cout << '\n';
