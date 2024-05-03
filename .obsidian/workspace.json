@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Prototype.md",
-                "mode": "preview",
+                "file": "cs/DataStructure/Data structure.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Prototype.md",
+                "file": "cs/DataStructure/Data structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JS/Prototype.md",
+                "file": "cs/DataStructure/Data structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JS/Prototype.md"
+                "file": "cs/DataStructure/Data structure.md"
               }
             }
           }
@@ -148,13 +148,16 @@
   },
   "active": "5d8d77bd6991f90d",
   "lastOpenFiles": [
-    "cs/Pattern/Singleton Pattern.md",
-    "cs/Complexity/Complexity.md",
-    "cs/Complexity/Space Complexity.md",
-    "cs/Complexity/Time Complexity.md",
-    "cs/Pattern/Pattern.md",
     "JS/Prototype.md",
-    "cs/Complexity",
+    "cs/DataStructure/Data structure.md",
+    "cs/DataStructure/Untitled",
+    "cs/DataStructure",
+    "cs/Pattern/Singleton Pattern.md",
+    "cs/DataStructure/Complexity/Complexity.md",
+    "cs/DataStructure/Complexity/Space Complexity.md",
+    "cs/DataStructure/Complexity/Time Complexity.md",
+    "cs/Pattern/Pattern.md",
+    "cs/DataStructure/Complexity",
     "cs/Pattern",
     "Untitled.md",
     "JS/Array.from().md",
