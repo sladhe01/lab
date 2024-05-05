@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cs/DataStructure/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cs/DataStructure/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cs/DataStructure/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cs/DataStructure/Data Structure/Linear Data Structure/ArrayOfJavaScript.md"
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md"
               }
             }
           }
@@ -173,13 +173,13 @@
   },
   "active": "24a586d8c7336af5",
   "lastOpenFiles": [
-    "cs/DataStructure/Data Structure/Linear Data Structure/Array.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Linked List.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
+    "cs/DataStructure/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
+    "cs/DataStructure/Data Structure/Linear Data Structure/Array.md",
     "cs/DataStructure/Data Structure/Data Structure.md",
     "Todo.md",
     "JS/Set.md",
-    "cs/DataStructure/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
     "여기.md",
     "cs/DataStructure/Data Structure/Complexity/Complexity.md",
     "cs/DataStructure/Data Structure/Complexity/Space Complexity.md",
