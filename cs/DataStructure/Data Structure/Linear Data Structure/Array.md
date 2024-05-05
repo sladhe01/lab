@@ -11,5 +11,5 @@
 
 ## Static Array And Dynamic Array
 Static array(정적 배열)은 선언시 size를 정하여 해당 size만큼의 연속된 메모리를 할당 받아 data를 연속/순차적으로 저장하는 자료 구조이다.
-Dynamic array(동적 배열)은 정적 배열과 다르게 선언 이후 size를 변경 할 수 있는 배열이다.
+Dynamic array(동적 배열)은 정적 배열과 다르게 선언 이후 size를 변경 할 수 있는 배열이다. [[vector]]도 동정 배열의 하나이다.
 기존에 할당된 size를 초과하면 size를 늘린 배열을 새로 선언하고 그 곳으로 모든 데이터를 옮기고 기존 배열은 메모리에서 삭제(free)한다. 이 과정을 resize라고 부르며 한번 의 resize에 한칸씩 하면 비효율적이기 때문에 주로 2배 큰 크기로 resize한다. 이를 doubling이라고 한다.
