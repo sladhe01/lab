@@ -1,1 +1,2 @@
-배열은 같은 타입의 변수들로
+## Static Array
+static array(정적 배열)은 
