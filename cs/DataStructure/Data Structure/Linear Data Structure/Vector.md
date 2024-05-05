@@ -19,7 +19,7 @@ int main() {
 	for (int a:v) cout << a << " ";
 	cout << "\n";
 	
-	auto a = fin(v.begin(), v.end(), 100); // --- (6)
+	auto a = find(v.begin(), v.end(), 100); // --- (6)
 	if (a === v.end()) cout << "not found" << "\n";
 	
 	fill(v.begin(), v.end(), 10); // --- (7)
@@ -35,3 +35,7 @@ int main() {
 ```
 >(1) - int 유형의 요소를 가지는 v라는 변수명의 벡터 선언
 >(2) - 뒤에서 부터 1부터 10까지 요소 삽입 // 1 2 3 4 5 6 7 8 9 10
+>(3) - `for (int i=0; i<v.size(); i++) cout << v[i] << '\n;`과 같은 뜻으로 JavaScript의 for of 와 비슷한 표현으로 `for (유형 변수:container)`와 같은 방식으로 쓴다.
+>(4) - 뒤에서 첫번째 요소를 제거한다 // 1 2 3 4 5 6 7 8 9
+>(5) - v.begin( ) 즉 첫번째 요소부터 v.begin( )+1 번째 요소 전까지 제거 // 2 3 4 5 6 7 8 9
+>(6) - find( ) 함수는 주어진 컨테이너의 첫번째 인자 여기서는 v.begin( )
