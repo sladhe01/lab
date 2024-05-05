@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d44538ce3d98a944",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Array.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -159,10 +171,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0dfaef900d7639c5",
+  "active": "d44538ce3d98a944",
   "lastOpenFiles": [
-    "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
+    "cs/DataStructure/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Array.md",
+    "여기.md",
+    "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Linked List.md",
     "cs/DataStructure/Data Structure/Complexity/Complexity.md",
     "cs/DataStructure/Data Structure/Complexity/Space Complexity.md",
