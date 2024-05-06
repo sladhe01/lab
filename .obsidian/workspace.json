@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "36c3976ca01e5feb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cs/Stream.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
+                "file": "cs/Stream.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
+                "file": "cs/Stream.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md"
+                "file": "cs/Stream.md"
               }
             }
           }
@@ -159,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fba8702633e6bd34",
+  "active": "36c3976ca01e5feb",
   "lastOpenFiles": [
-    "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
+    "cs/Stream.md",
+    "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
     "Todo.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Array.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Vector.md",
@@ -195,7 +208,6 @@
     "Untitled.canvas",
     "[[this]].md",
     "this^.md",
-    "().md",
     "cs/patternAndParadigm",
     "cs"
   ]
