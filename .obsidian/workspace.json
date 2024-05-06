@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "b60dfe2f09fa30bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cs/Stream.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "36c3976ca01e5feb",
             "type": "leaf",
             "state": {
@@ -171,7 +183,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "36c3976ca01e5feb",
+  "active": "b60dfe2f09fa30bf",
   "lastOpenFiles": [
     "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
     "cs/Stream.md",
