@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Todo.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fba8702633e6bd34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Todo.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Todo.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Todo.md"
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md"
               }
             }
           }
@@ -146,16 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f3ebd18934a2f8c1",
+  "active": "fba8702633e6bd34",
   "lastOpenFiles": [
     "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
+    "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
+    "Todo.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Array.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Vector.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Linked List.md",
     "cs/DataStructure/Data Structure/Complexity/Time Complexity.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
     "cs/DataStructure/Data Structure/Data Structure.md",
-    "Todo.md",
     "JS/Set.md",
     "여기.md",
     "cs/DataStructure/Data Structure/Complexity/Complexity.md",
@@ -182,7 +196,6 @@
     "[[this]].md",
     "this^.md",
     "().md",
-    "create a link.md",
     "cs/patternAndParadigm",
     "cs"
   ]
