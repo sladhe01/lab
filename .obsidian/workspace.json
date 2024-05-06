@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cs/Stream.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cs/Stream.md",
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cs/Stream.md"
+                "file": "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md"
               }
             }
           }
@@ -171,10 +171,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "36c3976ca01e5feb",
+  "active": "fba8702633e6bd34",
   "lastOpenFiles": [
-    "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
     "cs/Stream.md",
+    "cs/DataStructure/Data Structure/Linear Data Structure/Stack.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
     "Todo.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Array.md",
