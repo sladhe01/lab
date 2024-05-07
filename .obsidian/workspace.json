@@ -30,8 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f197180ec3557231",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Locality.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Todo.md",
+                "file": "cs/Cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Todo.md",
+                "file": "cs/Cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Todo.md"
+                "file": "cs/Cache.md"
               }
             }
           }
@@ -158,11 +171,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f3ebd18934a2f8c1",
+  "active": "6e03b8f9acd26749",
   "lastOpenFiles": [
-    "cs/DataStructure/Data Structure/Linear Data Structure/Queue.md",
+    "Locality.md",
     "cs/Cache.md",
     "Todo.md",
+    "cs/DataStructure/Data Structure/Linear Data Structure/Queue.md",
     "cs/Buffer.md",
     "cs/Stream.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
@@ -192,7 +206,6 @@
     "JS/this.md",
     "JS/Primitive type.md",
     "JS/Constructor And 'new' operator.md",
-    "JS/arguments.md",
     "JS",
     "Untitled.canvas",
     "cs/patternAndParadigm",
