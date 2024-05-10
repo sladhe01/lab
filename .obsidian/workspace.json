@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f3ebd18934a2f8c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Locality.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6e03b8f9acd26749",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Set.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f197180ec3557231",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Locality.md",
+                "file": "Todo.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Set.md",
+                "file": "Todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JS/Set.md",
+                "file": "Todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JS/Set.md"
+                "file": "Todo.md"
               }
             }
           }
@@ -171,12 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6e03b8f9acd26749",
+  "active": "392afdf222983c85",
   "lastOpenFiles": [
+    "cs/DataStructure/Data Structure/Non-Linear Data Structure",
     "Locality.md",
-    "JS/Set.md",
     "Todo.md",
     "cs/Cache.md",
+    "JS/Set.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Queue.md",
     "cs/Buffer.md",
     "cs/Stream.md",
@@ -205,7 +181,6 @@
     "JS/Array.from().md",
     "JS/this.md",
     "JS/Primitive type.md",
-    "JS/Constructor And 'new' operator.md",
     "JS",
     "Untitled.canvas",
     "cs/patternAndParadigm",
