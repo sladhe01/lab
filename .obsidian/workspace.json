@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cs/Cache.md",
+                "file": "Locality.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cs/Cache.md",
+                "file": "JS/Set.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cs/Cache.md",
+                "file": "JS/Set.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cs/Cache.md",
+                "file": "JS/Set.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cs/Cache.md"
+                "file": "JS/Set.md"
               }
             }
           }
@@ -170,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f3ebd18934a2f8c1",
+  "active": "6e03b8f9acd26749",
   "lastOpenFiles": [
-    "Todo.md",
     "Locality.md",
+    "JS/Set.md",
+    "Todo.md",
     "cs/Cache.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Queue.md",
     "cs/Buffer.md",
@@ -188,7 +190,6 @@
     "cs/DataStructure/Data Structure/Complexity/Space Complexity.md",
     "cs/DataStructure/Data Structure/Complexity/Complexity.md",
     "cs/DataStructure/Data Structure/Data Structure.md",
-    "JS/Set.md",
     "여기.md",
     "Pasted image 20240503163112.png",
     "Pasted image 20240503161140.png",
