@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Todo.md",
+                "file": "JS/Array.from().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Todo.md",
+                "file": "JS/Array.from().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Todo.md"
+                "file": "JS/Array.from().md"
               }
             }
           }
@@ -159,10 +157,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "282fadc249b922b0",
+  "active": "c49c076ac7402853",
   "lastOpenFiles": [
-    "JS/Array.prototype.reduce().md",
     "Todo.md",
+    "JS/Array.prototype.reduce().md",
     "JS/Array.prototype.forEach().md",
     "JS/Array.from().md",
     "JS/arguments.md",
