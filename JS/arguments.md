@@ -4,5 +4,5 @@ function f() {
   return Array.from(arguments);
 }
 
-console.log(f(1, 2, 3)); // 출력: [1, 2, 3]
+console.log(f(1, 2, 3)); // [1, 2, 3]
 ```
