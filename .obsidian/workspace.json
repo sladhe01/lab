@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "282fadc249b922b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Todo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "409b6129adc5771c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JS/Array.prototype.reduce().md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "array.from",
+                "query": "reduce",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Array.from().md",
+                "file": "JS/Array.prototype.reduce().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JS/Array.from().md",
+                "file": "JS/Array.prototype.reduce().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JS/Array.from().md"
+                "file": "JS/Array.prototype.reduce().md"
               }
             }
           }
@@ -146,18 +171,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c49c076ac7402853",
+  "active": "ef0e13384a6bbfdc",
   "lastOpenFiles": [
+    "Todo.md",
+    "JS/Array.prototype.reduce().md",
+    "JS/Array.prototype.forEach().md",
+    "JS/Array.from().md",
     "JS/arguments.md",
     "cs/DataStructure/Data Structure/Non-Linear Data Structure/Non-Linear Data Structure.md",
-    "JS/Array.from().md",
     "Graph.md",
     "cs/DataStructure/Data Structure/Non-Linear Data Structure/Map.md",
     "Heap.md",
     "cs/DataStructure/Data Structure/Non-Linear Data Structure/Set.md",
     "JS/Set.md",
     "cs/DataStructure/Data Structure/Linear Data Structure/Linear Data Structure.md",
-    "Todo.md",
     "cs/DataStructure/Data Structure/Non-Linear Data Structure",
     "Locality.md",
     "cs/Cache.md",
@@ -173,11 +200,9 @@
     "cs/DataStructure/Data Structure/Complexity/Space Complexity.md",
     "cs/DataStructure/Data Structure/Complexity/Complexity.md",
     "cs/DataStructure/Data Structure/Data Structure.md",
-    "여기.md",
     "Pasted image 20240503163112.png",
     "Pasted image 20240503161140.png",
     "cs/DataStructure/Data Structure/Linear Data Structure",
-    "JS/Prototype.md",
     "cs/DataStructure/Data Structure",
     "cs/DataStructure",
     "cs/DataStructure/Data Structure/Complexity",
