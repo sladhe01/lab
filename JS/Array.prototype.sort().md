@@ -10,8 +10,8 @@ sort(compareFn)
 compareFn 없이 호출하면 문자열을 UTF-16 순서에 따라 오름차순으로 정렬한다.
 
 - compareFn(optional) : 요소의 순서를 결정하는 함수로 다음과 같은 매개변수를 가진다
-  - a : 첫번째 비교 대상, undefined면 안된다
-  - b : 두번째 비교 대상, undefined면 안된다
+  - a : 인덱스가 작은 첫번째 비교 대상, undefined면 안된다
+  - b : 인덱스가 큰 두번째 비교 대상, undefined면 안된다
 
 compareFn의 반환 값에 따라 a,b의 순서는 다음과 같이 바뀐다
 ***1)음의 값을 반환하면 a가 b보다 먼저 오고***
