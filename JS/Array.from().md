@@ -20,7 +20,7 @@ Array.from('foo');
 //["f", "o", "o"]
 ```
 
-#### [[Set]]
+#### [[JS/Set]]
 ```js
 const set = new Set(["foo", "bar", "baz", "foo"]);
 Array.from(set);

@@ -5,5 +5,5 @@
 ## [[Heap]]
 ## [[Priority Queue]]
 ## [[Map]]
-## [[cs/DataStructure/Data Structure/Non-Linear Data Structure/Set|Set]]
+## [[cs/Data Structure/Non-Linear Data Structure/Set|Set]]
 ## [[Hash Table]]
