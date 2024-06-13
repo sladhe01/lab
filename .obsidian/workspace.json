@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Todo.md",
+                "file": "cs/Pattern/Singleton Pattern.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "constructor",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Todo.md",
+                "file": "cs/Pattern/Singleton Pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Todo.md",
+                "file": "cs/Pattern/Singleton Pattern.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Todo.md"
+                "file": "cs/Pattern/Singleton Pattern.md"
               }
             }
           }
@@ -147,6 +148,11 @@
   },
   "active": "c49c076ac7402853",
   "lastOpenFiles": [
+    "Todo.md",
+    "Todo 2.md",
+    "Todo 3.md",
+    "JS/Constructor And 'new' operator.md",
+    "JS/Prototype.md",
     "cs/Data Structure/Complexity/Complexity.md",
     "cs/Data Structure/Data Structure.md",
     "cs/Data Structure/Locality.md",
@@ -156,10 +162,8 @@
     "Pasted image 20240503163112.png",
     "JS/Array.prototype.sort().md",
     "JS/Array.prototype.reduce().md",
-    "JS/Constructor And 'new' operator.md",
     "JS/Array.from().md",
     "JS/Array.prototype.forEach().md",
-    "Todo.md",
     "cs/Data Structure/Complexity/Space Complexity.md",
     "cs/Data Structure/Complexity/Time Complexity.md",
     "JS/arguments.md",
@@ -173,9 +177,6 @@
     "cs/Data Structure/Linear Data Structure/Queue.md",
     "cs/Buffer.md",
     "cs/Stream.md",
-    "cs/Data Structure/Linear Data Structure/Stack.md",
-    "cs/Data Structure/Linear Data Structure/Vector.md",
-    "cs/Data Structure/Linear Data Structure/Linked List.md",
     "cs/Data Structure/Linear Data Structure",
     "cs/Data Structure",
     "cs/DataStructure",
