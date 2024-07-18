@@ -21,7 +21,7 @@ console.log(person.__proto__ === Object.prototype); //true
 
 ### prototype property
 상기 서술한대로 모든 객체는 프로토타입 객체를 지칭하는 `[[Prototype]]` internal slot을 가지고 있으며 `__proto__`속성을 통해 접근이 가능하다고 했다.
-하지만 함수 객체는 일반 객체와 달리 prototype 속성도 갖게 된다.
+하지만 함수 객체는 일반 객체와 달리 prototype 속성도 갖게 된다. (함수에만 존재하는 속성이다.)
 여기서 오해하면 안되는 것은 prototype속성을 지칭하는`[[Prototype]]` internal slot은 함수의 prototype 속성과 다르다는 점이다.
 ```js
 function Person(name) {
@@ -52,7 +52,7 @@ console.log(Person.prototype === foo.__proto__); //true
 
 ### constructor property
 
-prototype 객체는 constructor라는 속성을 갖는데 객체를 생성한 객체를 지칭한다.
+prototype 객체는 constructor라는 속성을 갖는데 생성된 객체 입장에서 자신을 생성한 객체를 지칭한다.
 ```js
 fucntion Person(name) {
 	this.name = name;
@@ -67,5 +67,9 @@ console.log(Person.prototype.constructor === Person); //true
 객체는 Person 함수이기 떄문이다.
 */
 
-console.log(foo.constructor)
+console.log(foo.constructor === Person); //true
+//foo를 생성한 객체는 Person() 생성자 함수이기 떄문이다.
+
+console.log(Person.constructor === Funtion); //trune
+//Person이라는 생성자 함수를 생성한 것은 Function() 생성자 함수이기 떄문이다.
 ```
