@@ -48,7 +48,6 @@ console.log(Person.prototype === foo.__proto__); //true
 ```
 
 ### constructor property
-
 prototype 객체는 constructor라는 속성을 갖는데 생성된 객체 입장에서 자신을 생성한 객체를 지칭한다.
 ```js
 fucntion Person(name) {
@@ -72,7 +71,6 @@ console.log(Person.constructor === Funtion); //trune
 ```
 
 ### Prototype Chain
-
 자바스크립트는 특정 객체의 프로퍼티나 메서드에 접근할 때 해당 객체에 그 프로퍼티나 메서드가 없다면 `[[Prototype]]`이 가리키는 링크를 따라 자신의 부모역할을 하는 프로토타입 객체의 프로퍼티나 메서드를 차례대로 검색하는데 이것을 프로토타입 체인이라고 한다.
 ```js
 let student = {
@@ -140,4 +138,29 @@ let f2 = function(number) {
 	return number
 }
 ```
-결국 함수 선언식, 함수 표현식을 이용하는 방식 모두 함수 리터럴 방식을 이용하고 함수 리터럴 방식은 내장함수를 통하여Function( )생성자 함수를 이용하여 생성하는 것이다. 즉, 어떤 방식을 이용하여 정의하더라도 모든 함수 객체의 프로토타입 객체는 Function.prototype이다.
+결국 함수 선언식, 함수 표현식을 이용하는 방식 모두 함수 리터럴 방식을 이용하고 함수 리터럴 방식은 내장함수를 통하여Function( )생성자 함수를 이용하여 생성하는 것이다. 즉, 어떤 방식을 이용하여 정의하더라도 모든 함수 객체의 프로토타입 객체는 Function.prototype이다. 생성자 함수도 함수 객체이기 때문에 생성자 함수의 프로토타입 객체는 Function.prototype이다.
+```js
+let Person(name, gender) {
+	this.name = name;
+	this.gender = gender;
+	this.sayHeloo = function(){
+		console.log('Hi my name is' + this.name);
+	};
+}
+
+let foo = new Person('Jeong',31);
+
+console.log(foo.__proto__ === Person.prototype); //true
+console.log(Person.prototype.__proto__ === Object.prototype); //true
+console.log(Person.prototype.constructor === Person); //true
+console.log(Person.__proto__ === Function.prototype); //true
+console.log(Function.prototype.__proto__ === Object.prototype); //true
+```
+위와 같이 foo 객체의 프로토타입 체인 링크를 타고 가다보면 Object.prototype 객체에서 체인이 끝난다. 이 때
+Object.prototype을 프로토타입 체인의 종점(End of prototype chain)이라고 한다.
+
+### 프로토타입 객체의 확장
+
+### 원시타입의 확장
+
+### 프로토타입 객체의 변경
