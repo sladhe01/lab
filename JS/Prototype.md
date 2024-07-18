@@ -47,24 +47,6 @@ console.log(Person.__proto__ === Function.prototype); //true
 console.log(Person.prototype === foo.__proto__); //true
 ```
 
-### Prototype Chain
-
-자바스크립트는 특정 객체의 프로퍼티나 메서드에 접글할 때 해당 객체에 그 프로퍼티나 메서드가 없다면 `[[Prototype]]`이 가리키는 링크를 따라 자신의 부모역할을 하는 프로토타입 객체의 프로퍼티나 메서드를 차례대로 검색하는데 이것을 프로토타입 체인이라고 한다.
-```js
-let student = {
-	name: "Jeong",
-	score: 93
-}
-
-console.log(student.hasOwnProperty('name')); //true
-/*
-[[Prototype]] internal slot이 가리키는 링크를 따라가서 student 객체의 부모역할을 하는
-프로토타입 객체인 Object.prototype의 메서드인 hasOwnProperty를 호출한 것이다.
-*/
-console.log(student.__proto__ === Object.prototype); //true
-console.log(Object.prototype.hasOwnProperty('hasOwnproperty')); //ture
-```
-
 ### constructor property
 
 prototype 객체는 constructor라는 속성을 갖는데 생성된 객체 입장에서 자신을 생성한 객체를 지칭한다.
@@ -88,3 +70,50 @@ console.log(foo.constructor === Person); //true
 console.log(Person.constructor === Funtion); //trune
 //Person이라는 생성자 함수를 생성한 것은 Function() 생성자 함수이기 떄문이다.
 ```
+
+### Prototype Chain
+
+자바스크립트는 특정 객체의 프로퍼티나 메서드에 접글할 때 해당 객체에 그 프로퍼티나 메서드가 없다면 `[[Prototype]]`이 가리키는 링크를 따라 자신의 부모역할을 하는 프로토타입 객체의 프로퍼티나 메서드를 차례대로 검색하는데 이것을 프로토타입 체인이라고 한다.
+```js
+let student = {
+	name: "Jeong",
+	score: 93
+}
+
+console.log(student.hasOwnProperty('name')); //true
+/*
+[[Prototype]] internal slot이 가리키는 링크를 따라가서 student 객체의 부모역할을 하는
+프로토타입 객체인 Object.prototype의 메서드인 hasOwnProperty를 호출한 것이다.
+*/
+console.log(student.__proto__ === Object.prototype); //true
+console.log(Object.prototype.hasOwnProperty('hasOwnproperty')); //ture
+```
+
+
+JS는 객체를 생성하는 세가지 방법이 있다.
+ - 객체 리터럴을 이용하여 생성하는 방법
+ - 생성자 함수를 통하여 생성하는 방법
+ - Object( ) 생성자 함수를 이용하여 생성하는 방법
+여기서 객체 리터럴을 생성 하는 방법은  내장함수를 이용하여 Obejct( )생성자 함수를 이용하여 생성한다.
+
+객체가 생성되는 방법에 따라서 prototype chain이 일어나는 방식이 조금 다르다.
+- 객체 리터럴을 이용하여 생성할 때(Object( )생성자를 이용하여 생성할 때)
+	- 위 방식을 통하여 생성된 객체의 프로토타입 객체는 Object.prototype이다.
+```js
+let person = {
+	name: 'Jeong',
+	gender: 'male',
+	sayHello: function(){
+		console.log('Hi my name is' + this.name);
+	}
+};
+
+console.log(person.__proto__ === Object.prototype); //true
+console.log(Object.prototype.constructor === Object); //true
+/*
+Object.prototype은 함수의 portotype이라는 속성으로
+Object()생성자 함수를 통해 생성될 객체의 프로토타입 객체를 칭하고
+이 생성될 
+*/
+```
+
