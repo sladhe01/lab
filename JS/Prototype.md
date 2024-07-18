@@ -49,6 +49,21 @@ console.log(Person.prototype === foo.__proto__); //true
 
 ### Prototype Chain
 
+자바스크립트는 특정 객체의 프로퍼티나 메서드에 접글할 때 해당 객체에 그 프로퍼티나 메서드가 없다면 `[[Prototype]]`이 가리키는 링크를 따라 자신의 부모역할을 하는 프로토타입 객체의 프로퍼티나 메서드를 차례대로 검색하는데 이것을 프로토타입 체인이라고 한다.
+```js
+let student = {
+	name: "Jeong",
+	score: 93
+}
+
+console.log(student.hasOwnProperty('name')); //true
+/*
+[[Prototype]] internal slot이 가리키는 링크를 따라가서 student 객체의 부모역할을 하는
+프로토타입 객체인 Object.prototype의 메서드인 hasOwnProperty를 호출한 것이다.
+*/
+console.log(student.__proto__ === Object.prototype); //true
+console.log(Object.prototype.hasOwnProperty('hasOwnproperty')); //ture
+```
 
 ### constructor property
 
