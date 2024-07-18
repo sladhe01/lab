@@ -8,7 +8,7 @@ JS의 모든 객체는 부모 역할을 하는 객체와 연결되어 있고 부
 - `[[ProtoType]]`의 값은 null 또는 객체이며 상속을 구현하는데 사용된다.
 - `[[ProtoType]]`객체의 데이터 프로퍼티는 get 액세스를 위해 상속되어 자식 객체의 프로퍼티처럼 사용될 수 있다. 하지만 set 액세스는 허용되지 않는다.
 `[[Prototype]]`이 null이 아니라면 프로토타입 객체이고 `__proto__` 속성을 이용하여 접근할 수 있다.
-`__proto__` 속성으으로 접근하면 내부적으로 **Object.getPrototypeOf** 가 호출되어 프로토타입 객체를 반환한다.
+`__proto__` 속성으로 접근하면 내부적으로 **Object.getPrototypeOf** 가 호출되어 프로토타입 객체를 반환한다.
 ```js
 let person = {
 	name: 'Jeong',프로토타입
@@ -73,7 +73,7 @@ console.log(Person.constructor === Funtion); //trune
 
 ### Prototype Chain
 
-자바스크립트는 특정 객체의 프로퍼티나 메서드에 접글할 때 해당 객체에 그 프로퍼티나 메서드가 없다면 `[[Prototype]]`이 가리키는 링크를 따라 자신의 부모역할을 하는 프로토타입 객체의 프로퍼티나 메서드를 차례대로 검색하는데 이것을 프로토타입 체인이라고 한다.
+자바스크립트는 특정 객체의 프로퍼티나 메서드에 접근할 때 해당 객체에 그 프로퍼티나 메서드가 없다면 `[[Prototype]]`이 가리키는 링크를 따라 자신의 부모역할을 하는 프로토타입 객체의 프로퍼티나 메서드를 차례대로 검색하는데 이것을 프로토타입 체인이라고 한다.
 ```js
 let student = {
 	name: "Jeong",
@@ -97,8 +97,7 @@ JS는 객체를 생성하는 세가지 방법이 있다.
 여기서 객체 리터럴을 생성 하는 방법은  내장함수를 이용하여 Obejct( )생성자 함수를 이용하여 생성한다.
 
 객체가 생성되는 방법에 따라서 prototype chain이 일어나는 방식이 조금 다르다.
-- 객체 리터럴을 이용하여 생성할 때(Object( )생성자를 이용하여 생성할 때)
-	- 위 방식을 통하여 생성된 객체의 프로토타입 객체는 Object.prototype이다.
+1. 객체 리터럴을 이용하여 생성할 때(Object( )생성자를 이용하여 생성할 때)
 ```js
 let person = {
 	name: 'Jeong',
@@ -111,9 +110,34 @@ let person = {
 console.log(person.__proto__ === Object.prototype); //true
 console.log(Object.prototype.constructor === Object); //true
 /*
-Object.prototype은 함수의 portotype이라는 속성으로
-Object()생성자 함수를 통해 생성될 객체의 프로토타입 객체를 칭하고
-이 생성될 
+Object.prototype은 Object함수를 통해 생성될 객체의 프로토타입 객체를 칭하고
+이렇게 생성될 함수의 생성자 함수는 Object 함수이기 떄문에
+constructor 프로퍼티는 Object 함수를 칭한다.
 */
+console.log(Object.__proto__ === Function.prototype); //true
+//Object도 함수이기 떄문에 이 함수의 프로토타입 객체는 Fucntion.prototype을 칭한다.
+console.log(Function.prototype.__proto__ === Object.prototype); //true
+//Object가 Function 즉 함수를 통해서 생성된 객체이기 때문이다.
+```
+즉, 객체 리터럴을 이용하여 생성된 객체의 프로토타입 객체는 Object.prototype이다.
+
+2. 생성자 함수를 이용하여 생성할 때
+	생성자 함수로 객체를 생성하기 전에 생성자 함수를 먼저 정의해야하고 정의하는 데 3가지 방식이 있다.
+	1.  함수 선언식을 이용하여 정의하는 방법
+	2.  함수 표현식을 이용하여 정의하는 방법
+	3.  Function( )생성자 함수를 이용하여 정의하는 방법
+```js
+//함수 선언식을 이용하여 정의하는 방법
+let f1 = function f1(number) {
+	 return number
+}
+//함수 선언식을 이용할 경우 자바스크립트 내부적으로 기명 함수 표현식으로 변환한다.
 ```
 
+```js 
+//함수 표현식을 이용하여 정의하는 방법(함수 리터럴 방식을 이용)
+let f2 = function(number) {
+	return number
+}
+```
+결국 함수 선언식, 함수 표현식을 이용하는 방식 모두 함수 리터럴 방식을 이용하고 함수 리터럴 방식은 내장함수를 통하여Function( )생성자 함수를 이용하여 생성하는 것이다. 즉, 어떤 방식을 이용하여 정의하더라도 모든 함수 객체의 프로토타입 객체는 
