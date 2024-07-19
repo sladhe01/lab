@@ -160,7 +160,62 @@ console.log(Function.prototype.__proto__ === Object.prototype); //true
 Object.prototype을 프로토타입 체인의 종점(End of prototype chain)이라고 한다.
 
 ### 프로토타입 객체의 확장
+프로토타입도 객체이기 때문에 프로퍼티를 추가, 삭제할 수 있다. 추가, 삭제된 프로퍼티는 즉시 프로토타입 체인에 반영된다.
+```js
+function Person(name) {
+	this.name = name
+};
+
+let foo = new Person('Jeong');
+
+Person.prototype.sayHello = function(){
+	console.log('Hi my name is' + this.name);
+};
+
+foo.sayHello(); //Hi my name is Jeong
+```
 
 ### 원시타입의 확장
+js에서 원시 타입을 제외한 모든 것은 객체이다. 그런데 원시 타입인 문자열이 객체와 유사하게 동작한다.
+```js
+let str = 'test';
+console.log(typeof str); //string
+console.log(str.constructor === String); //true
+console.dir(str); //test
 
+let strObj = new String('test');
+console.log(typeof strObj); //object
+console.log(strObj.constructor === String); //true
+console.dir(strObj); 
+/* {0: "t", 1: "e", 2: "s", 3: "t", legnth:4, __proto__: String, [[PrimitiveValue]]: "test"}
+*/
+
+console.log(str.toUpperCase()); //TEST
+console.log(strObj.toUpperCase()); //TEST
+
+```
+위와같이 원시 타입 문자열과 String( )생성자를 통하여 생성된 객체의 타입은 다르다. 원시 타입은 객체가 아니므로 메서드를 가질 수 없지만 프로퍼티나 메서드를 호출할 때 원시타입과 연관된 객체로 ***일시적으로*** 변환되어 프로토타입 객체를 공유하게 된다.
+
+또한 원시타입은 객체가 아니기 때문에 프로퍼티나 메서드를 직접 추가할 수 없다.
+```js
+let str = 'test';
+
+str.method = function(){
+	console.log('this is method')
+};
+
+str.method(); //TypeError: str.method is not a function
+```
+하지만 String.prototype에 메서드를 추가하면 원시타입과 String( )생성자로 생성된 객체 모두 해당 메서드를 사용할 수 있다.
+```js
+let str = 'test';
+
+String.prototype.method = function(){
+	return 'this is method'
+};
+
+console.log(str.method()); //this is method
+console.log('string'.method()); //this is method
+```
 ### 프로토타입 객체의 변경
+객체

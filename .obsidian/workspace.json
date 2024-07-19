@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "constructor",
+                "query": "프로퍼티",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -158,22 +159,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f8297c599054d8e1",
+  "active": "ef0e13384a6bbfdc",
   "lastOpenFiles": [
+    "cs/Data Structure/Non-Linear Data Structure/Map.md",
+    "cs/Data Structure/Non-Linear Data Structure/Pasted image 20240503161140.png",
+    "cs/Data Structure/Non-Linear Data Structure/Set.md",
+    "cs/Data Structure/Non-Linear Data Structure/Heap.md",
+    "cs/Data Structure/Non-Linear Data Structure/Graph.md",
+    "cs/Data Structure/Non-Linear Data Structure/Non-Linear Data Structure.md",
+    "cs/Data Structure/Non-Linear Data Structure/Pasted image 20240503163112.png",
     "Todo.md",
+    "JS/Prototype.md",
     "cs/Pattern/Singleton Pattern.md",
     "README.md",
     "Todo 2.md",
-    "JS/Prototype.md",
     "Todo 3.md",
     "JS/Constructor And 'new' operator.md",
     "cs/Data Structure/Complexity/Complexity.md",
     "cs/Data Structure/Data Structure.md",
     "cs/Data Structure/Locality.md",
-    "Heap.md",
-    "Graph.md",
-    "Pasted image 20240503161140.png",
-    "Pasted image 20240503163112.png",
     "JS/Array.prototype.sort().md",
     "JS/Array.prototype.reduce().md",
     "JS/Array.from().md",
@@ -181,14 +185,10 @@
     "cs/Data Structure/Complexity/Space Complexity.md",
     "cs/Data Structure/Complexity/Time Complexity.md",
     "JS/arguments.md",
-    "cs/Data Structure/Non-Linear Data Structure/Non-Linear Data Structure.md",
-    "cs/Data Structure/Non-Linear Data Structure/Map.md",
-    "cs/Data Structure/Non-Linear Data Structure/Set.md",
     "JS/Set.md",
     "cs/Data Structure/Linear Data Structure/Linear Data Structure.md",
     "cs/Data Structure/Non-Linear Data Structure",
     "cs/Cache.md",
-    "cs/Data Structure/Linear Data Structure/Queue.md",
     "cs/Data Structure/Linear Data Structure",
     "cs/Data Structure",
     "cs/DataStructure",
