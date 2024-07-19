@@ -218,4 +218,4 @@ console.log(str.method()); //this is method
 console.log('string'.method()); //this is method
 ```
 ### 프로토타입 객체의 변경
-객체
+객체를 생성할 때 프로토타입 객체는 정해지지만 이를 동적으로 변경할 수 있다.
