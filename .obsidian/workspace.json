@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Prototype.md",
+                "file": "JS/Array.prototype.forEach().md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "프로퍼티",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Prototype.md",
+                "file": "JS/Array.prototype.forEach().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JS/Prototype.md",
+                "file": "JS/Array.prototype.forEach().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JS/Prototype.md"
+                "file": "JS/Array.prototype.forEach().md"
               }
             }
           }
@@ -161,6 +160,13 @@
   },
   "active": "f8297c599054d8e1",
   "lastOpenFiles": [
+    "JS/Array.prototype.reduce().md",
+    "JS/Array.prototype.forEach().md",
+    "JS/Array.prototype.sort().md",
+    "Todo.md",
+    "README.md",
+    "JS/Prototype.md",
+    "JS/arguments.md",
     "cs/Data Structure/Non-Linear Data Structure/Map.md",
     "cs/Data Structure/Non-Linear Data Structure/Pasted image 20240503161140.png",
     "cs/Data Structure/Non-Linear Data Structure/Set.md",
@@ -168,23 +174,16 @@
     "cs/Data Structure/Non-Linear Data Structure/Graph.md",
     "cs/Data Structure/Non-Linear Data Structure/Non-Linear Data Structure.md",
     "cs/Data Structure/Non-Linear Data Structure/Pasted image 20240503163112.png",
-    "Todo.md",
-    "JS/Prototype.md",
     "cs/Pattern/Singleton Pattern.md",
-    "README.md",
     "Todo 2.md",
     "Todo 3.md",
     "JS/Constructor And 'new' operator.md",
     "cs/Data Structure/Complexity/Complexity.md",
     "cs/Data Structure/Data Structure.md",
     "cs/Data Structure/Locality.md",
-    "JS/Array.prototype.sort().md",
-    "JS/Array.prototype.reduce().md",
     "JS/Array.from().md",
-    "JS/Array.prototype.forEach().md",
     "cs/Data Structure/Complexity/Space Complexity.md",
     "cs/Data Structure/Complexity/Time Complexity.md",
-    "JS/arguments.md",
     "JS/Set.md",
     "cs/Data Structure/Linear Data Structure/Linear Data Structure.md",
     "cs/Data Structure/Non-Linear Data Structure",

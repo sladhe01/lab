@@ -6,9 +6,11 @@
 
 #### JS 
 
-[this](https://github.com/sladhe01/lab/blob/main/this.md)<br/>
-[Primitive type](https://github.com/sladhe01/lab/blob/main/Primitive%20type.md)<br/>
-[Constructor And 'new' operator](https://github.com/sladhe01/lab/blob/main/Constructor%20And%20'new'%20operator.md)<br/>
+[this](https://github.com/sladhe01/lab/blob/main/JS/this.md)<br/>
+[Primitive type](https://github.com/sladhe01/lab/blob/main/JS/Primitive%20type.md)<br/>
+[Constructor And 'new' operator](https://github.com/sladhe01/lab/blob/main/JS/Constructor%20And%20'new'%20operator.md)<br/>
+[Prototype](https://github.com/sladhe01/lab/blob/main/JS/Prototype.md)<br/>
+
 
 
 #### CS
