@@ -72,7 +72,7 @@ console.log(Person.constructor === Funtion); //trune
 
 ### Prototype Chain
 자바스크립트는 특정 객체의 프로퍼티나 메서드에 접근할 때 해당 객체에 그 프로퍼티나 메서드가 없다면 `[[Prototype]]`이 가리키는 링크를 따라 자신의 부모역할을 하는 프로토타입 객체의 프로퍼티나 메서드를 차례대로 검색하는데 이것을 프로토타입 체인이라고 한다.
-```js
+```js ignore
 let student = {
 	name: "Jeong",
 	score: 93
@@ -177,7 +177,7 @@ foo.sayHello(); //Hi my name is Jeong
 
 ### 원시타입의 확장
 js에서 원시 타입을 제외한 모든 것은 객체이다. 그런데 원시 타입인 문자열이 객체와 유사하게 동작한다.
-```js
+```js ignore
 let str = 'test';
 console.log(typeof str); //string
 console.log(str.constructor === String); //true
@@ -219,5 +219,46 @@ console.log('string'.method()); //this is method
 ```
 ### 프로토타입 객체의 변경
 객체를 생성할 때 프로토타입 객체는 정해지지만 이를 동적으로 변경할 수 있다. 여기서 주의해야할 점이 있다.
-- 프로토타입 변경전에 생성된 객체는 기존 프로토타입 객체를 [[Prototype]]에 바인딩한다.
-- 프로토타입 변경후에 생성된 객체는 변경된 프로토타입 객체를 [[Prototype]]에 바인딩한다.
+- 프로토타입 변경전에 생성된 객체는 기존 프로토타입 객체를 \[\[Prototype]]에 바인딩한다.
+- 프로토타입 변경후에 생성된 객체는 변경된 프로토타입 객체를 \[\[Prototype]]에 바인딩한다.
+```js
+fucntion Person(name) {
+	this.name = name;
+};
+
+let foo = new Person('Jeong');
+
+Person.prototype = { gender: 'male'};
+
+let bar  = new Person('Kim');
+
+console.log(foo.gender); //undefined
+console.log(bar.gender); //male
+
+console.log(foo.constructor); //Person(name)
+console.log(bar.constructor); //Object()
+/*
+Person.prototype을 변경하면서 Person.prototype 객체의 constuctor 프로퍼티가 사라지고
+프로토타입 체이닝에 의해서 Object.prototype.constuctor 프로퍼티에 접근하기 떄문에
+bar.constructor는 Object() 생성자 함수가 된다.
+*/
+```
+
+### 프로토타입 체인 동작 조건
+객체의 프로퍼티를 참조하는 경우 해당 객체에 그 프로퍼티가 없으면 프로토타입 체인이 동작한다.
+즉 객체에 해당 프로퍼티가 존재하면 프로토타입 체인이 동작하지 않는다. 만약 객체에도 해당 프로퍼티가 있고 프로토타입 객체에도 해당 프로퍼티가 존재하면 객체의 프로퍼티에 값을 재할당 하게 된다.
+```js
+function Person(name) {
+ this.name = name;
+};
+
+Pesron.prototype.gender = 'male';
+
+let foo = new Person('Jeong');
+let bar = new Person('Kim');
+console.log(foo.gender); //male;
+console.log(bar.gender); //male
+
+bar.gender = 'female'
+console.log(bar.gender); //female
+```
