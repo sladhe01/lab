@@ -32,3 +32,16 @@ else:
 #### and, or
 
 and, or을 나타내는 논리연산자를 ***&&*** 또는 ***||*** 로 표현하지 않고 문자 그대로 ***and*** 또는 ***or*** 사용
+
+#### module import
+
+예를 들어 Python Standard Lbrarry의 radonm 모듈의 randint 함수를 import 해보자
+```py
+from random import randint
+
+radom_num = random.randint(1,10)
+```
+
+#### 주석
+
+\#을 앞에 써서 주석을 사용한다. 
