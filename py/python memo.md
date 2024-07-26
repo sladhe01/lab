@@ -28,3 +28,7 @@ elif(a==0):
 else:
 	return f("{a} is greater tahn 0")
 ```
+
+#### and, or
+
+and, or을 나타내는 논리연산자를 ***&&*** 또는 ***||*** 로 표현하지 않고 문자 그대로 ***and*** 또는 ***or*** 사용
