@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/실행순서에 관한 이야기(1) - Hoisting.md",
+                "file": "py/python memo.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/실행순서에 관한 이야기(1) - Hoisting.md",
+                "file": "py/python memo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JS/실행순서에 관한 이야기(1) - Hoisting.md",
+                "file": "py/python memo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JS/실행순서에 관한 이야기(1) - Hoisting.md"
+                "file": "py/python memo.md"
               }
             }
           }
@@ -160,10 +160,12 @@
   },
   "active": "f8297c599054d8e1",
   "lastOpenFiles": [
+    "JS/실행순서에 관한 이야기(1) - Hoisting.md",
+    "py/python memo.md",
+    "py",
     "JS/실행순서에 관한 이야기(2) - express http method.md",
     "JS/Array.prototype.forEach().md",
     "JS/arguments.md",
-    "JS/실행순서에 관한 이야기(1) - Hoisting.md",
     "cs/Data Structure/Non-Linear Data Structure/Heap.md",
     "cs/Data Structure/Non-Linear Data Structure/Tree.md",
     "images.png",
@@ -191,7 +193,6 @@
     "JS/Constructor And 'new' operator.md",
     "cs/Data Structure/Complexity/Complexity.md",
     "cs/Data Structure/Data Structure.md",
-    "cs/Data Structure/Locality.md",
     "cs/Data Structure/Non-Linear Data Structure",
     "cs/Data Structure/Linear Data Structure",
     "cs/Data Structure",
