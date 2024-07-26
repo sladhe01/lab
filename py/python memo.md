@@ -55,3 +55,18 @@ js와 다르게 음수 인덱스를 통해 뒤에서부터 차례대로 접근 �
 #### Tuple
 
 ( )안에 element를 집어 넣고 리스트와 비슷한 자료구조지만 수정이 불가능하다. 마찬가지로 인덱스를 통해 접근
+
+#### Dictionaries
+
+js의 객체와 비슷한 개념 마찬가지로 { }로 key, value pair를 담고 있으나 key는 ''를 이용해 string 형태로 써줘야한다. 접근 방식은 dicts.get('key')와 같은 메서드를 사용하거나 dicts\['key']와 같이 접근할 수 있다. 추가 혹은 수정은 리터럴로 가능하다.
+```py
+jeong = {
+	'age' : 32,
+	'male': True,
+	"job" : "developer"
+}
+
+print(jeong.age) #32
+print(jeong['age'])
+
+```
