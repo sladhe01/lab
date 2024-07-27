@@ -20,6 +20,7 @@ f"hello my name is {my_name}"
 #### 조건문
 
 js의 ***else if*** 대신 ***elif*** 라는 키워드 사용
+js에서 부정을 나타낼 때 !를 사용했지만 파이썬은 not 키워드를 사용
 ```py
 if(a<0):
 	return f"{a} is less than 0"
