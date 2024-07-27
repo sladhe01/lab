@@ -78,10 +78,14 @@ print(jeong) #{'age' : 32, 'male': True, 'job' : 'developer', 'score': 100}
 
 ### Class
 
-method의 첫번째 argument는 항상 self가 되어야 한다.
+js의 constrcutor와 같은 역할을 하는 \_\_init__ 메서드가 있다.
+method의 첫번째 argument는 항상 self가 되어야 한다. (메서드는 항상 클래스 자기 자신에 대한 참조를 받고 있다.)
 ```py
 class Person:
-
 	def __init__(self):
+		Print(self) #<__main__.Person object at 0x792c2bc659f0>
 		print("Person is born")
+
+jeong = Person()
+print(jeong) #<__main__.Person object at 0x792c2bc659f0>
 ```
