@@ -1,12 +1,20 @@
 
-### 함수 선언
+### 함수
 
-***def*** 키워드와 ***:*** 사용
+함수 선언시 ***def*** 키워드와 ***:*** 사용
 중괄호 대신 공백사용
 기본값-> `parameter = default_value`
 ```Py
 def hello(name="doe"):
 	print("hello", name)
+```
+
+함수 호출시 argument가 정해진 순서대로 넣어서 호출도 가능하고 'keyword argument'를 이용해서 호출도 가능
+```py
+def greet(first_name, last_name, age): 
+	print(f"Hello, {first_name} {last_name}. You are {age} years old.")
+
+greet(age=32, lastname='Jeong', first_name='DongMin')
 ```
 
 ### 문자열 리터럴
@@ -79,13 +87,17 @@ print(jeong) #{'age' : 32, 'male': True, 'job' : 'developer', 'score': 100}
 ### Class
 
 js의 constrcutor와 같은 역할을 하는 \_\_init__ 메서드가 있다.
-method의 첫번째 argument는 항상 self가 되어야 한다. (메서드는 항상 클래스 자기 자신에 대한 참조를 받고 있다.)
+method의 첫번째 argument는 항상 클래스 그 자체(주로 self로 많이 사용)가 되어야 한다. (메서드는 항상 클래스 자기 자신에 대한 참조를 받고 있다.)
 ```py
 class Person:
-	def __init__(self):
-		Print(self) #<__main__.Person object at 0x792c2bc659f0>
-		print("Person is born")
+	def __init__(self, name, age):
+		Print(self) 
+		self.name = name
+		self.age = age
 
-jeong = Person()
-print(jeong) #<__main__.Person object at 0x792c2bc659f0>
+foo = Person('jeong', 32) 
+#<__main__.Person object at 0x792c2bc659f0>
+ 
+print(foo)
+#<__main__.Person object at 0x792c2bc659f0>
 ```
