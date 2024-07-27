@@ -106,7 +106,7 @@ print(foo)
 상속시 클래스명 옆에 소괄호를 쓰고 그 안에 상속 받을 클래스를 써주면 된다.
 super( )를 통해서 부모 클래스를 참조한다.
 ```python
-class puppy(Dog):
+class Puppy(Dog):
 	def __init__(self, name, breed):
 		super().__init__(name, breed, 0.1)
 	def woof_woof(self):
