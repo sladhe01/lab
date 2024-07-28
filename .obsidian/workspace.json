@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "py/python memo.md",
+                "file": "go/go memo.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "py/python memo.md",
+                "file": "go/go memo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "py/python memo.md",
+                "file": "go/go memo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "py/python memo.md"
+                "file": "go/go memo.md"
               }
             }
           }
@@ -160,16 +160,22 @@
   },
   "active": "f8297c599054d8e1",
   "lastOpenFiles": [
-    "JS/실행순서에 관한 이야기(1) - Hoisting.md",
     "py/python memo.md",
+    "go/go memo.md",
+    "go",
+    "JS/this.md",
+    "JS/Set.md",
+    "JS/Prototype.md",
+    "README.md",
+    "cs/Data Structure/Non-Linear Data Structure/Tree.md",
+    "cs/Data Structure/Non-Linear Data Structure/images.png",
+    "cs/Data Structure/Non-Linear Data Structure/64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png",
+    "cs/Data Structure/Non-Linear Data Structure/Heap.md",
+    "JS/실행순서에 관한 이야기(1) - Hoisting.md",
     "py",
     "JS/실행순서에 관한 이야기(2) - express http method.md",
     "JS/Array.prototype.forEach().md",
     "JS/arguments.md",
-    "cs/Data Structure/Non-Linear Data Structure/Heap.md",
-    "cs/Data Structure/Non-Linear Data Structure/Tree.md",
-    "images.png",
-    "64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png",
     "1_CMGFtehu01ZEBgzHG71sMg.webp",
     "cs/Data Structure/Non-Linear Data Structure/pasted image 0.png",
     "cs/Data Structure/Non-Linear Data Structure/Graph.md",
@@ -185,14 +191,9 @@
     "Todo.md",
     "JS/Array.prototype.reduce().md",
     "JS/Array.prototype.sort().md",
-    "README.md",
-    "JS/Prototype.md",
     "cs/Pattern/Singleton Pattern.md",
     "Todo 2.md",
     "Todo 3.md",
-    "JS/Constructor And 'new' operator.md",
-    "cs/Data Structure/Complexity/Complexity.md",
-    "cs/Data Structure/Data Structure.md",
     "cs/Data Structure/Non-Linear Data Structure",
     "cs/Data Structure/Linear Data Structure",
     "cs/Data Structure",
@@ -201,7 +202,6 @@
     "cs/Pattern",
     "JS",
     "Untitled.canvas",
-    "cs/patternAndParadigm",
-    "cs"
+    "cs/patternAndParadigm"
   ]
 }
