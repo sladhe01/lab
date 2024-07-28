@@ -31,3 +31,14 @@ var country stirng = "Korea"
 country := "Korea" //위와 같은 코든데 줄여서 쓰면 알아서 타입 추론해줌
 //단, func 안에서만, 변수만 줄여쓸 수 있음
 ```
+
+함수의 인자와 반환값의 타입을 알려줘야 한다.
+```go
+func multiply (a int, b int) int {
+	return a*b
+}
+
+func multiply (a,b int) int {
+	retunr a*b
+} //복수의 인자의 타입이 같으면 맨 뒤에만 적어줘도 된다
+```
