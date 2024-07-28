@@ -22,3 +22,12 @@ import "package-name"
 
 
 node.js에서는 함수를 export하려면 export 한다고 명시해줘야 했지만 go는 함수의 첫 글자를 대문자로 만들면 이게 export하겠다는 뜻(소문자로 만들면 private function)
+
+
+상수, 변수 선언
+```go
+const name string = "go"
+var country stirng = "Korea"
+country := "Korea" //위와 같은 코든데 줄여서 쓰면 알아서 타입 추론해줌
+//단, func 안에서만, 변수만 줄여쓸 수 있음
+```
