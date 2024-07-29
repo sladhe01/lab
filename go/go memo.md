@@ -221,3 +221,14 @@ func main() {
 	*b = 11 // b가 a의 주소를 나타내기 때문에 *b를 변경해 a의 값을 변경할 수 도 있다.
 	fmt.Print(a) // 11
 }
+```
+
+
+### Array & Slice
+go에서는 array를 만들 때 길이를 명시해줘야 한다. 길이를 정해주고 싶지 않을 때는 slice라는 타입을 이용해야 한다.
+```go
+func main() {
+	names := [5]string {"jeong", "kim", "lee"}
+	//
+}
+```
