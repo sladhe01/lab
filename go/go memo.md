@@ -253,7 +253,17 @@ js의 object와 비슷한 개념
 key, value의 쌍을 이룬 자료구조
 ```go
 func main() {
-	jeong := map[string]stirng{"name":"jeong", "age":"32"}
+	jeong := map[string]string{"name":"jeong", "age":"32"}
+	//map[key_type]value_type{key1:value1}
 	fmt.Println(jeong)//map[age:32 name:jeong]
+}
+```
+map 도 for를 사용할 수 있음
+```go
+func main() {
+	jeong := map[string]string{"name":"jeong", "age":"32"}
+	for key, value := range jeong {
+	fmt.Println(key, value)// 물론 key를 _로 ignore할 수 있음
+	}
 }
 ```
