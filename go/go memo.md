@@ -225,10 +225,35 @@ func main() {
 
 
 ### Array & Slice
-go에서는 array를 만들 때 길이를 명시해줘야 한다. 길이를 정해주고 싶지 않을 때는 slice라는 타입을 이용해야 한다.
+go에서는 array를 만들 때 길이를 명시해줘야 한다. 길이를 추론하게끔 하려면 ...을 입력해주면 되고 크기에 유연성을 더해주고자 할 때(동적크기의 타입)는 길이를 기입하지 않는 slice라는 타입을 이용해야 한다.
 ```go
 func main() {
-	names := [5]string {"jeong", "kim", "lee"}
+	var names = [5]string {"jeong", "kim", "lee"}
+	names := [5]string {"jeong", "kim", "lee"}//위와 같은 표현
+	names[3] = "park"
+	names[4] = "choi"
+	fmt.Println(names) //[jeong kim lee park choi]
 	//
+}
+```
+
+```go
+func main() {
+	names := []string {"jeong", "kim", "lee"}
+	fmt.Println(names) //[jeong kim lee]
+	names[3] = "park" //panic: runtime error: index out of range 이 방식으로 slice는 추가 안됨, 수정은 됨
+	names = append(names, "park")//slice와 추가할 요소가 인자
+	//append는 새로운 slice를 반환하기 때문에 names에 재할당해야함
+}
+```
+
+
+### Map
+js의 object와 비슷한 개념
+key, value의 쌍을 이룬 자료구조
+```go
+func main() {
+	jeong := map[string]stirng{"name":"jeong", "age":"32"}
+	fmt.Println(jeong)//map[age:32 name:jeong]
 }
 ```
