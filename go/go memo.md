@@ -267,3 +267,6 @@ func main() {
 	}
 }
 ```
+
+
+### Struct
