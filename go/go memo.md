@@ -276,6 +276,7 @@ constructor method가 없어서 constructor를 실행해야함
 `struct_name{}`을 통해서 인스턴스를 생성해 사용가능
 
 ```go
+// public하게 하려면 struct와 그 안의 요소들의 이름의 첫글자를 대문자로 만들어야 함
 type person struct {
 	name string
 	age int
