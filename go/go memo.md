@@ -106,21 +106,28 @@ func main() {
 ### loop
 오직 for만 가능 forEach, map, for in, for of 등 없음
 for 다음에 인덱스, 요소 순으로 써주고 필요할 경우 인덱스만 쓰거나 \_ 로 요소만 쓸 수있다.
-:= ragne를 통해 인덱스 처음부터 끝까지 순회할 수도 있고
-:= i 조건문을 통해서 조건에 부합한 index만 순회할 수도 있다.
+for i, element := rangne elements{}를 통해 인덱스 처음부터 끝까지 순회할 수도 있고
+for i := range elements{}
+for \_, element := range elements{}
+for i := 조건문을 통해서 조건에 부합한 index만 순회할 수도 있다.(조건문은 인덱스에만 붙일 수 있음)
 ```go
 func superAdd(elements ...int) int{
+	total := 0
 	for index, element := range elements {
 		fmt.Println(index, element)
+		total += element
 	}//ranage 이용시 인덱스 처음부터 끝까지 순회
-	return 1 //단지 반환타입 맞춰주기 위해서 입력했을 뿐
+	return total
 }
 ```
 
 ```go
 func superAdd(elements ...int) int{
+	total := 0
 	for i := 0; i<len(elements); i++ {
 		fmt.Println(elements[i])
+		total += elements[i]
 	}
+	return total
 }
 ```
