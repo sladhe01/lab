@@ -102,3 +102,6 @@ func main() {
 }//I'm done
 //5 JEONG
 ```
+
+### loop
+오직 for만 가능 forEach, map, for in, for of 등 없음
