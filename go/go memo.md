@@ -133,3 +133,30 @@ func superAdd(elements ...int) int{
 ```
 
 ### 조건문 
+if 뒤에 바로 조건문 적어주면 된다
+else는 if의 실행문을 닫는 중괄호 뒤에 붙여 써줘야한다
+```go
+func canIDrink(age int) bool {
+	if age < 18 {return false
+	} else {return true} //else는 } 뒤에 써줘야된다. 줄바꿈해서 쓰면 인식못함
+}
+```
+
+```go
+func canIDrink(age int) bool {
+	if age < 18 {return false
+	} 
+	else {return true} // 이렇게 줄바꿈하면 syntax error: unexpected else
+}
+```
+
+### variable expression
+조건문을 쓰는 동시에 변수를 만들 수 있음
+if뒤에 변수를 만들고 ; 뒤에 조건문 작성
+보통 조건문에만 그 변수를 사용할 때 해당 문법 적용
+```go
+func canIDrink(age int) bool {
+	if koreanAge := age+2; koreanAge< 18 {return false
+	} else {return true}
+}
+```
