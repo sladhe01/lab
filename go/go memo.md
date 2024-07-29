@@ -270,4 +270,25 @@ func main() {
 
 
 ### Struct
-map과 비슷하지만 좀 더 유연한 데이터 타입
+map과 비슷하지만 좀 더 유연한 데이터 타입  js의 class와 비슷함 go에는 class가 없음
+constructor method가 없어서 constructor를 실행해야함
+어떤 타입으로 이루어진 strurct 인지 `type sturct_name struct {}`를 통해서 명시해주고
+`struct_name{}`을 통해서 인스턴스를 생성해 사용가능
+
+```go
+type person struct {
+	name string
+	age int
+	favFood []string
+}
+  
+func main() {
+	favFood := []string{"sushi", "pizza"}
+	jeong := person{"jeong", 32, favFood}
+	//인스턴스 생성 하지만 어떤 요소가 무엇을 뜻하지는 직관적으로 알기 힘듦
+	jeong := person{name: "jeong", age: 32, favFood: favFood}
+	//이렇게 하면 좀 더 명확하다
+	fmt.Println(jeong)//{jeong 32 [sushi pizza]}
+	fmt.Println(jeong.age)//32
+}
+```
