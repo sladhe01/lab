@@ -36,6 +36,7 @@ name, country := "go", "Korea"// 이렇게 복수로 사용도 가능
 ```
 
 ### 함수의 인자와 반환값의 타입을 알려줘야 한다.
+void 타입이 없으니 반환값이 없을 경우 타입을 안써주면 된다
 ```go
 func multiply (a int, b int) int {
 	return a*b
@@ -159,4 +160,40 @@ func canIDrink(age int) bool {
 	if koreanAge := age+2; koreanAge< 18 {return false
 	} else {return true}
 }
+```
+
+### Switch
+js의 switch와 거의 동일함 switch문의 평가대상에 괄호 없이 써주면 됨
+마찬가지로 vaialbe expression도 사용가능
+```go
+func canIDrink(age int) bool{
+	switch age {
+	case 10:
+		return false
+	case 18:
+		return true
+	}
+}
+```
+
+```go
+func canIDrink(age int) bool{
+	switch age {
+	case age<18:
+		return false
+	case age>=18:
+		return true
+	}
+}//이런 식으로 논리연산자를 이용가능
+```
+
+```go
+func canIDrink(age int) bool{
+	switch koreanAge := age+2; koreanAge {
+	case koreanAge<18:
+		return false
+	case koreanAge>=18:
+		return true
+	}
+}//이런 식으로 논리연산자를 이용가능
 ```
