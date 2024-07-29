@@ -197,3 +197,27 @@ func canIDrink(age int) bool{
 	}
 }//이런 식으로 논리연산자를 이용가능
 ```
+
+### low level programming
+변수의 값이 저장된 메모리 주소에 접근하려면 변수앞에 &을 붙이면 된다.
+메모리 주소가 나타내는 값을 표현할 때는 \*을 변수앞에 붙이면 된다.
+```go
+func main() {
+	a := 2
+	b := a
+	a = 10
+	fmt.Println(a,b)// 10 2
+	fmt.Println(&a,&b)// 0x000016080 0x000016088
+}
+```
+
+```go
+func main() {
+	a := 2
+	b := &a //b는 a의 메모리 주소를 참조하는 포인터
+	a = 10
+	fmt.Print(&a,b)// 0x000016080 0x000016080
+	fmt.Print(a, *b)// 10 10
+	*b = 11 // b가 a의 주소를 나타내기 때문에 *b를 변경해 a의 값을 변경할 수 도 있다.
+	fmt.Print(a) // 11
+}
