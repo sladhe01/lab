@@ -271,7 +271,7 @@ func main() {
 
 ### Struct
 map과 비슷하지만 좀 더 유연한 데이터 타입  js의 class와 비슷함 go에는 class가 없음
-constructor method가 없어서 constructor를 실행해야함
+constructor method가 없어서 constructor 역할을 할 함수를 만들어서 실행해야 함
 어떤 타입으로 이루어진 strurct 인지 `type sturct_name struct {}`를 통해서 명시해주고
 `struct_name{}`을 통해서 인스턴스를 생성해 사용가능
 
