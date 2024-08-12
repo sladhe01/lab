@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/go memo.md",
+                "file": "Todo.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "go/go memo.md",
+                "file": "Todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "go/go memo.md",
+                "file": "Todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "go/go memo.md"
+                "file": "Todo.md"
               }
             }
           }
@@ -160,8 +160,12 @@
   },
   "active": "f8297c599054d8e1",
   "lastOpenFiles": [
-    "py/python memo.md",
+    "cs/Data Structure/Complexity/Space Complexity.md",
+    "Todo.md",
+    "cs/Data Structure/Complexity/Time Complexity.md",
+    "cs/Data Structure/Complexity/Complexity.md",
     "go/go memo.md",
+    "py/python memo.md",
     "go",
     "JS/this.md",
     "JS/Set.md",
@@ -188,12 +192,8 @@
     "cs/Data Structure/Non-Linear Data Structure/Set.md",
     "cs/Data Structure/Non-Linear Data Structure/Non-Linear Data Structure.md",
     "cs/Data Structure/Non-Linear Data Structure/Map.md",
-    "Todo.md",
     "JS/Array.prototype.reduce().md",
     "JS/Array.prototype.sort().md",
-    "cs/Pattern/Singleton Pattern.md",
-    "Todo 2.md",
-    "Todo 3.md",
     "cs/Data Structure/Non-Linear Data Structure",
     "cs/Data Structure/Linear Data Structure",
     "cs/Data Structure",
