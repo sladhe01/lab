@@ -19,5 +19,5 @@ block의 border가 겹치면 큰 margin을 따라간다.
 </body>
 // 자식인 div를 flexbox로 사용하려면 그 부모인 body에만 flex container임을 명시해주면 된다.
 ```
-2. align-items는 기본적으로 cross axis(교차축, 수직)에 작용
-3. justify-contents는 기본적으로 main axis(주축, 수평)에 작용
+2. align-items는 cross axis(교차축, 기본적으로 수직)에 작용
+3. justify-contents는 main axis(주축, 기본적으로 수평)에 작용
