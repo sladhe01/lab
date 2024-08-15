@@ -26,7 +26,7 @@ block의 border가 겹치면 큰 margin을 따라간다.
 
 - static : 기본값으로 기준점이 됨
 - fixed : 화면상 항상 같은 곳에 위치
-- relative : 처음에 위치했던곳(static)을 기준으로 top, left, right, bottom  만큼 위치
+- relative : 처음에 위치했던곳(static이었을 떄 위치)을 기준으로 top, left, right, bottom  만큼 위치
 - absolute : static이 아닌 가장 가까운 부모를 기준으로 top, left, right, bottom  만큼 위치
 *부모 중에 대상이 없다면 가장 상위인 body를 기준으로 작동
 - fixed나 absolute 값을 적용하면 그 element는 다른 레이어에 위치한다
@@ -51,3 +51,8 @@ block의 border가 겹치면 큰 margin을 따라간다.
 	<div id="second"></div>
 </body>
 ```
+
+<img alt="screenshot 240815220413.png" src="https://github.com/sladhe01/lab/blob/main/html,%20css/images/screenshot%20240815220413.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI">
+적용 전
+<img alt="screenshot 240815220514.png" src="https://github.com/sladhe01/lab/blob/main/html,%20css/images/screenshot%20240815220514.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI">
+적용 후
