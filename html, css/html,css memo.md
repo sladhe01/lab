@@ -60,3 +60,27 @@ block의 border가 겹치면 큰 margin을 따라간다.
 ## Combinators
 - 모든 combinators에 적용하는 게 아니라 바로 밑 자식 태그에만 영향을 주려면 > 표시를 사용하면됨
   `div > span` div 바로 아래의 자식 span tag에만 적용하겠다는 뜻
+- 특정 태그 바로 다음에 적용하려면 + 로 조합
+  `div + span` div 바로 다음에 오는 span 태그에만 적용하겠다는 뜻
+- 특정 태그의 뒤에 존재하는 형제인데 바로 뒤에 오지 않을 때는 ~로 조합
+  `div ~ span` div 바로 다음에 오지는 않지만 형제인 span 태그에 적용하겠다는 뜻
+
+## Pseudo Selectors
+- `tag명:pseudo selector`를 이용하여 특정 조건을 만족하는 태그에만 스타일 적용 가능
+  `div:nth-child(3n+1)` 3n+1번째 div에 적용된다는 뜻
+
+## Attribute Selectors
+- `tag[attribute]` 특정 attribute를 가진 태그에 스타일 적용
+- `tag[attribute="something"]` 특정 attribute의 key 값을 가진 태그에 스타일 적용
+-  `tag[attribute~="something"]` "something"이라는 속성값을 가지거나 "something"을 포함하여 공백으로 구분된 key를 가진 태그에 모두 적용
+  `div[class~="name"]`클래스가 lastname, firstname, "name age"등의 태그에 모두 스타일 적용 하지만 "name-age"와 같이 하이픈으로 구분된 경우는 미적용
+- `tag[attribute|="something"]` "something"으로 시작하지만 바로 뒤에 하이픈으로 구분되는 key값을 가진 태그에 스타일 적용
+  `div[class|="round"]` 클래스 이름이 round-corner, round-font 등 round로 시작하는 태그에 모두 적용, "round around" 처럼 여러개의 클래스가 조합된 경우에는 적용 안됨
+- `tag[attribute^="something"]` "something"으로 시작하는 key값을 가진 태그에 스타일 적용
+  `div[class^="round"]` 클래스 이름이 round-corner, round-font 등 "round long"등 round 시작하는 태그에 모두 적용, "long round"처럼 시작이 다르면 적용 안됨
+- `tag[attribute]$="something"` "something"으로 끝나는 key 값을 가진 태그에 스타일 적용
+   `div[class$="round"]` 클래스 이름이 corner-round, "long round" 등 round 로 끝나는 태그에 모두 적용, "round long"처럼 마지막이 다르면 적용 안됨
+- `tag[attribute]*="something"` "something"을 포함하는 key 값을 가진 태그에 스타일 적용
+   `div[class*="round"]` 클래스 이름이 corner-round, "long round" , "round long" 등 round를 포함하면 모두 적용
+   </br>
+  *예외로 required의 경우 `tag:requried` 혹은 `tag:optional`로 적용
