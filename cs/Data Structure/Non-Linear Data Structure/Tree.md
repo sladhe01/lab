@@ -2,7 +2,7 @@ Tree는 그래프 중 하나로 정점과 간선으로 이루어져 있고, 트�
 루트 노드, 내부 노드, 리프 노드 등으로 구성된다.
 그리고 트리로 이루어진 집합을 숲이라고 부른다.
 
-![[pasted image 0.png]]
+<img alt="pasted image 0.png" src="https://github.com/sladhe01/lab/blob/main/cs/Data%20Structure/Non-Linear%20Data%20Structure/pasted%20image%200.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI">
 ## 트리의 특징
 1.  부모, 자식 계층 구조를 가진다.
 2.  간선 수는 노드 수 - 1 이다. (V - 1 = E)
@@ -28,7 +28,7 @@ Tree는 그래프 중 하나로 정점과 간선으로 이루어져 있고, 트�
 
 ### 이진 트리(binary tree)
 
-![[64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png]]
+<img alt="64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png" src="https://github.com/sladhe01/lab/blob/main/cs/Data%20Structure/Non-Linear%20Data%20Structure/64eb4e97c2b21c77ccb25d05_Screenshot%202023-08-27%20at%209.24.32%20AM.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI">
 자식 노드의 개수가 2개 이하인 트리를 의미한다. 다음과 같은 유형이 존재한다.
 
 - 정이진 트리(full binary tree) - 자식 노드가 0 또는 2개인 이진트리를 말한다.
@@ -39,7 +39,8 @@ Tree는 그래프 중 하나로 정점과 간선으로 이루어져 있고, 트�
 
 ### 이진 탐색 트리(binary search tree, BST)
 
-![[images.png]]
+<img alt="images.png" src="https://github.com/sladhe01/lab/blob/main/cs/Data%20Structure/Non-Linear%20Data%20Structure/images.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI">
+
 노드의 오른쪽 하위 트리에는 노드보다 큰 값이 있는 노드만 포함되고, 노드의 왼쪽 하위 트리에는 노드 보다 작은 값이 있는 노드만 포함되는 트리를 말한다. 이런 구조를 가지면 검색을 하기에 용이하다. 탐색시 평균 시간복잡도는 O(logn)이고 최악의 경우 O(n)의 시간복잡도를 가진다. 이 때는 선형적인 트리구조를 이룬다.
 
 ### AVL 트리(Adelson-Velsky and Landis tree)
