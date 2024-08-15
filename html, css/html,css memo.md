@@ -56,3 +56,7 @@ block의 border가 겹치면 큰 margin을 따라간다.
 적용 전
 <img alt="screenshot 240815220514.png" src="https://github.com/sladhe01/lab/blob/main/html,%20css/images/screenshot%20240815220514.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI">
 적용 후
+
+## Combinators
+- 모든 combinators에 적용하는 게 아니라 바로 밑 자식 태그에만 영향을 주려면 > 표시를 사용하면됨
+  `div > span` div 바로 아래의 자식 span tag에만 적용하겠다는 뜻
