@@ -23,7 +23,13 @@ block의 border가 겹치면 큰 margin을 따라간다.
 3. justify-contents는 main axis(주축, 기본적으로 수평)에 작용
 
 ## position
-- position property를 적용한 후 top, right ,left, bottom 중 하나의 css property를 주면 기존 다른 요소들과 다른 레이어에 위치하게 된다.
+
+- static : 기본값으로 기준점이 됨
+- fixed : 화면상 항상 같은 곳에 위치
+- relative : 처음에 위치했던곳(static)을 기준으로 top, left, right, bottom  만큼 위치
+- absolute : static이 아닌 가장 가까운 부모를 기준으로 top, left, right, bottom  만큼 위치
+*부모 중에 대상이 없다면 가장 상위인 body를 기준으로 작동
+- fixed나 absolute 값을 적용하면 그 element는 다른 레이어에 위치한다
 ```
 	<style>
 	#first {
