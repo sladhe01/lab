@@ -22,8 +22,26 @@ block의 border가 겹치면 큰 margin을 따라간다.
 2. align-items는 cross axis(교차축, 기본적으로 수직)에 작용
 3. justify-contents는 main axis(주축, 기본적으로 수평)에 작용
 
-## Position
-- top, right ,left, bottom 중 하나의 css property를 주면 기존 다른 요소들과 다른 레이어에 위치하게 된다.
+## position
+- position property를 적용한 후 top, right ,left, bottom 중 하나의 css property를 주면 기존 다른 요소들과 다른 레이어에 위치하게 된다.
 ```
-	<style>  
+	<style>
+	#first {
+		height: 150px;
+		width: 150px;
+		background-color: tomato;
+		position: fixed;
+		top: 5px;
+	}
+	#second {
+		height: 200px;
+		width: 200px;
+		background-color: blueviolet;
+	}
+	</style>
+</head>
+<body>
+	<div id="first"></div>
+	<div id="second"></div>
+</body>
 ```
