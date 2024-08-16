@@ -97,3 +97,15 @@ elements의 특정 부분만을 선택하는 방법
    </br>
   *예외로 required의 경우 `tag:requried` 혹은 `tag:optional`로 적용
 
+## Custom Properties(Variables)
+css property의 value값을 변수와 같은 형식으로 저장할 수 있다.
+
+1. --`붙이고 변수명을 정해주면 된다.(띄어쓰기 불가능, 하이픈으로 연결)
+   명시해준 태그가 그 변수가 적요되는 스코프 나타냄(global로 사용하려면 :root selector 이용)
+```
+   :root {
+	   --main-color: #489ee3;
+   }
+```
+
+2. 
