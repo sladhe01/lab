@@ -84,3 +84,10 @@ block의 border가 겹치면 큰 margin을 따라간다.
    `div[class*="round"]` 클래스 이름이 corner-round, "long round" , "round long" 등 round를 포함하면 모두 적용
    </br>
   *예외로 required의 경우 `tag:requried` 혹은 `tag:optional`로 적용
+
+## States
+
+- active 마우스로 선택했을 때 
+- hover 마우스 위에 올려뒀을 때
+- focus 키보드로 선택했을 때
+- visited <a>에만 적용 링크 클릭 했을 때
