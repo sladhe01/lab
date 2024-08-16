@@ -190,3 +190,17 @@ transition과 달리 state 변경이 없이 animation 효과를 줄 때 사용�
 
 ## Media Queries
 반응형 웹을 만들기 위해 사용자의 스크린 크기, 방향등의 조건에 맞춰 어떤 css를 적용할 지 분기를 나눌 수 있음
+```
+<style>
+	@media media-type과 조건 {
+		적용할 style
+	}
+
+	@media screen and (orientation: landscape) {
+		span {
+			display: none;
+		}
+	}
+```
+* media type에는 screen과 print, all 등이 존재하는데 screen은 화면 print는 인쇄 미리보기화면
+* Media Query Level 4부터는 조건에 부등호 연산자 사용 가능
