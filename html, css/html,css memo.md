@@ -65,10 +65,16 @@ block의 border가 겹치면 큰 margin을 따라간다.
 - 특정 태그의 뒤에 존재하는 형제인데 바로 뒤에 오지 않을 때는 ~로 조합
   `div ~ span` div 바로 다음에 오지는 않지만 형제인 span 태그에 적용하겠다는 뜻
 
-## Pseudo Selectors
-- `tag명:pseudo selector`를 이용하여 특정 조건을 만족하는 태그에만 스타일 적용 가능
+## Pseudo Classes
+특정 키워드 상태의 selector를 이용하여 특정 element만 선택하는 방법
+- `tag명:pseudo-class`를 이용하여 특정 조건을 만족하는 element에만 스타일 적용 가능
   `div:nth-child(3n+1)` 3n+1번째 div에 적용된다는 뜻
-
+### States
+- :active 마우스로 클릭되어 선택된 상태
+- :hover 마우스 커서가 위에 올려져있는 상태
+- :focus 키보드로 선택된 상태
+- :visited `<a>`에만 해당, 이미 클릭된 링크의 상태
+- :focus-within focus상태의 자식을 가진 부모 element의 상태
 ## Attribute Selectors
 - `tag[attribute]` 특정 attribute를 가진 태그에 스타일 적용
 - `tag[attribute="something"]` 특정 attribute의 key 값을 가진 태그에 스타일 적용
@@ -85,9 +91,3 @@ block의 border가 겹치면 큰 margin을 따라간다.
    </br>
   *예외로 required의 경우 `tag:requried` 혹은 `tag:optional`로 적용
 
-## States
-
-- active 마우스로 선택했을 때 
-- hover 마우스 위에 올려뒀을 때
-- focus 키보드로 선택했을 때
-- visited <a>에만 적용 링크 클릭 했을 때
