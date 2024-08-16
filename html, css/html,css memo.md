@@ -150,3 +150,7 @@ transition: property-name1 duration1, property-name2 duration2;
 //1~5의 방식을 이용하여 ,를 이용해 여러개에 적용가능
 //모든 대상에 적용시키려면 대상에 all 기입
 ```
+
+## Transform
+element를 변형시키는 css property
+좌표공간 변경을 통해 변형시킴
