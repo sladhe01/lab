@@ -161,3 +161,29 @@ element를 변형시키는 css property
 
 ## Animation
 transition과 달리 state 변경이 없이 animation 효과를 줄 때 사용하는 css property
+1. animation 정의
+   `@keyframes animation-name{from{} to{}}` 와 같은 문법으로 정의
+```
+<style>
+	@keyframes flipp {
+		0% {
+			transform: rotateY(0);
+		}
+		50% {
+			transform: rotateY(180deg) translateY(100px);
+		}
+		100%{
+			transform:rotateY(0);
+		}
+	}
+// 위와 같이 %로 표시된 진행도로 표시할 수도 있다
+```
+2. animation 적용
+   `animation: keyframes duration easingfunction delay iteration-count direction fill-mode play-state name`과 같은 문법으로 적용
+```
+	img {
+		animation: flipp 5s ease-in-out infinite;
+	}
+</style>
+//문법상 몇몇 값은 빠질 수도 있음
+```
