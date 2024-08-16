@@ -158,3 +158,6 @@ element를 변형시키는 css property
 
 <img alt="cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png" src="https://github.com/sladhe01/lab/blob/main/html,%20css/images/cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI" width=50%>
 좌표 축은 위와 같음
+
+## Animation
+transition과 달리 state 변경이 없이 animation 효과를 줄 때 사용하는 css property
