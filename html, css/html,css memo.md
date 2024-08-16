@@ -69,6 +69,7 @@ block의 border가 겹치면 큰 margin을 따라간다.
 특정 키워드 상태의 selector를 이용하여 특정 element만 선택하는 방법
 - `tag명:pseudo-class`를 이용하여 특정 조건을 만족하는 element에만 스타일 적용 가능
   `div:nth-child(3n+1)` 3n+1번째 div에 적용된다는 뜻
+  
 ### States
 - :active 마우스로 클릭되어 선택된 상태
 - :hover 마우스 커서가 위에 올려져있는 상태
@@ -81,6 +82,7 @@ elements의 특정 부분만을 선택하는 방법
 - `tag::pseudo-element`와 같은 방법으로 특정부분에만 스타일 적용 가능
   `input::placeholder` input의 placeholder에만 스타일 적용
   `span::selection`드래그된 부분만 스타일 적용
+  
 ## Attribute Selectors
 - `tag[attribute]` 특정 attribute를 가진 태그에 스타일 적용
 - `tag[attribute="something"]` 특정 attribute의 key 값을 가진 태그에 스타일 적용
@@ -100,7 +102,7 @@ elements의 특정 부분만을 선택하는 방법
 ## Custom Properties(Variables)
 css property의 value값을 변수와 같은 형식으로 저장할 수 있다.
 
-1. --`붙이고 변수명을 정해주면 된다.(띄어쓰기 불가능, 하이픈으로 연결)
+1. `--`붙이고 변수명을 정해주면 된다.(띄어쓰기 불가능, 하이픈으로 연결)
    명시해준 태그가 그 변수가 적요되는 스코프 나타냄(global로 사용하려면 :root selector 이용)
 ```
    :root {
@@ -108,4 +110,28 @@ css property의 value값을 변수와 같은 형식으로 저장할 수 있다.
    }
 ```
 
-2. 
+2. @property 문법을 이용하여 변수 할당
+```
+@property{
+	syntax: "<color>"; //변수가 적용될 태그 명시
+	inherits: false; //상속 여부
+	initial-value: #c0ffee; //초기값 지정, 참고로 변수에 다른 값 재할당 할 수 있음
+}
+```
+
+3.  JS의 window.CSS.Property() 메서드 이용 2번과 사용법은 거의 동일
+```
+window.CSS.registerProperty({
+  name: "--item-color",
+  syntax: "<color>",
+  inherits: false,
+  initialValue: "aqua",
+});
+```
+
+`var(변수명)` 로 변수 참조 가능
+```
+details {
+  background-color: var(--main-bg-color);
+}
+```
