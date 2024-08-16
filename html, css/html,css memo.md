@@ -140,5 +140,13 @@ details {
 state 변경될 때 애니메이션 효과를 주는 css property
 state가 없는 selector쪽에 명시해줘야함
 ```
-transition: 대상 시간 효과, 대상2 시간2 효과2; // 모든 대상에 적용시키려면 all 사용
+transition: property-name duration;
+transition: property-name duration easing fucntion;
+transition: property-name duration easing function delay;
+transition: property-name duration behavior;
+transition: property-name duration delay;
+transition: property-name1 duration1, property-name2 duration2;
+//easing function은 애니메이션이 어떻게 변하는 지를 나타냄
+//1~5의 방식을 이용하여 ,를 이용해 여러개에 적용가능
+//모든 대상에 적용시키려면 대상에 all 기입
 ```
