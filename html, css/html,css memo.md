@@ -187,3 +187,6 @@ transition과 달리 state 변경이 없이 animation 효과를 줄 때 사용�
 </style>
 //문법상 몇몇 값은 빠질 수도 있음
 ```
+
+## Media Queries
+반응형 웹을 만들기 위해 사용자의 스크린 크기에 맞춰 어떤 css를 적용할 지 분기를 나눌 수 있음
