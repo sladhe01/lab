@@ -135,3 +135,10 @@ details {
   background-color: var(--main-bg-color);
 }
 ```
+
+## Transitions
+state 변경될 때 애니메이션 효과를 주는 css property
+state가 없는 selector쪽에 명시해줘야함
+```
+transition: 대상 시간 효과, 대상2 시간2 효과2; // 모든 대상에 적용시키려면 all 사용
+```
