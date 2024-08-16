@@ -75,6 +75,12 @@ block의 border가 겹치면 큰 margin을 따라간다.
 - :focus 키보드로 선택된 상태
 - :visited `<a>`에만 해당, 이미 클릭된 링크의 상태
 - :focus-within focus상태의 자식을 가진 부모 element의 상태
+
+## Pseudo Elements
+elements의 특정 부분만을 선택하는 방법
+- `tag::pseudo-element`와 같은 방법으로 특정부분에만 스타일 적용 가능
+  `input::placeholder` input의 placeholder에만 스타일 적용
+  `span::selection`드래그된 부분만 스타일 적용
 ## Attribute Selectors
 - `tag[attribute]` 특정 attribute를 가진 태그에 스타일 적용
 - `tag[attribute="something"]` 특정 attribute의 key 값을 가진 태그에 스타일 적용
