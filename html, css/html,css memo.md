@@ -156,5 +156,5 @@ element를 변형시키는 css property
 좌표공간 변경을 통해 변형시킴
 다른 요소에는 영향을 미치지 않음 (margin, padding 처럼 다른 요소 밀어내지 않음)
 
-<img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://www.freecodecamp.org/news/content/images/2023/06/cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png" width=50%>
+<img alt="cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png" src="https://github.com/sladhe01/lab/blob/main/html,%20css/images/cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI" width=50%>
 좌표 축은 위와 같음
