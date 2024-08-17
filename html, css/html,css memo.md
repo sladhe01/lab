@@ -204,3 +204,10 @@ transition과 달리 state 변경이 없이 animation 효과를 줄 때 사용�
 ```
 * media type에는 screen과 print, all 등이 존재하는데 screen은 화면 print는 인쇄 미리보기화면
 * Media Query Level 4부터는 조건에 부등호 연산자 사용 가능
+
+## BEM(Block Element Modifier)
+css에서 사용하는 클래스 명명법이다.
+`block__element` 혹은 `block--modifier`와 같은 형식으로 명명한다.
+block은 독립적인 하나의 큰 단위라고 보면되고
+element는 block을 이루는 단위체라고 보면되고
+modifier는 block이나 element의 외관이나 행동, 상태 등을 바꿔주는 것을 말한다.
