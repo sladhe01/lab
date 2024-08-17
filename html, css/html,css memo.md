@@ -214,3 +214,6 @@ modifier는 block이나 element의 외관이나 행동, 상태 등을 바꿔주�
 
 
 #### Script 태그는 항상 body의 마지막에 넣기!!
+
+## button태그와 input type="submit"의 차이점
+[[https://stackoverflow.com/questions/7117639/input-type-submit-vs-button-tag-are-they-interchangeable]]
