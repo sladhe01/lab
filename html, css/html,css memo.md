@@ -211,3 +211,6 @@ css에서 사용하는 클래스 명명법이다.
 block은 독립적인 하나의 큰 단위라고 보면되고
 element는 block을 이루는 단위체라고 보면되고
 modifier는 block이나 element의 외관이나 행동, 상태 등을 바꿔주는 것을 말한다.
+
+
+#### Script 태그는 항상 body의 마지막에 넣기!!
