@@ -222,7 +222,7 @@ modifier는 block이나 element의 외관이나 행동, 상태 등을 바꿔주�
 [[https://stackoverflow.com/questions/7117639/input-type-submit-vs-button-tag-are-they-interchangeable]]
 
 
-`nav>ul>li*4` 이렇게 쓰면 일일히 아래처럼 안써줘도 됨
+## Tip `nav>ul>li*4` 이렇게 쓰면 일일히 아래처럼 안써줘도 됨
 ```
 <nav>
 	<ul></ul>
@@ -231,3 +231,7 @@ modifier는 block이나 element의 외관이나 행동, 상태 등을 바꿔주�
 	<ul></ul>
 </nav>
 ```
+
+## box-sizing
+요소의 전체 크기를 계산하는 기준을 정하는 css property이다.
+원래 css는 기본적으로 width와 padding, margin, border 등을 입력해주면 전체 크기가 width값이 아니라 width+padding+border을 전체 크기로 받아들인다. 이때 `box-sizing=border-box`를 적용해주면 width를 기준으로 전체 크기가 되도록 자동적으로 계산해서 적용한다.
