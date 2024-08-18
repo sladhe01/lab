@@ -220,3 +220,14 @@ modifier는 block이나 element의 외관이나 행동, 상태 등을 바꿔주�
 
 ## button태그와 input type="submit"의 차이점
 [[https://stackoverflow.com/questions/7117639/input-type-submit-vs-button-tag-are-they-interchangeable]]
+
+
+`nav>ul>li*4` 이렇게 쓰면 일일히 아래처럼 안써줘도 됨
+```
+<nav>
+	<ul></ul>
+	<ul></ul>
+	<ul></ul>
+	<ul></ul>
+</nav>
+```
