@@ -69,7 +69,9 @@ block의 border가 겹치면 큰 margin을 따라간다.
 특정 키워드 상태의 selector를 이용하여 특정 element만 선택하는 방법
 - `tag명:pseudo-class`를 이용하여 특정 조건을 만족하는 element에만 스타일 적용 가능
   `div:nth-child(3n+1)` 3n+1번째 div에 적용된다는 뜻
-  
+
+### :not()
+`:not(선택자)`와 같이 선택자 조건에 해당하지 않는 경우만 적용
 ### States
 - :active 마우스로 클릭되어 선택된 상태
 - :hover 마우스 커서가 위에 올려져있는 상태
@@ -98,6 +100,7 @@ elements의 특정 부분만을 선택하는 방법
    `div[class*="round"]` 클래스 이름이 corner-round, "long round" , "round long" 등 round를 포함하면 모두 적용
    </br>
   *예외로 required의 경우 `tag:requried` 혹은 `tag:optional`로 적용
+
 
 ## Custom Properties(Variables)
 css property의 value값을 변수와 같은 형식으로 저장할 수 있다.
