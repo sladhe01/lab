@@ -22,6 +22,7 @@ block의 border가 겹치면 큰 margin을 따라간다.
 2. align-items는 cross axis(교차축, 기본적으로 수직)에 작용
 3. justify-contents는 main axis(주축, 기본적으로 수평)에 작용
 
+**flex-children에게 order라는 Css 속성을 부여하여 표시 순서를 정할 수 있음**
 ## position
 
 - static : 기본값으로 기준점이 됨
