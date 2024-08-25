@@ -237,3 +237,31 @@ modifier는 block이나 element의 외관이나 행동, 상태 등을 바꿔주�
 ## box-sizing
 요소의 전체 크기를 계산하는 기준을 정하는 css property이다.
 원래 css는 기본적으로 width와 padding, margin, border 등을 입력해주면 전체 크기가 width값이 아니라 width+padding+border을 전체 크기로 받아들인다. 이때 `box-sizing=border-box`를 적용해주면 width를 기준으로 전체 크기가 되도록 자동적으로 계산해서 적용한다.
+
+## will-change
+브라우저에게 어떤 변화가 있을지 렌더링 힌트를 주는 속성으로 이 속성에 명시해둔 변화는 그래픽 가속을 쓸 수 있도록 예고해주는 역할
+
+애니메이션 transform:scale()을 썼을 때 흔들리면서 커지는 모습을 보여 해당 속성을 부여했더니 더 이상 흔들리지 않음
+```
+@keyframes heartBeat {
+	0% {
+		cololr: white;
+		transform: none;
+		}
+	50% {
+		color: tomato;
+		transform: scale(1.5);
+		}
+	100% {
+		color: white;
+		transform: none;
+		}
+
+}
+
+.open-post__heart-count:hover i {
+	/* 적용 후 흔들림 사라짐*/
+	will-change: transform;
+	animation: heartBeat 1s linear infinite;
+}
+```
