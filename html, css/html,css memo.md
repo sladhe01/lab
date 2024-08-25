@@ -190,6 +190,7 @@ transition과 달리 state 변경이 없이 animation 효과를 줄 때 사용�
 	}
 </style>
 //문법상 몇몇 값은 빠질 수도 있음
+//forwards값을 주면 애니메이션 마지막 상태로 지속
 ```
 
 ## Media Queries
