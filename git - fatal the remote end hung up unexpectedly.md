@@ -1,0 +1,1 @@
+기껏해야 1mb정도의 이미지 파일 3장이 추가된 커밋을 push 하려고 하니 `fatal: the remote end hung up unexpectedly` 이런 에러가 발생했다. 이 에러는 push 하려는 데이터 크기가 너무 큰 경우에 발생할 수 있다고 한다.
