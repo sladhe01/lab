@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "buffer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -172,8 +172,9 @@
   },
   "active": "d571c2ad04bf9b2c",
   "lastOpenFiles": [
-    "form 태그.md",
+    "cs/Buffer.md",
     "git - fatal the remote end hung up unexpectedly.md",
+    "form 태그.md",
     "Untitled",
     "html, css/html,css memo.md",
     "Todo.md",
@@ -206,7 +207,6 @@
     "cs/Data Structure/Complexity/Complexity.md",
     "go/go memo.md",
     "go",
-    "JS/this.md",
     "cs/Data Structure/Non-Linear Data Structure/images.png",
     "cs/Data Structure/Non-Linear Data Structure/64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png",
     "py",
