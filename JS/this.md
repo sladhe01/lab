@@ -70,12 +70,14 @@ obj1.func1() // Window{} func가 어떤 다른 함수 내부에도 있지 않기
 
 const obj2 = {
 	met1: function () {
-		const func5 = () => {
-		console.log(this);
+		const func2 = () => {
+			console.log(this);
 		};
-	func5();
+		func2();
 	},
 };
+
+obj2.met1() // {met1: met1()} func2가 met1이라는 함수 안에 위치하기 떄문에 상위 스코프가 met1이기 때문이다. 만약 met1이 화살표 함수였다면 func2의 상위 스코프인 met1의 this가 전역 객체이기 때문에 똑같이 Window{}로 출력되었을 것이다.
 
 ```
 ##### 메서드의 내부 함수의 경우에도 this는 window를 지칭한다.
