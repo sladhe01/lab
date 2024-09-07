@@ -1,7 +1,6 @@
 
 #### 기본적으로 js에서 this는 global context(window)를 지칭한다.
 
-^9d1458
 
 ```
 	console.log(this); // Window { }
@@ -125,4 +124,6 @@ obj2.sayName() // Jeong
 ```
 ###### [[Prototype]] 객체의 메서드의 this도 프로토타입 객체를 지칭한다.
 
-[[binding]]과 화살표 함수에서는 또 다르기 때문에 해당 문서에서 다루겠다.
+#### binding
+
+this를 내가 원하는 객체로 지정할 수 있다. 이러한 행위를 binding이라고 하는데 

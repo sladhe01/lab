@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/binding.md",
+                "file": "JS/this.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/binding.md",
+                "file": "JS/this.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JS/binding.md",
+                "file": "JS/this.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JS/binding.md"
+                "file": "JS/this.md"
               }
             }
           }
@@ -172,8 +172,9 @@
   },
   "active": "d571c2ad04bf9b2c",
   "lastOpenFiles": [
+    "JS/Function.prototype.bind().md",
+    "form 태그.md",
     "JS/this.md",
-    "JS/binding.md",
     "html, css/html,css memo.md",
     "Untitled 2.canvas",
     "Untitled.canvas",
@@ -183,7 +184,6 @@
     "memo.md",
     "git - fatal the remote end hung up unexpectedly.md",
     "cs/Buffer.md",
-    "form 태그.md",
     "Untitled",
     "Todo.md",
     "html, css/images/screenshot 240815220514.png",
