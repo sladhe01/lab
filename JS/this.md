@@ -1,5 +1,5 @@
 
-#### 기본적으로 js에서 this는 global context(window)를 지칭한다.
+### 기본적으로 js에서 this는 global context(window)를 지칭한다.
 
 
 ```
@@ -9,7 +9,7 @@
 	a1(); // Window{} 단, strict 모드에서는 undefined
 ```
 
-#### 객체의 메서드인 경우는 객체를 지칭한다.
+### 객체의 메서드인 경우는 객체를 지칭한다.
 
 ```
 	const obj = {
@@ -23,7 +23,7 @@
 	//호출하는 함수가 객체의 메서드인지 일반 함수인지 중요하다.
 
 ```
-#### 클래스 내부의 this는 그 클래스 인스턴스 객체를 지칭한다.
+### 클래스 내부의 this는 그 클래스 인스턴스 객체를 지칭한다.
 ``` js
 class Person {
 		constructor(name, age) {
@@ -56,7 +56,7 @@ person1.printThis()
 	// bar's this: Window {}
 ```
 
-###### 메서드의 내부 함수의 경우에도 this는 window를 지칭한다.
+##### 메서드의 내부 함수의 경우에도 this는 window를 지칭한다.
 
 ```
 	const value = 1;
@@ -81,7 +81,7 @@ person1.printThis()
 	// bar's this.value: 1
 ```
 
-###### 콜백 함수의 경우도 this는 window를 지칭한다.
+##### 콜백 함수의 경우도 this는 window를 지칭한다.
 
 ```
 	const value = 1;
@@ -102,7 +102,7 @@ person1.printThis()
 	//callback's this.value: 1
 ```
 
-###### 메서드인 경우는 상기 서술한 대로 객체를 지칭한다.
+##### 메서드인 경우는 상기 서술한 대로 객체를 지칭한다.
 
 ```
 let obj1 = {
@@ -122,8 +122,20 @@ obj1.sayName() // Kim
 obj2.sayName() // Jeong
 
 ```
-###### [[Prototype]] 객체의 메서드의 this도 프로토타입 객체를 지칭한다.
+##### [[Prototype]] 객체의 메서드의 this도 프로토타입 객체를 지칭한다.
 
-#### binding
+### binding
 
-this를 내가 원하는 객체로 지정할 수 있다. 이러한 행위를 binding이라고 하는데 
+프로그래밍에서 value와 identifier 사이의 연관을 binding이라고 부른다. 그리고 이러한 연관을 지어주는 것도 binding이라고 한다. this도 binding을 통해서 원하는 객체로 정해줄 수 있는데 대표적인 방법으로 .bind() 메서드를 사용하면 된다. bind()메서드는 this 객체를 원하는 대로 정한 새로운 함수객체를 생성는 메서드이기 때문에 기존 함수를 호출하면 원래의 this를 볼 수 있다.
+\**bind메서드로 생성된 함수객체에 다시 bind메서드를 사용해도 효과 없음*
+
+```js
+	function a1() { console.log(this); }
+	a1.bind({hi:"hello"})() // {hi:"hello"}
+	a1() // Window{}
+```
+
+이벤트 리스너안의 콜백함수인 이벤트 핸들러 함수의 경우도 내부에 this를 event target으로 바인딩되는 로직이 포함되어 있기 때문에 이벤트 핸들러 함수의 this는 기본적으로 event.target을 나타낸다.
+
+### 화살표 함수
+
