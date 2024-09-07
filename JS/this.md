@@ -125,3 +125,4 @@ obj2.sayName() // Jeong
 ```
 ###### [[Prototype]] 객체의 메서드의 this도 프로토타입 객체를 지칭한다.
 
+#### bind

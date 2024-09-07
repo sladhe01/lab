@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "memo.md",
+                "file": "JS/this.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "buffer",
+                "query": "this",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "memo.md",
+                "file": "JS/this.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "memo.md",
+                "file": "JS/this.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "memo.md"
+                "file": "JS/this.md"
               }
             }
           }
@@ -184,8 +185,9 @@
   },
   "active": "88681425432b4cb2",
   "lastOpenFiles": [
-    "html, css/html,css memo.md",
+    "py/python memo.md",
     "memo.md",
+    "html, css/html,css memo.md",
     "git - fatal the remote end hung up unexpectedly.md",
     "cs/Buffer.md",
     "form 태그.md",
@@ -206,7 +208,6 @@
     "cs/Data Structure/Linear Data Structure/Stack.md",
     "cs/Data Structure/Linear Data Structure/Queue.md",
     "cs/Data Structure/Linear Data Structure/Linked List.md",
-    "py/python memo.md",
     "README.md",
     "cs/Data Structure/Linear Data Structure/Pasted image 20240503163112.png",
     "cs/Data Structure/Linear Data Structure/Linear Data Structure.md",
