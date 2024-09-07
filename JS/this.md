@@ -1,17 +1,17 @@
 
 ### 기본적으로 js에서 this는 global context(window)를 지칭한다.
 
-
-```
+```js
 	console.log(this); // Window { }
 	//함수의 경우
 	function a1() { console.log(this); }
 	a1(); // Window{} 단, strict 모드에서는 undefined
 ```
+\* 이는 js의 설계오류로 인한 현상인데 js를 설계할 때 함수 호출 시 함수 내부의 this를 지정하지 않았고(undefined) this가 정해지지 않은경우 자동적으로 전역객체에서 this를 찾게 되어있기때문이다
 
 ### 객체의 메서드인 경우는 객체를 지칭한다.
 
-```
+```js
 	const obj = {
 		method1: function() {console.log(this);}
 	}
