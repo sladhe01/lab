@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "graphql for nestjs/Context.md",
+                "file": "NestJS/GraphQL for Nestjs/@Args.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "graphql for nestjs/Context.md",
+                "file": "NestJS/GraphQL for Nestjs/@Args.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "graphql for nestjs/Context.md",
+                "file": "NestJS/GraphQL for Nestjs/@Args.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "graphql for nestjs/Context.md"
+                "file": "NestJS/GraphQL for Nestjs/@Args.md"
               }
             }
           }
@@ -172,9 +172,11 @@
   },
   "active": "d571c2ad04bf9b2c",
   "lastOpenFiles": [
+    "NestJS/GraphQL for Nestjs/Context.md",
+    "NestJS/GraphQL for Nestjs/@Args.md",
+    "NestJS",
     "JS/this.md",
-    "graphql for nestjs/Context.md",
-    "graphql for nestjs",
+    "NestJS/GraphQL for Nestjs",
     "JS/Function.prototype.bind().md",
     "form 태그.md",
     "html, css/html,css memo.md",
@@ -207,7 +209,6 @@
     "cs/Data Structure/Linear Data Structure/Linear Data Structure.md",
     "cs/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
     "cs/Pattern/Singleton Pattern.md",
-    "cs/Data Structure/Linear Data Structure/Array.md",
     "html, css",
     "go",
     "cs/Data Structure/Non-Linear Data Structure/images.png",
@@ -218,7 +219,6 @@
     "cs/Data Structure/Non-Linear Data Structure",
     "cs/Data Structure/Linear Data Structure",
     "cs/Data Structure",
-    "cs/DataStructure",
-    "cs/Data Structure/Complexity"
+    "cs/DataStructure"
   ]
 }
