@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/this.md",
+                "file": "graphql for nestjs/Context.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/this.md",
+                "file": "graphql for nestjs/Context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JS/this.md",
+                "file": "graphql for nestjs/Context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JS/this.md"
+                "file": "graphql for nestjs/Context.md"
               }
             }
           }
@@ -172,9 +172,11 @@
   },
   "active": "d571c2ad04bf9b2c",
   "lastOpenFiles": [
+    "JS/this.md",
+    "graphql for nestjs/Context.md",
+    "graphql for nestjs",
     "JS/Function.prototype.bind().md",
     "form 태그.md",
-    "JS/this.md",
     "html, css/html,css memo.md",
     "Untitled 2.canvas",
     "Untitled.canvas",
@@ -184,7 +186,6 @@
     "memo.md",
     "git - fatal the remote end hung up unexpectedly.md",
     "cs/Buffer.md",
-    "Untitled",
     "Todo.md",
     "html, css/images/screenshot 240815220514.png",
     "html, css/images/cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png",
@@ -207,7 +208,6 @@
     "cs/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
     "cs/Pattern/Singleton Pattern.md",
     "cs/Data Structure/Linear Data Structure/Array.md",
-    "cs/Data Structure/Data Structure.md",
     "html, css",
     "go",
     "cs/Data Structure/Non-Linear Data Structure/images.png",
