@@ -11,3 +11,6 @@ async editProfile(userId: number, { email, password }: EditProfileInput) {
 	return await this.users.update(userId, user);
 }
 ```
+
+
+typeorm은 save 메서드가 일어나기 전의 entity상태를 스냅샷으로 일시적으로 기억해 save가 일어난 후의 상태와 비교하고 변경사항이 있으면 @BeforeUpdate 데커리이터가 붙은 함수를 실행하고 save를 한다 (from gpt, 맞는 설명인지는 잘 모르겠다... 내생각엔 save가 변경시 변경된 부분을 return하니까 return값이 있는 경우에만 작동하ㄱ)
