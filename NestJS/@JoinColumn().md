@@ -1,1 +1,1 @@
-A entity로 부터 B entity에 접근하고 싶으면 A entity에 @JoinColumn() 데커레이터를 써줘야 함. 그 관계를 나타내는 @OneToOne, @ManyToOne 등의 데커레이터와 함께
+A entity로 부터 B entity에 접근하고 싶으면 A entity에 @JoinColumn() 데커레이터를 써줘야 함. (@OneToOne은 @JoinColumn()을 필수로 써줘야 하고, @ManyToOne, @OneToMany 데커레이터에서는 생략 가능)
