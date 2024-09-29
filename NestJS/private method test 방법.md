@@ -17,3 +17,22 @@ describe('sendVerificationEmail', () => {
   });
 });
 ```
+
+혹은 아래와 같이 변수로 지정해서 쓰면 더 편하다.
+```ts
+class Service {
+  ...
+  private async sendEmail() {
+  ...
+  }
+}
+
+describe('sendVerificationEmail', () => {
+  it('should call sendEmail', async () => {
+	...
+    const sendEmailSpy = jest.spyOn(service as any, 'sendEmail');
+    expect(sendEmailSpy).toHaveBeenCalledTimes(1);
+    ...
+  });
+});
+```
