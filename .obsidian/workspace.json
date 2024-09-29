@@ -172,8 +172,9 @@
   },
   "active": "d571c2ad04bf9b2c",
   "lastOpenFiles": [
-    "NestJS/@BeforeUpdate().md",
+    "JS/Prototype.md",
     "NestJS/private method test 방법.md",
+    "NestJS/@BeforeUpdate().md",
     "NestJS/@JoinColumn().md",
     "NestJS/GraphQL for Nestjs/@Args.md",
     "NestJS/GraphQL for Nestjs/Context.md",
@@ -207,7 +208,6 @@
     "cs/Data Structure/Linear Data Structure/Stack.md",
     "cs/Data Structure/Linear Data Structure/Queue.md",
     "cs/Data Structure/Linear Data Structure/Linked List.md",
-    "README.md",
     "cs/Data Structure/Linear Data Structure/Pasted image 20240503163112.png",
     "html, css",
     "go",

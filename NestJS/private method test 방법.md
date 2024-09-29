@@ -1,21 +1,19 @@
-spyOn을 이용하여 prototype 속성에서 private method를 당겨와서 쓸 수 있다.
+spyOn의 첫번째 매개변수로 사용되는 객체를 any타입으로 명시해주고 메서드에 접근할 때는 bracket notation 방식으로 접근한다.
 
-```javascript
-class OrderBuilder {
-  public build() {
-    this.handleError()
-  }
-  private handleError() {
-    throw new Error('missing ... field in order')
+```ts
+class Service {
+  ...
+  private async sendEmail() {
+  ...
   }
 }
 
-describe('Order Builder', () => {
-  it('should test the handleError', () => {
-    const handleErrorSpy = jest.spyOn(OrderBuilder.prototype as any, 'handleError');
-    const orderBuilder = new OrderBuilder()
-    expect(() => orderBuilder.build()).toThrow('missing ... field in order');  // Success!
-    expect(handleErrorSpy).toHaveBeenCalled();  // Success!
+describe('sendVerificationEmail', () => {
+  it('should call sendEmail', async () => {
+	...
+    jest.spyOn(service as any, 'sendEmail');
+    expect(service['sendEmail']).toHaveBeenCalledTimes(1);
+    ...
   });
 });
 ```
