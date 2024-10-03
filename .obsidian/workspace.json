@@ -1,64 +1,35 @@
 {
   "main": {
-    "id": "ec86c93f73cc5ff0",
+    "id": "94ad21c668cf9d24",
     "type": "split",
     "children": [
       {
-        "id": "d88b66443b32de4b",
+        "id": "b9f7b5dbba49b179",
         "type": "tabs",
         "children": [
           {
-            "id": "c49c076ac7402853",
+            "id": "bddd1e550c9a0efa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "html, css/html,css memo.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e6e5855ca48cf4e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "form 태그.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d571c2ad04bf9b2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NestJS/private method test 방법.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "9b52e19303503982",
+    "id": "1245d38420e99ac6",
     "type": "split",
     "children": [
       {
-        "id": "551ed2385acd73ad",
+        "id": "224242290b165728",
         "type": "tabs",
         "children": [
           {
-            "id": "392afdf222983c85",
+            "id": "f257a550971e50ed",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -68,12 +39,12 @@
             }
           },
           {
-            "id": "ef0e13384a6bbfdc",
+            "id": "f069480963ca1ff5",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "this",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,7 +54,7 @@
             }
           },
           {
-            "id": "0fd9710ff0e82c51",
+            "id": "09008759b279a7ee",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -97,20 +68,19 @@
     "width": 300
   },
   "right": {
-    "id": "841b13ab31d3a5ea",
+    "id": "5ae05505df1ab752",
     "type": "split",
     "children": [
       {
-        "id": "fa3994b7eaa01f88",
+        "id": "fbfd9e1886c6ba5b",
         "type": "tabs",
         "children": [
           {
-            "id": "a472423d81d0aa7b",
+            "id": "082b97bf6408a01d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NestJS/private method test 방법.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,19 +92,18 @@
             }
           },
           {
-            "id": "bf0e98bf3e75a39a",
+            "id": "ad1cf5946b50e991",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NestJS/private method test 방법.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "7dda2f874775e1d3",
+            "id": "2bd3250153208c65",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -145,20 +114,19 @@
             }
           },
           {
-            "id": "aaed611df63dffdd",
+            "id": "4b5c13d710230f68",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "NestJS/private method test 방법.md"
-              }
+              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,55 +138,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d571c2ad04bf9b2c",
-  "lastOpenFiles": [
-    "JS/Prototype.md",
-    "NestJS/private method test 방법.md",
-    "NestJS/@BeforeUpdate().md",
-    "NestJS/@JoinColumn().md",
-    "NestJS/GraphQL for Nestjs/@Args.md",
-    "NestJS/GraphQL for Nestjs/Context.md",
-    "NestJS",
-    "JS/this.md",
-    "NestJS/GraphQL for Nestjs",
-    "JS/Function.prototype.bind().md",
-    "form 태그.md",
-    "html, css/html,css memo.md",
-    "Untitled 2.canvas",
-    "Untitled.canvas",
-    "Untitled 1.canvas",
-    "2024-09-07.md",
-    "py/python memo.md",
-    "memo.md",
-    "git - fatal the remote end hung up unexpectedly.md",
-    "cs/Buffer.md",
-    "Todo.md",
-    "html, css/images/screenshot 240815220514.png",
-    "html, css/images/cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png",
-    "cs/Data Structure/Non-Linear Data Structure/Tree.md",
-    "cs/Data Structure/Non-Linear Data Structure/Set.md",
-    "cs/Data Structure/Non-Linear Data Structure/pasted image 0.png",
-    "cs/Data Structure/Non-Linear Data Structure/Non-Linear Data Structure.md",
-    "cs/Data Structure/Non-Linear Data Structure/Map.md",
-    "cs/Data Structure/Non-Linear Data Structure/Heap.md",
-    "cs/Data Structure/Non-Linear Data Structure/Graph.md",
-    "html, css/images/screenshot 240815220413.png",
-    "html, css/images",
-    "cs/Data Structure/Linear Data Structure/Vector.md",
-    "cs/Data Structure/Linear Data Structure/Stack.md",
-    "cs/Data Structure/Linear Data Structure/Queue.md",
-    "cs/Data Structure/Linear Data Structure/Linked List.md",
-    "cs/Data Structure/Linear Data Structure/Pasted image 20240503163112.png",
-    "html, css",
-    "go",
-    "cs/Data Structure/Non-Linear Data Structure/images.png",
-    "cs/Data Structure/Non-Linear Data Structure/64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png",
-    "py",
-    "1_CMGFtehu01ZEBgzHG71sMg.webp",
-    "cs/Data Structure/Non-Linear Data Structure/Pasted image 20240503161140.png",
-    "cs/Data Structure/Non-Linear Data Structure",
-    "cs/Data Structure/Linear Data Structure",
-    "cs/Data Structure",
-    "cs/DataStructure"
-  ]
+  "active": "bddd1e550c9a0efa",
+  "lastOpenFiles": []
 }
