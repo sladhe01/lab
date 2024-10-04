@@ -11,8 +11,12 @@
             "id": "bddd1e550c9a0efa",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "NestJS/전역 guard 설정.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "NestJS/전역 guard 설정.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "NestJS/전역 guard 설정.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "NestJS/전역 guard 설정.md"
+              }
             }
           }
         ]
@@ -139,5 +147,7 @@
     }
   },
   "active": "bddd1e550c9a0efa",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "NestJS/전역 guard 설정.md"
+  ]
 }
