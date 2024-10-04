@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NestJS/전역 guard 설정.md",
+                "file": "NestJS/custom repository.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NestJS/전역 guard 설정.md",
+                "file": "NestJS/custom repository.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NestJS/전역 guard 설정.md",
+                "file": "NestJS/custom repository.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NestJS/전역 guard 설정.md"
+                "file": "NestJS/custom repository.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "bddd1e550c9a0efa",
   "lastOpenFiles": [
-    "NestJS/전역 guard 설정.md"
+    "NestJS/전역 guard 설정.md",
+    "NestJS/custom repository.md"
   ]
 }
