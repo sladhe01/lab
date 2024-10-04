@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NestJS/custom repository.md",
+                "file": "NestJS/ManyToMany 관계일 때 삭제.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NestJS/custom repository.md",
+                "file": "NestJS/ManyToMany 관계일 때 삭제.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NestJS/custom repository.md",
+                "file": "NestJS/ManyToMany 관계일 때 삭제.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NestJS/custom repository.md"
+                "file": "NestJS/ManyToMany 관계일 때 삭제.md"
               }
             }
           }
@@ -148,7 +148,8 @@
   },
   "active": "bddd1e550c9a0efa",
   "lastOpenFiles": [
-    "NestJS/전역 guard 설정.md",
-    "NestJS/custom repository.md"
+    "NestJS/custom repository.md",
+    "NestJS/ManyToMany 관계일 때 삭제.md",
+    "NestJS/전역 guard 설정.md"
   ]
 }
