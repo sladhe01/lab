@@ -18,3 +18,11 @@ NestJS는 생성자에 입력된 매개변수의 타입을 보고 그 타입과 
 다시 정리하자면 NestJS의 의존성 주입 시스템 덕분에  클래스에서 `DataSource`를 생성자 매개변수로 선언하기만 하면, NestJS가 적절한 인스턴스를 자동으로 주입한다.
 
 또 `extends Repository<Category>`를 통해 `CategoryRepository`가 부모 클래스의 메서드를 사용할 수 있지만, 이 메서드들이 실제로 호출되기 위해서는 `super()`로 초기화된 인스턴스가 필요하다. 즉, 메서드는 상속되어 사용 가능하지만, 이를 사용하기 위해서는 올바르게 초기화되어야 하기때문에 super()를 통해 부모 클래스인 `Repository<Category>` 의 생성자를 (target, entityManager 매개변수와 함께) 호출하여 `Repository<Category>` 의 메서드들을 온전히 사용할 수 있게 한다.
+
+그리고 이 custom repository를 다른 파일에서 주입할 때는 기존의 @InjectRepository 데커레이터를 이용하여 자동으로 주입하는 것이 아니라 데커레이터를 떼고 직접 주입해야 한다.
+
+```ts
+...
+  constructor(private readonly categories: CategoryRepository) {}
+...
+```
