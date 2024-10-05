@@ -1,0 +1,1 @@
+DB나 entity에 저장되어 존재하지 않고 GraphQL schema에만 존재하는 resolver에서 계산하여 값을 나타낼 수 있는 유연한 필드

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NestJS/ManyToMany 관계일 때 삭제.md",
+                "file": "NestJS/GraphQL for Nestjs/@ResolveField.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NestJS/ManyToMany 관계일 때 삭제.md",
+                "file": "NestJS/GraphQL for Nestjs/@ResolveField.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NestJS/ManyToMany 관계일 때 삭제.md",
+                "file": "NestJS/GraphQL for Nestjs/@ResolveField.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NestJS/ManyToMany 관계일 때 삭제.md"
+                "file": "NestJS/GraphQL for Nestjs/@ResolveField.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "bddd1e550c9a0efa",
   "lastOpenFiles": [
-    "NestJS/custom repository.md",
     "NestJS/ManyToMany 관계일 때 삭제.md",
+    "NestJS/GraphQL for Nestjs/@ResolveField.md",
+    "NestJS/custom repository.md",
     "NestJS/전역 guard 설정.md"
   ]
 }
