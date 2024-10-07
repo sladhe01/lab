@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NestJS/ManyToMany 관계일 때 삭제.md",
+                "file": "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NestJS/ManyToMany 관계일 때 삭제.md",
+                "file": "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NestJS/ManyToMany 관계일 때 삭제.md",
+                "file": "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NestJS/ManyToMany 관계일 때 삭제.md"
+                "file": "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md"
               }
             }
           }
@@ -148,9 +148,21 @@
   },
   "active": "bddd1e550c9a0efa",
   "lastOpenFiles": [
-    "NestJS/ManyToOne의 nullable 옵션 기초값은 true.md",
-    "NestJS/ManyToMany 관계일 때 삭제.md",
+    "NestJS/GraphQL for Nestjs/@Args.md",
+    "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md",
+    "NestJS/GraphQL for Nestjs/@ResolveField.md",
+    "NestJS/GraphQL for Nestjs/Context.md",
+    "NestJS/@BeforeUpdate().md",
+    "NestJS/@JoinColumn().md",
     "NestJS/관계성 테이블 대신 json타입의 컬럼을 썼을 때.md",
+    "NestJS/전역 guard 설정.md",
+    "NestJS/custom repository.md",
+    "NestJS/e2e test db 충돌.md",
+    "NestJS/forEach와 비동기 함수.md",
+    "NestJS/ManyToMany 관계일 때 삭제.md",
+    "NestJS/ManyToOne의 nullable 옵션 기초값은 true.md",
+    "NestJS/private method test 방법.md",
+    "git - fatal the remote end hung up unexpectedly.md",
     "cs/Data Structure/Non-Linear Data Structure/64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png",
     "cs/Data Structure/Non-Linear Data Structure/Non-Linear Data Structure.md",
     "cs/Data Structure/Non-Linear Data Structure/images.png",
@@ -166,20 +178,8 @@
     "cs/Data Structure/Linear Data Structure/Linear Data Structure.md",
     "cs/Data Structure/Linear Data Structure/Queue.md",
     "cs/Data Structure/Linear Data Structure/Linked List.md",
-    "cs/Data Structure/Complexity/Time Complexity.md",
-    "cs/Data Structure/Complexity/Complexity.md",
-    "cs/Data Structure/Complexity/Space Complexity.md",
-    "NestJS/forEach와 비동기 함수.md",
-    "NestJS/GraphQL for Nestjs/Context.md",
-    "NestJS/GraphQL for Nestjs/@Args.md",
-    "cs/Pattern/Pattern.md",
-    "cs/Pattern/Singleton Pattern.md",
-    "cs/Data Structure/Data Structure.md",
-    "cs/Data Structure/Locality.md",
     "html, css/images/screenshot 240815220514.png",
     "html, css/images/screenshot 240815220413.png",
-    "html, css/images/cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png",
-    "NestJS/e2e test db 충돌.md",
-    "NestJS/GraphQL for Nestjs/@ResolveField.md"
+    "html, css/images/cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png"
   ]
 }
