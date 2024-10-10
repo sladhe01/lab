@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md",
+                "file": "NestJS/@JoinColumn().md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md",
+                "file": "NestJS/@JoinColumn().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md",
+                "file": "NestJS/@JoinColumn().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md"
+                "file": "NestJS/@JoinColumn().md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "bddd1e550c9a0efa",
   "lastOpenFiles": [
-    "NestJS/GraphQL for Nestjs/@Args.md",
     "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md",
+    "NestJS/GraphQL for Nestjs/@Args.md",
     "NestJS/GraphQL for Nestjs/@ResolveField.md",
     "NestJS/GraphQL for Nestjs/Context.md",
     "NestJS/@BeforeUpdate().md",
