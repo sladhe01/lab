@@ -42,5 +42,17 @@ GraphQLModule.forRoot<ApolloDriverConfig>({
 }),
 ```
 
+- graphql-ws 라이브러리에 서버를 시작할 때 context함수의 인자를 args[2]를 그대로 가져오지 않고 ctx라는 객체로 초기화 하여 건네준다. 그래서 기존 `{req:}`형식의 객체가 아니라 req의 값에 해당하는 객체 형태이기 때문에 context에서 req라는 속성의 유무로 http 프로토콜인지 ws 프로토콜인지 분간할 수 있게된다.
+```js
+//node_modules/graphql-ws/lib/server.js의 일부
+function makeServer(options) {
+...
+	const ctx = {
+		connectionInitReceived: false,
+		acknowledged: false,
+		subscriptions: {},
+		extra,
+	};
+```
 - context는 인자로 context객체를 받는다. 그리고 반환값을 context객체에 추가하도록 되어있다.
 - onConnect도 인자로 context객체를 받고 함수를 그대로 실행한다. 다만 웹소켓 연결이 되면 가장 먼저 호출된다.
