@@ -13,7 +13,7 @@ args[2]는 GraphQL 또는 REST API 요청의 상태와 관련된 정보를 저�
 //http 프로토콜 이용시 context 객체
 //IncomingMessage 객체를 나타낸다.
 //토큰 등은 이 객체의 rawHeaders 에서 찾을 수 있다.
-{req:IncomingMessage{}}
+{req:{IncomingMessage 인스턴스}}
 
 
 //ws 프로토콜 이용시 context 객체
