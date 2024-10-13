@@ -27,3 +27,20 @@ args[2]는 GraphQL 또는 REST API 요청의 상태와 관련된 정보를 저�
   }}
 ```
 
+## GraphQLModule.forRoot\<ApolloDriverConfig>의 옵션
+아래와 같은 모듈 설정에서 context와 관련된 context와 onConnect에 대해서 알아보자
+```
+GraphQLModule.forRoot<ApolloDriverConfig>({
+	driver: ApolloDriver,
+	autoSchemaFile: true,
+	context: async () => {},
+	subscriptions: {
+		'graphql-ws': {
+			onConnect: () => {},
+		},
+	},
+}),
+```
+
+- context는 인자로 context객체를 받는다. 그리고 반환값을 context객체에 추가하도록 되어있다.
+- onConnect도 인자로 context객체를 받고 함수를 그대로 실행한다. 다만 웹소켓 연결이 되면 가장 먼저 호출된다.

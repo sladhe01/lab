@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NestJS/ExecutionContext.md",
+                "file": "NestJS/ExecutionContext (especially for ws protocol).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NestJS/ExecutionContext.md",
+                "file": "NestJS/ExecutionContext (especially for ws protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NestJS/ExecutionContext.md",
+                "file": "NestJS/ExecutionContext (especially for ws protocol).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NestJS/ExecutionContext.md"
+                "file": "NestJS/ExecutionContext (especially for ws protocol).md"
               }
             }
           }
@@ -149,7 +149,7 @@
   "active": "60b8158e8f27f963",
   "lastOpenFiles": [
     "NestJS/forEach와 비동기 함수.md",
-    "NestJS/ExecutionContext.md",
+    "NestJS/ExecutionContext (especially for ws protocol).md",
     "NestJS/@JoinColumn().md",
     "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md",
     "NestJS/GraphQL for Nestjs/@Args.md",
