@@ -20,3 +20,5 @@ cartItemsVar(cartItemIds);
 console.log(cartItemsVar());
 
 ```
+
+`useReactiveVar` 훅을 통해 reactive variable이 새로 업데이트 될때만 다시 렌더링하는 방식으로 사용할 수 있다.
