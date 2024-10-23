@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "front-end/apollo-client/reactive-variables.md",
+                "file": "react/useEffect().md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "front-end/apollo-client/reactive-variables.md",
+                "file": "react/useEffect().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "front-end/apollo-client/reactive-variables.md",
+                "file": "react/useEffect().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "front-end/apollo-client/reactive-variables.md"
+                "file": "react/useEffect().md"
               }
             }
           }
@@ -148,10 +148,11 @@
   },
   "active": "60b8158e8f27f963",
   "lastOpenFiles": [
+    "react/apollo-client/reactive-variables.md",
+    "react/useEffect().md",
     "html, css/html,css memo.md",
-    "front-end/apollo-client/reactive-variables.md",
-    "front-end/apollo-client",
-    "front-end",
+    "react/apollo-client",
+    "react",
     "NestJS/ExecutionContext (especially for ws protocol).md",
     "NestJS/forEach와 비동기 함수.md",
     "NestJS/@JoinColumn().md",
@@ -178,7 +179,6 @@
     "cs/Data Structure/Linear Data Structure/Array.md",
     "cs/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
     "cs/Data Structure/Linear Data Structure/Vector.md",
-    "cs/Data Structure/Linear Data Structure/Stack.md",
     "cs/Data Structure/Linear Data Structure/Pasted image 20240503163112.png",
     "html, css/images/screenshot 240815220514.png",
     "html, css/images/screenshot 240815220413.png",
