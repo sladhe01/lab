@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "react/props.md",
+                "file": "react/apollo-client/static typing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "react/props.md",
+                "file": "react/apollo-client/static typing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "react/props.md",
+                "file": "react/apollo-client/static typing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "react/props.md"
+                "file": "react/apollo-client/static typing.md"
               }
             }
           }
@@ -148,10 +148,11 @@
   },
   "active": "60b8158e8f27f963",
   "lastOpenFiles": [
-    "react/useEffect().md",
     "react/props.md",
-    "react/apollo-client/reactive-variables.md",
+    "react/apollo-client/static typing.md",
     "html, css/html,css memo.md",
+    "react/useEffect().md",
+    "react/apollo-client/reactive-variables.md",
     "react/apollo-client",
     "react",
     "NestJS/ExecutionContext (especially for ws protocol).md",
@@ -178,7 +179,6 @@
     "cs/Data Structure/Non-Linear Data Structure/pasted image 0.png",
     "cs/Data Structure/Non-Linear Data Structure/Heap.md",
     "cs/Data Structure/Linear Data Structure/Array.md",
-    "cs/Data Structure/Linear Data Structure/ArrayOfJavaScript.md",
     "cs/Data Structure/Linear Data Structure/Pasted image 20240503163112.png",
     "html, css/images/screenshot 240815220514.png",
     "html, css/images/screenshot 240815220413.png",
