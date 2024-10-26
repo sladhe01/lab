@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "react/apollo-client/writeFragment().md",
+                "file": "react/apollo-client/apollo client cache.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "writeFragment()"
+              "title": "apollo client cache"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "react/apollo-client/writeFragment().md",
+                "file": "react/apollo-client/apollo client cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for writeFragment()"
+              "title": "Backlinks for apollo client cache"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "react/apollo-client/writeFragment().md",
+                "file": "react/apollo-client/apollo client cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from writeFragment()"
+              "title": "Outgoing links from apollo client cache"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "react/apollo-client/writeFragment().md"
+                "file": "react/apollo-client/apollo client cache.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of writeFragment()"
+              "title": "Outline of apollo client cache"
             }
           }
         ]
@@ -164,8 +164,8 @@
   },
   "active": "60b8158e8f27f963",
   "lastOpenFiles": [
-    "react/apollo-client/apollo client cache.md",
     "react/apollo-client/writeFragment().md",
+    "react/apollo-client/apollo client cache.md",
     "react/apollo-client/useMutation().md",
     "react/apollo-client/reactive-variables.md",
     "react/apollo-client/static typing.md",
