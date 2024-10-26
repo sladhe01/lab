@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "html, css/html,css memo.md",
+                "file": "react/apollo-client/apollo client cache.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "apollo client cache"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "html, css/html,css memo.md",
+                "file": "react/apollo-client/apollo client cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for apollo client cache"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "html, css/html,css memo.md",
+                "file": "react/apollo-client/apollo client cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from apollo client cache"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "html, css/html,css memo.md"
-              }
+                "file": "react/apollo-client/apollo client cache.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of apollo client cache"
             }
           }
         ]
@@ -149,11 +165,12 @@
   "active": "60b8158e8f27f963",
   "lastOpenFiles": [
     "react/apollo-client/useMutation().md",
+    "react/apollo-client/apollo client cache.md",
+    "react/apollo-client/reactive-variables.md",
     "react/apollo-client/static typing.md",
     "react/props.md",
     "html, css/html,css memo.md",
     "react/useEffect().md",
-    "react/apollo-client/reactive-variables.md",
     "react/apollo-client",
     "react",
     "NestJS/ExecutionContext (especially for ws protocol).md",
@@ -178,7 +195,6 @@
     "cs/Data Structure/Non-Linear Data Structure/Tree.md",
     "cs/Data Structure/Non-Linear Data Structure/Graph.md",
     "cs/Data Structure/Non-Linear Data Structure/pasted image 0.png",
-    "cs/Data Structure/Non-Linear Data Structure/Heap.md",
     "cs/Data Structure/Linear Data Structure/Pasted image 20240503163112.png",
     "html, css/images/screenshot 240815220514.png",
     "html, css/images/screenshot 240815220413.png",
