@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "react/apollo-client/apollo client cache.md",
+                "file": "react/apollo-client/useLazyQuery().md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "apollo client cache"
+              "title": "useLazyQuery()"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "react/apollo-client/apollo client cache.md",
+                "file": "react/apollo-client/useLazyQuery().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for apollo client cache"
+              "title": "Backlinks for useLazyQuery()"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "react/apollo-client/apollo client cache.md",
+                "file": "react/apollo-client/useLazyQuery().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from apollo client cache"
+              "title": "Outgoing links from useLazyQuery()"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "react/apollo-client/apollo client cache.md"
+                "file": "react/apollo-client/useLazyQuery().md"
               },
               "icon": "lucide-list",
-              "title": "Outline of apollo client cache"
+              "title": "Outline of useLazyQuery()"
             }
           }
         ]
@@ -164,8 +164,9 @@
   },
   "active": "60b8158e8f27f963",
   "lastOpenFiles": [
-    "react/apollo-client/writeFragment().md",
     "react/apollo-client/apollo client cache.md",
+    "react/apollo-client/useLazyQuery().md",
+    "react/apollo-client/writeFragment().md",
     "react/apollo-client/useMutation().md",
     "react/apollo-client/reactive-variables.md",
     "react/apollo-client/static typing.md",
@@ -193,7 +194,6 @@
     "cs/Data Structure/Non-Linear Data Structure/64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png",
     "cs/Data Structure/Non-Linear Data Structure/Non-Linear Data Structure.md",
     "cs/Data Structure/Non-Linear Data Structure/images.png",
-    "cs/Data Structure/Non-Linear Data Structure/Tree.md",
     "cs/Data Structure/Non-Linear Data Structure/pasted image 0.png",
     "cs/Data Structure/Linear Data Structure/Pasted image 20240503163112.png",
     "html, css/images/screenshot 240815220514.png",

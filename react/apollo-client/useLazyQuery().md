@@ -1,0 +1,1 @@
+useQuery는 쿼리 작성할 때 즉시 요청이 가지만 useLazyQuery는 useMutation처럼 튜플을 반환하고 첫번째 요소가 쿼리 실행 함수다.
