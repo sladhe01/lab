@@ -50,6 +50,11 @@ const RESTAURANTS_QUERY = gql(`
 
 ## unmasking
 타입스크립트는 useQuery()의 반환값 중에 하나인 data에서 fragment부분이 어떤 타입인지 masking되어 있어 알지 못하기 때문에 프래그먼트 내부의 데이터를 이용하는데 문제가 있다. 이를 해결하는 방법에는 두가지 방법이 있다.
+
+참고링크:
+https://the-guild.dev/graphql/codegen/plugins/presets/preset-client#fragment-masking-with-nested-fragments
+https://github.com/charlypoly/codegen-repros/blob/master/client-preset-nested-fragments-interface/src/App.tsx
+
 ### embrace fragment masking( useFragment( ) )
 첫번쨰 방법으로 leaking을 방지할 수 있기 때문에 이방식을 가장 많이 추천한다.
 useFragment는 명칭이 훅으로 오인하게 만들지만 그냥 함수다. 이 함수를 통해서 내부 타입이 명시된 fragment 객체를 반환한다.
