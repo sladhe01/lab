@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e2aaaa4d69eb20df",
+        "id": "6e54f04627c81001",
         "type": "tabs",
         "children": [
           {
-            "id": "60b8158e8f27f963",
+            "id": "a54611a9c0d1059b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "react/testing-library/error when async func in useEffect & mocked hook in in deps.md",
+                "file": "react/apollo-client/useMutation().md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "error when async func in useEffect & mocked hook in in deps"
+              "title": "useMutation()"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "react/testing-library/error when async func in useEffect & mocked hook in in deps.md",
+                "file": "react/apollo-client/useMutation().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for error when async func in useEffect & mocked hook in in deps"
+              "title": "Backlinks for useMutation()"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "react/testing-library/error when async func in useEffect & mocked hook in in deps.md",
+                "file": "react/apollo-client/useMutation().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from error when async func in useEffect & mocked hook in in deps"
+              "title": "Outgoing links from useMutation()"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "react/testing-library/error when async func in useEffect & mocked hook in in deps.md"
+                "file": "react/apollo-client/useMutation().md"
               },
               "icon": "lucide-list",
-              "title": "Outline of error when async func in useEffect & mocked hook in in deps"
+              "title": "Outline of useMutation()"
             }
           }
         ]
@@ -162,10 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "60b8158e8f27f963",
+  "active": "a54611a9c0d1059b",
   "lastOpenFiles": [
-    "react/codegen.md",
+    "react/apollo-client/Untitled.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps.md",
+    "react/codegen.md",
     "react/testing-library/waitFor.md",
     "react/testing-library",
     "react/useEffect().md",
@@ -192,7 +193,6 @@
     "NestJS/custom repository.md",
     "NestJS/e2e test db 충돌.md",
     "NestJS/ManyToMany 관계일 때 삭제.md",
-    "NestJS/ManyToOne의 nullable 옵션 기초값은 true.md",
     "cs/Data Structure/Non-Linear Data Structure/64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png",
     "cs/Data Structure/Non-Linear Data Structure/images.png",
     "cs/Data Structure/Non-Linear Data Structure/pasted image 0.png",

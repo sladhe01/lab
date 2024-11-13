@@ -3,3 +3,4 @@ graphql의 mutation을 사용하기 위한 hook으로 첫번째 매개변수는 
 - variables - gql문에 들어갈 매개변수를 여기서 전달할 수 있다. 여기서 전달해도 되고 `useMutation()`을 통해 반환받은 함수에 variables를 전달할수도 있다.
 - onCompleted - mutation이 에러 없이 성공했을 때 호출될 콜백함수
 - onError - mutation이 에러가 발생했을 경우 호출될 콜백함수
+- refetchQueries - mutation이 성공하면 캐시에 새로 업데이트할 쿼리를 기입하면 된다.
