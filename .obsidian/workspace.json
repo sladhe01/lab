@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "useMutation()"
             }
+          },
+          {
+            "id": "de86511986a179e4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,7 +175,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a54611a9c0d1059b",
+  "active": "de86511986a179e4",
   "lastOpenFiles": [
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 4.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 3.md",
