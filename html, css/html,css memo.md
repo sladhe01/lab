@@ -27,7 +27,7 @@ block의 border가 겹치면 큰 margin을 따라간다.
 
 - static : 기본값으로 기준점이 됨
 - fixed : 화면상 항상 같은 곳에 위치
-- relative : 처음에 위치했던곳(static이었을 떄 위치)을 기준으로 top, left, right, bottom  만큼 위치
+- relative : 처음에 위치했던곳(static이었을 때 위치)을 기준으로 top, left, right, bottom  만큼 위치
 - absolute : static이 아닌 가장 가까운 부모를 기준으로 top, left, right, bottom  만큼 위치
 *부모 중에 대상이 없다면 가장 상위인 body를 기준으로 작동
 - fixed나 absolute 값을 적용하면 그 element는 다른 레이어에 위치한다(block이더라도 너비를 따로 명시해줘야함 다른 레이어라 어디까지 자리를 차지해야할 지 알려줄 부모가 없음)

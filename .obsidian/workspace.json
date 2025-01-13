@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "memo.md",
+                "file": "html, css/html,css memo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memo"
+              "title": "html,css memo"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "rela",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +73,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -164,6 +165,7 @@
   },
   "active": "a54611a9c0d1059b",
   "lastOpenFiles": [
+    "memo.md",
     "react/apollo-client/useMutation().md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 11.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 10.md",
@@ -192,7 +194,6 @@
     "NestJS/@JoinColumn().md",
     "NestJS/GraphQL for Nestjs/@InputType과 @ArgsType 차이.md",
     "NestJS/GraphQL for Nestjs/@Args.md",
-    "NestJS/GraphQL for Nestjs/@ResolveField.md",
     "cs/Data Structure/Non-Linear Data Structure/64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png",
     "cs/Data Structure/Non-Linear Data Structure/images.png",
     "cs/Data Structure/Non-Linear Data Structure/pasted image 0.png",
