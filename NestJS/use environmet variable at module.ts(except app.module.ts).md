@@ -9,6 +9,24 @@ import { PUB_SUB } from './common.constants';
 import { RedisPubSub } from 'graphql-redis-subscriptions';
 import Redis from 'ioredis';
 
+const options = {
+  host: process.env.REDIS_HOST,
+  port: +process.env.REDIS_PORT,
+};
+const pubsub = new RedisPubSub ({
+  publisher: new Redis(options),
+  subcriber: new Redis(options)
+});
+
+@Global()
+@Module({
+  providers: [{ provide: PUB_SUB, useValue: pubsub }],
+  exports: [PUB_SUB],
+})
+export class CommonModule {}
+```
+원래는 이와 같이 CommonModule 클래스와 데코레이터의 외부에서 환경변수를 이용하여 환경변수를 로드하지 못하는 문제가 발생했으나
+```ts
 @Global()
 @Module({
   providers: [
@@ -17,17 +35,18 @@ import Redis from 'ioredis';
       useFactory: async () => {
         const options = {
           host: process.env.REDIS_HOST,
-port: +process.env.REDIS_PORT,
-retryStrategy: (times: number) => Math.min(times * 50, 2000),
-};
-return new RedisPubSub({
-publisher: new Redis(options),
-subscriber: new Redis(options),
-});
-},
-},
-],
-exports: [PUB_SUB],
+          port: +process.env.REDIS_PORT,
+          retryStrategy: (times: number) => Math.min(times * 50, 2000),
+        };
+        return new RedisPubSub({
+          publisher: new Redis(options),
+          subscriber: new Redis(options),
+        });
+      },
+    },
+  ],
+  exports: [PUB_SUB],
 })
 export class CommonModule {}
 ```
+이와 같이 useValue를 이용하는 대신 useFactory를 이용하여 데코레이터 내부에서 환경변수를 이용하니 제대로 환경변수를 로드할 수 있게 되었다.
