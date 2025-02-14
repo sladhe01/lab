@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "e93e6ffc1ee76b80",
+        "id": "2fad2c7d101a0c2a",
         "type": "tabs",
         "children": [
           {
-            "id": "acdd426df6d589ac",
+            "id": "aac7254d17f87d04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "form 태그.md",
+                "file": "html, css/html,css memo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "form 태그"
+              "title": "html,css memo"
+            }
+          },
+          {
+            "id": "b9d32f197e707bdf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JS/JS 동작원리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JS 동작원리"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,8 +178,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "acdd426df6d589ac",
+  "active": "b9d32f197e707bdf",
   "lastOpenFiles": [
+    "html, css/html,css memo.md",
+    "JS/JS 동작원리.md",
+    "images/1_eFvdHDgxCM6C20Zt80I7Jg.webp",
+    "html, css/images/cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png",
+    "Pasted image 20250214113127.png",
+    "form 태그.md",
     "JS/Constructor And 'new' operator.md",
     "JS/Execution Context.md",
     "JS/Array.prototype.sort().md",
@@ -175,10 +196,8 @@
     "cs/Cache.md",
     "cs/Interpreted Language vs Compiled Language (+ Script Language).md",
     "cs/Lexical.md",
-    "images/1_eFvdHDgxCM6C20Zt80I7Jg.webp",
     "Todo 2.md",
     "2024-09-07.md",
-    "JS/JS 동작원리.md",
     "images",
     "cs/Runtime.md",
     "NestJS/ExecutionContext (especially for ws protocol).md",
@@ -190,9 +209,6 @@
     "NestJS/forEach와 비동기 함수.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 2.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps.md",
-    "react/testing-library/error when async func in useEffect & mocked hook in in deps 7.md",
-    "react/testing-library/error when async func in useEffect & mocked hook in in deps 5.md",
-    "react/testing-library/error when async func in useEffect & mocked hook in in deps 11.md",
     "react/testing-library",
     "react/apollo-client",
     "react",
@@ -201,7 +217,6 @@
     "cs/Data Structure/Non-Linear Data Structure/pasted image 0.png",
     "cs/Data Structure/Linear Data Structure/Pasted image 20240503163112.png",
     "html, css/images/screenshot 240815220514.png",
-    "html, css/images/screenshot 240815220413.png",
-    "html, css/images/cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png"
+    "html, css/images/screenshot 240815220413.png"
   ]
 }
