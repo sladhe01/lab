@@ -48,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,7 +191,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "53af1aa9ad984c0e",
+  "active": "b9d32f197e707bdf",
   "lastOpenFiles": [
     "html, css/html,css memo.md",
     "JS/JS 동작원리.md",
