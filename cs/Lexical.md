@@ -1,0 +1,2 @@
+Lexical이란 Lexicon에서 유래한 말로 어휘를 뜻한다. 프로그래밍 분야에서는 코드가 **작성된 위치를 기반** 으로 동작한다는 의미를 가지는 경우가 많다.
+예를 들어 scope에는 Lexical Scope와 Dynamic Scope가 있는데 Lexical Scope는 코드가 작성된 위치를 기준으로 변수를 찾고 Dynamic Scope는 함수가 호출된 위치를 기준으로 변수를 찾는다

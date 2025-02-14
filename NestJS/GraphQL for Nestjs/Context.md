@@ -1,4 +1,4 @@
-이전에는 graphql을 사용하기 위해 apollo-server- express 라이브러리를 같이 설치하여 아폴로의 기능을 graphql도 사용가능 했다. 지금은 @apollo/server 라이브러리를 설치하여 graphqlModule을 초기화할 때 driver로 ApolloDriver를 지정해줘 graphql에서 아폴로의 기능을 사용할 수 있다.
+이전에는 graphql을 사용하기 위해 apollo-server-express 라이브러리를 같이 설치하여 아폴로의 기능을 graphql도 사용가능 했다. 지금은 @apollo/server 라이브러리를 설치하여 graphqlModule을 초기화할 때 driver로 ApolloDriver를 지정해줘 graphql에서 아폴로의 기능을 사용할 수 있다.
 
 context에 대한 설명은 다음과 같다.
 >The `context` function should be _asynchronous_ and return an **object**. This object is then accessible to your server's resolvers and plugins using the name [`contextValue`](https://www.apollographql.com/docs/apollo-server/data/context/#the-contextvalue-object).

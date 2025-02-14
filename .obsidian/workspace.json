@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NestJS/use environmet variable at module.ts(except app.module.ts).md",
+                "file": "form 태그.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "use environmet variable at module.ts(except app.module.ts)"
+              "title": "form 태그"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "비동기",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 639.5
+    "width": 329.5
   },
   "right": {
     "id": "5ae05505df1ab752",
@@ -159,38 +159,41 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "acdd426df6d589ac",
   "lastOpenFiles": [
+    "JS/Constructor And 'new' operator.md",
+    "JS/Execution Context.md",
+    "JS/Array.prototype.sort().md",
+    "JS/Array.prototype.reduce().md",
+    "JS/Function.prototype.bind().md",
+    "JS/Closure.md",
+    "cs/Buffer.md",
+    "cs/Cache.md",
+    "cs/Interpreted Language vs Compiled Language (+ Script Language).md",
+    "cs/Lexical.md",
+    "images/1_eFvdHDgxCM6C20Zt80I7Jg.webp",
+    "Todo 2.md",
+    "2024-09-07.md",
+    "JS/JS 동작원리.md",
+    "images",
+    "cs/Runtime.md",
+    "NestJS/ExecutionContext (especially for ws protocol).md",
+    "NestJS/GraphQL for Nestjs/Context.md",
+    "NestJS/use environmet variable at module.ts(except app.module.ts).md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 4.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 3.md",
     "NestJS/private method test 방법.md",
-    "NestJS/use environmet variable at module.ts(except app.module.ts).md",
     "NestJS/forEach와 비동기 함수.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 2.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 7.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 5.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 11.md",
-    "react/testing-library/error when async func in useEffect & mocked hook in in deps 10.md",
-    "react/testing-library/error when async func in useEffect & mocked hook in in deps 9.md",
-    "react/testing-library/error when async func in useEffect & mocked hook in in deps 8.md",
-    "html, css/html,css memo.md",
-    "memo.md",
-    "react/apollo-client/useMutation().md",
-    "react/apollo-client/Untitled.md",
-    "react/codegen.md",
-    "react/testing-library/waitFor.md",
     "react/testing-library",
-    "react/useEffect().md",
-    "react/apollo-client/useLazyQuery().md",
-    "react/apollo-client/apollo client cache.md",
-    "react/apollo-client/writeFragment().md",
-    "react/apollo-client/reactive-variables.md",
-    "react/apollo-client/static typing.md",
-    "react/props.md",
     "react/apollo-client",
     "react",
     "cs/Data Structure/Non-Linear Data Structure/64eb4e97c2b21c77ccb25d05_Screenshot 2023-08-27 at 9.24.32 AM.png",

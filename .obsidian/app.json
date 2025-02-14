@@ -1,5 +1,6 @@
 {
   "strictLineBreaks": false,
   "tabSize": 2,
-  "useTab": false
+  "useTab": false,
+  "promptDelete": false
 }
