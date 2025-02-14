@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "JS 동작원리"
             }
+          },
+          {
+            "id": "53af1aa9ad984c0e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -55,7 +67,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -178,7 +191,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9d32f197e707bdf",
+  "active": "53af1aa9ad984c0e",
   "lastOpenFiles": [
     "html, css/html,css memo.md",
     "JS/JS 동작원리.md",
