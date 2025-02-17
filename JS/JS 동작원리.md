@@ -39,7 +39,7 @@ first();
 6. second() 함수의 실행이 끝나면서 콜스택에서 제거된다.
 7. console.log("first")함수의 실행 컨텍스트가 콜스택에 추가되고 로그 출력 후 console.log()의 실행이 끝나면서 콜스택에서 제거된다.
 8. first() 함수의 실행이 끝나면서 콜스택에서 제거된다.
-9. 마지막으로 전역 실행 컨텍스트(anonymous)가 콜스택에서 제거된다.
+9. 마지막으로 전역 실행 컨텍스트(anonymous)가 실행완료되며 콜스택에서 제거된다.
 \* Uncaught RangeError: Maximum call stack size exceeded 에러는 JS엔진의 콜스택 한계를 넘겼을 경우 종료되면서 나타나는 에러로 연산이 오래걸리거나 반복문의 횟수가 많을 경우 발생할 수 있으므로 주의해야 한다.
 ###### 이번에는 다른 예제를 통해 비동기적인 함수를 실행할 경우 어떤 일이 일어나는지 알아보자.
 
@@ -52,6 +52,46 @@ setTimeout(function () {
 
 console.log("end");
 ```
+
 1. anonymous가 콜스택에 가장 먼저 쌓인다.
 2. console.log("start")가 콜스택에 쌓이고 로그 출력 후 콜스택에서 제거된다.
-3. setTimeout() 함수가
+3. setTimeout() 함수는 비동기 함수로 콜스택에 쌓이지 않고 바로 WebAPI로 이동한다.
+4. console.log("end")가 콜스택에 쌓이고 로그 출력 후 콜스택에서 제거된다.
+5. anonymous가 실행완료되며 콜스택에서 제거된다.
+6. 3초가 지난 후WebAPI에 있던 setTImeout 내부의 콜백함수인 익명함수가 콜백큐로 이동한다.
+7. 이벤트 루프가 콜스택이 비어있는지 확인 후 콜백큐에 있던 익명함수를 콜스택으로 넘겨 콜스택에는 익명함수가 쌓인다. (이벤트 루프는 여기서만 콜스택이 비어있는지 확인하는 것이 아니라 이전부터 계속 확인하고 있다.)
+8. 익명함수 내부의 console.log("middle")이 콜스택에 쌓인다.
+9. 콘솔 출력후 console.log() 콜스택에서 제거된다.
+10. 익명함수가 종료되며 콜스택에서 제거된다.
+
+###### 만약 setTimeout의 대기 시간이  3000이 아니라 0이 였다면 어떤 일이 벌어졌는지 알아보자
+
+엔진과 브라우저 환경에 따라서 조금씩 다르겠지만 console.log("end")가 실행되기전에 Web API의 익명함수가 콜백큐로 먼저 넘어간다는 가정하에 아래 순서를 적어보겠다.
+
+1. anonymous가 콜스택에 가장 먼저 쌓인다.
+2. console.log("start")가 콜스택에 쌓이고 로그 출력 후 콜스택에서 제거된다.
+3. setTimeout() 함수는 비동기 함수로 콜스택에 쌓이지 않고 바로 WebAPI로 이동한다.
+4. Web API에 있던 setTImeout() 내부의 콜백함수인 익명하수가 콜백큐로 이동한다.
+5. console.log("end")가 콜스택에 쌓이고 로그 출력 후 콜스택에서 제거된다.
+6. anonymous가 실행완료되며 콜스택에서 제거된다.
+7. 이벤트 루프가 콜스택이 비어있는지 확인 후 콜백큐에 있던 익명함수를 콜스택으로 넘겨 콜스택에는 익명함수가 쌓인다.
+8. 익명함수 내부의 console.log("middle")이 콜스택에 쌓인다.
+9. 콘솔 출력후 console.log() 콜스택에서 제거된다.
+10. 익명함수가 종료되며 콜스택에서 제거된다.
+
+###### 이번에는 또 다른 예제를 통해서 알아보자.
+
+```js
+console.log("start");
+
+setTimeout(fuction () {
+  console.log("middle");
+}, 0);
+
+Promise.resolve()
+  .then(function () {
+    console.log("promise");
+  });
+
+console.log("end");
+```
