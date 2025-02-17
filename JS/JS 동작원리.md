@@ -99,4 +99,4 @@ console.log("end");
 1. anonymous가 콜스택에 가장 먼저 쌓인다.
 2. console.log("start")가 콜스택에 쌓이고 로그 출력 후 콜스택에서 제거된다.
 3. setTimeout() 함수는 비동기 함수로 콜스택에 쌓이지 않고 바로 WebAPI로 이동한다.
-4. Promise.resolve()는 즉시 실행가는한 Promise를 반환하며
+4. Promise.resolve()가
