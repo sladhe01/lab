@@ -1,0 +1,1 @@
+scope, hoisting, this, function, closure 등의 동작원리를 담고 있는 JS의 핵심원리이다. 자바스크립트 엔진은
