@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Execution Context.md",
+                "file": "cs/Evaluate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Execution Context"
+              "title": "Evaluate"
             }
           }
         ],
@@ -181,8 +181,9 @@
   },
   "active": "b9d32f197e707bdf",
   "lastOpenFiles": [
-    "JS/JS 동작원리.md",
     "JS/Execution Context.md",
+    "cs/Evaluate.md",
+    "JS/JS 동작원리.md",
     "JS/module wrapper function.md",
     "html, css/html,css memo.md",
     "images/1_eFvdHDgxCM6C20Zt80I7Jg.webp",
@@ -190,7 +191,6 @@
     "Pasted image 20250214113127.png",
     "form 태그.md",
     "JS/Constructor And 'new' operator.md",
-    "JS/Execution Context.md",
     "JS/Array.prototype.sort().md",
     "JS/Array.prototype.reduce().md",
     "JS/Function.prototype.bind().md",
@@ -210,7 +210,6 @@
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 3.md",
     "NestJS/private method test 방법.md",
     "NestJS/forEach와 비동기 함수.md",
-    "react/testing-library/error when async func in useEffect & mocked hook in in deps 2.md",
     "react/testing-library",
     "react/apollo-client",
     "react",
