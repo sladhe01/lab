@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cs/Evaluate.md",
+                "file": "cs/Evaluate vs Execution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Evaluate"
+              "title": "Evaluate vs Execution"
             }
           }
         ],
@@ -196,7 +196,7 @@
   "active": "66dc9106b11f9a22",
   "lastOpenFiles": [
     "JS/Execution Context.md",
-    "cs/Evaluate.md",
+    "cs/Evaluate vs Execution.md",
     "JS/JS 동작원리.md",
     "JS/module wrapper function.md",
     "html, css/html,css memo.md",
