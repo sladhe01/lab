@@ -1,4 +1,4 @@
-Execution context(실행 컨텍스트)는 ECMAScript를 통해서 코드가 실행되는 과정을 추적하기 위해 사용되는 추상적이고 개념적인 요소다. scope, hoisting, this, function, closure 등의 동작원리도 execution context로 설명이 가능하다.
+Execution context(실행 컨텍스트)는 ECMAScript를 통해서 코드가 실행되는 과정을 추적하기 위해 사용되는 추상적이고 개념적인 요소다. 실행컨텍스트를 구성하는 요소들은 실제 메모리에 존재하지만 실행컨텍스트 자체는 개념적인 구조다 scope, hoisting, this, function, closure 등의 동작원리도 execution context로 설명이 가능하다.
 
 자바스크립트 엔진은 코드를 실행하기 위해 실행에 필요한 여러가지 정보를 알고 있어야 한다. 예로 아래와 같은 것들이 필요하다
 1. 변수 : 전역변수, 지역변수, 매개변수, 객체의 프로퍼티
