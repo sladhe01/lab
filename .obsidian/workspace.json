@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,10 +193,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "656e3eff7caed544",
+  "active": "b9d32f197e707bdf",
   "lastOpenFiles": [
-    "JS/Execution Context.md",
     "JS/JS 동작원리(event loop).md",
+    "JS/Execution Context.md",
     "cs/Evaluate vs Execution.md",
     "html, css/html,css memo.md",
     "JS/module wrapper function.md",
