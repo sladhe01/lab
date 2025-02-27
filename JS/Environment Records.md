@@ -1,0 +1,1 @@
+Environment Record는 ECMAScript 코드의 [[Lexical|lexical]] netsing 구조에 기반한(코드의 실행 시점이 아닌 코드의 작성 위치에 기반한다는 뜻) 변수, 함수 등의 식별자와 값의 연결을 설명하는 데 이용되는 명세용 타입이다.
