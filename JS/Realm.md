@@ -6,3 +6,8 @@
  
  **Realm**은 **Realm Record**로 표현하기도 하며 아래 표와 같은 필드를 가진다.
  
+
+| Field Name           | Value                                   | Meaning           |
+| -------------------- | --------------------------------------- | ----------------- |
+| \[\[AgentSignifier]] | 에이전트 식별자                                | 이 realm이 소유한 에이전트 |
+| \[\[Intrinsics]]     | 필드 이름이 intrinsic keys이고 그 값이 객체인 record |                   |
