@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Record.md",
+                "file": "JS/Realm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Record"
+              "title": "Realm"
             }
           },
           {
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "react/apollo-client/useMutation().md",
+                "file": "JS/Realm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for useMutation()"
+              "title": "Backlinks for Realm"
             }
           },
           {
@@ -156,12 +156,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "react/apollo-client/useMutation().md",
+                "file": "JS/Realm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from useMutation()"
+              "title": "Outgoing links from Realm"
             }
           },
           {
@@ -193,7 +193,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 250.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -209,9 +209,9 @@
   },
   "active": "07ad048df4a54759",
   "lastOpenFiles": [
-    "JS/Realm.md",
-    "JS/Execution Context.md",
     "JS/Record.md",
+    "JS/Execution Context.md",
+    "JS/Realm.md",
     "Untitled.md",
     "JS/JS 동작원리(event loop).md",
     "cs/Evaluate vs Execution.md",
