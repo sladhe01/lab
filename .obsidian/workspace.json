@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Realm.md",
+                "file": "JS/Record.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Realm"
+              "title": "Record"
             }
           },
           {
@@ -209,9 +209,10 @@
   },
   "active": "07ad048df4a54759",
   "lastOpenFiles": [
-    "Untitled.md",
     "JS/Realm.md",
     "JS/Execution Context.md",
+    "JS/Record.md",
+    "Untitled.md",
     "JS/JS 동작원리(event loop).md",
     "cs/Evaluate vs Execution.md",
     "html, css/html,css memo.md",
@@ -238,7 +239,6 @@
     "NestJS/use environmet variable at module.ts(except app.module.ts).md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 4.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 3.md",
-    "NestJS/private method test 방법.md",
     "react/testing-library",
     "react/apollo-client",
     "react",
