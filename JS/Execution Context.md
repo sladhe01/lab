@@ -12,7 +12,7 @@ Execution context(실행 컨텍스트)는 JS엔진이 코드를 평가하고 실
 | Function              | 실행 컨텍스트가 함수 객체(function object)의 코드를 평가할 때 이 구성요소의 값은 해당 함수 객체가 된다. 스크립트나 모듈의 코드를 평가할 때 이 값은 `null`이 된다.                                                                                                                |
 | [[Realm]]             | 코드가 ECMAScript 리소스에 접근하는 Realm Record를 나타낸다.                                                                                                                                                                            |
 | ScriptOrModule        | 코드가 기원한 Module Record 혹은 Script Record를 나타낸다. 스크립트(import나 export 없이 작성된 일반적인 JS 파일로 생각하면 됨)나 모듈(export를 통해서 다른 파일에서 사용 가능한 코드 단위라고 생각하면 됨)에서 기원하지 않은 경우(InitiailizeHostDefinedRealm에서 생성된 실행컨텍스트의 경우) 이 값은 `null`이 된다. |
- 
+##### 실행컨텍스트 추가 구성요소(additional state components)
 
 ##### 종류
 실행컨텍스트를 생성시키는 소스코드의 종류에 따라 실행 컨텍스트의 생성과정과 관리하는 내용이 다르다.
