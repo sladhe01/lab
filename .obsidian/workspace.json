@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "07ad048df4a54759",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JS/Realm.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Realm"
+            }
+          },
+          {
             "id": "656e3eff7caed544",
             "type": "leaf",
             "state": {
@@ -50,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -193,10 +207,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9d32f197e707bdf",
+  "active": "07ad048df4a54759",
   "lastOpenFiles": [
-    "JS/JS 동작원리(event loop).md",
+    "Untitled.md",
+    "JS/Realm.md",
     "JS/Execution Context.md",
+    "JS/JS 동작원리(event loop).md",
     "cs/Evaluate vs Execution.md",
     "html, css/html,css memo.md",
     "JS/module wrapper function.md",
@@ -223,7 +239,6 @@
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 4.md",
     "react/testing-library/error when async func in useEffect & mocked hook in in deps 3.md",
     "NestJS/private method test 방법.md",
-    "NestJS/forEach와 비동기 함수.md",
     "react/testing-library",
     "react/apollo-client",
     "react",

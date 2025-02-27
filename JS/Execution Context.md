@@ -10,7 +10,7 @@ Execution context(실행 컨텍스트)는 JS엔진이 코드를 평가하고 실
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | code evaluation state | 실행컨텍스트와 관련된 코드 평가(evaluation)를 perform(수행), suspend(중단), resume(재개)하는 데 필요한 모든 상태를 포함한다. 즉 코드가 어디까지 실행되었는지, 현재 어떤 작업을 하고 있는지 등의 정보를 담고있다. |
 | Function              | 실행 컨텍스트가 함수 객체(function object)의 코드를 평가할 때 이 구성요소의 값은 해당 함수 객체가 된다. 스크립트나 모듈의 코드를 평가할 때 이 값은 `null`이 된다.                                  |
-| Realm                 | 코드가 ECMAScript 리소스에 접근하는 Realm Record를 나타낸다.                                                                                              |
+| [[Realm]]             | 코드가 ECMAScript 리소스에 접근하는 Realm Record를 나타낸다.                                                                                              |
 | ScriptOrModule        | 코드가 기원한 Module Record 혹은 Script Record를 나타낸다. 스크립트나 모듈에서 기원하지 않은 경우(InitiailizeHostDefinedRealm에서 생성된 실행컨텍스트의 경우) 이 값은 `null`이 된다.        |
  
 
