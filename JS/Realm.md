@@ -3,3 +3,6 @@
 - ECMAScript Global Environment(전역 환경)
 - 상기 전역 환경 스코프 내에서 로드된 모든 ECMAScript 코드
 - 기타 관련 state 및 resource
+ 
+ **Realm**은 **Realm Record**로 표현하기도 하며 아래 표와 같은 필드를 가진다.
+ 
