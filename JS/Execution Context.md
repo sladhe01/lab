@@ -22,13 +22,14 @@ Execution context(실행 컨텍스트)는 JS엔진이 코드를 평가하고 실
 | LexicalEnvironment  | 식별자 참조를 결정한다. 즉, 코드에서 사용되는 변수나 함수 등이 정의되는 [[Environment Records]]                        |
 | VariableEnvrionment | var 키워드를 사용해 선언된 변수 등이 정의되는 [[Environment Records]]                                      |
 | PrivateEnvironment  | class 내에서 사용되는 Private Name에 대한 정보를 담은 [[Environment Records]]. 만약 클래스가 없다면 null 값을 가진다. |
-|                     |                                                                                          |
 
 ##### 종류
 실행컨텍스트를 생성시키는 소스코드의 종류에 따라 실행 컨텍스트의 생성과정과 관리하는 내용이 다르다.
 
 - Global code : ECMAScript의 **Script**로 취급되는 소스 텍스트(source text)다. 전역에 존재하는 함수나 클래스의 선언, 표현식 등은 글로벌 코드에 포함되지 않는다. (함수등을 변수에 할당하는 부분은 글로벌 코드에 속한다.)
-- Eval code : 내장 함수 **eval( )** 에 전달되는 소스 텍스트다. 좀 더 정확하게 설명하자면 
+- Eval code : 내장 함수 **eval( )** 에 전달되는 소스 텍스트다.
+- Function code : 함수 내부에 존재하는 소스 텍스트다. 함수 내부에 중첩된 함수, 클래스 등의 내부 코드는 포함되지 않는다.
+- Module code : 모듈내부에 존재하는 소스 텍스트다. 모듈 내부의 함수, 클래스 등의 내부 코드는 포함되지 않는다. 모듈이 초기화 될때 직접 평가된다.
 ###### 실행컨텍스트의 종류
 1. 
 JS의 실행 과정을 자세히 말해보면 소스코드를 통해서
