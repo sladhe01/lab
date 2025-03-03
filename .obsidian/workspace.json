@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Scope.md",
+                "file": "JS/Closure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scope"
+              "title": "Closure"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Outer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +117,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -137,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Execution Context.md",
+                "file": "JS/Environment Records.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +148,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Execution Context"
+              "title": "Backlinks for Environment Records"
             }
           },
           {
@@ -207,14 +208,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9d32f197e707bdf",
+  "active": "5ec50885399958b7",
   "lastOpenFiles": [
-    "JS/Environment Records.md",
-    "JS/Scope.md",
-    "cs/Lexical.md",
-    "cs/Stream.md",
-    "JS/Closure.md",
     "JS/Execution Context.md",
+    "JS/Environment Records.md",
+    "JS/Closure.md",
+    "cs/Lexical.md",
+    "JS/Scope.md",
+    "cs/Stream.md",
     "JS/JS 동작원리(event loop).md",
     "JS/실행순서에 관한 이야기(1) - Hoisting.md",
     "JS/Realm.md",
@@ -231,7 +232,6 @@
     "JS/Array.prototype.sort().md",
     "JS/Array.prototype.reduce().md",
     "JS/Function.prototype.bind().md",
-    "JS/Closure.md",
     "cs/Buffer.md",
     "cs/Cache.md",
     "cs/Interpreted Language vs Compiled Language (+ Script Language).md",
