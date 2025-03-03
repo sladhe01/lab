@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Closure.md",
+                "file": "JS/Scope.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Closure"
+              "title": "Scope"
             }
           }
         ],
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Closure.md",
+                "file": "JS/Scope.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Closure"
+              "title": "Backlinks for Scope"
             }
           },
           {
@@ -219,6 +219,9 @@
   },
   "active": "5917ceb56f1f5b3d",
   "lastOpenFiles": [
+    "cs/Lexical.md",
+    "JS/Scope.md",
+    "cs/Stream.md",
     "JS/Closure.md",
     "JS/Execution Context.md",
     "JS/Environment Records.md",
@@ -242,13 +245,10 @@
     "cs/Buffer.md",
     "cs/Cache.md",
     "cs/Interpreted Language vs Compiled Language (+ Script Language).md",
-    "cs/Lexical.md",
     "Todo 2.md",
     "2024-09-07.md",
     "images",
     "cs/Runtime.md",
-    "NestJS/ExecutionContext (especially for ws protocol).md",
-    "NestJS/GraphQL for Nestjs/Context.md",
     "react/testing-library",
     "react/apollo-client",
     "react",
