@@ -17,11 +17,11 @@ Execution context(실행 컨텍스트)는 JS엔진이 코드를 평가하고 실
 
 ##### 실행컨텍스트 추가 구성요소(additional state components)
 
-| component          | purpose                                                                                  |
-| ------------------- | ---------------------------------------------------------------------------------------- |
-| LexicalEnvironment  | 식별자 참조를 결정한다. 즉, 코드에서 사용되는 변수나 함수 등이 정의되는 [[Environment Records]]                        |
-| VariableEnvrionment | var 키워드를 사용해 선언된 변수 등이 정의되는 [[Environment Records]]                                      |
-| PrivateEnvironment  | class 내에서 사용되는 Private Name에 대한 정보를 담은 [[Environment Records]]. 만약 클래스가 없다면 null 값을 가진다. |
+| component          | purpose                                                                                                          |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| LexicalEnvironment  | 코드에서 사용 식별자의 값을 찾는 데 사용되는 [[Environment Records]]                                                                |
+| VariableEnvrionment | var 키워드를 사용해 선언된 변수를 처리하는 데 사용되는 [[Environment Records]] \*let, const를 사용해 선언된 변수의 바인딩은 LexicalEnvironment에 속한다. |
+| PrivateEnvironment  | class 내에서 사용되는 Private Name(클래스 내부에서만 접근가능한 식별자)에 대한 정보를 담은 [[Environment Records]]. 만약 클래스가 없다면 null 값을 가진다.    |
 
 ##### 종류
 실행컨텍스트는 아래의 소스코드들이 평가되면 생성되는데 소스코드의 종류에 따라 생성되는 실행 컨텍스트와 실행컨텍스트의 관리내용이 다르다.
