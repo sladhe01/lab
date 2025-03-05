@@ -1,4 +1,4 @@
-## margin collapsing
+변## margin collapsing
 block의 border가 겹치면 큰 margin을 따라간다.
 
 ## flexbox

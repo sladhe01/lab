@@ -11,5 +11,5 @@ Environment Record는 추상적인 클래스로 역할에 따라 아래와 같�
     - Function Environment Record : 함수 호출과 관련되어 함수가 호출될 때 생성된다. 함수 내부의 최상위 선언(top-level declaration)의 바인딩(binding)을 포함하고 있다. 새로운 this 바인딩을 생성할 수 있고 super 메서드 호출을 지원하기 위해 필요한 정보를 가지고 있다.
       \*top-level declaration이 아닌 경우로 함수 속의 if 블럭 속에 선언된 변수 등을 생각해 보면 된다.
     - Module Environment Record : 모듈의 최상위 선언을 위한 위한 바인딩을 포함하고 모듈에서 명시적으로  import한 것의 바인딩도 포함한다. 이 Record의 \[\[OuterEnv]]는 Global Environment Record다.
-- Object Environment Record : 객체(Object)와 관련된 바인딩을 저장하는 환경레코드다. with 문에서는 with의 타겟이 되는 객체의 프로퍼티가 Object Envrionment Record에 저장되고 
+- Object Environment Record : 객체(Object)와 관련된 바인딩을 저장하는 환경레코드다. with 문에서는 with의 타겟이 되는 객체의 프로퍼티가 Object Envrionment Record에 저장된다. 글로벌 객체도 객체이기 때문에 글로벌 객체와 관련된 바인딩도 저장된다.
 - Global Environment Record : 이 레코드는 전역 실행 컨텍스트에 사용되는 레코드로 스크립트의 전역 선언을 다루며 \[\[OuterEnv]]값이 null이다. 글로벌 객체(브라우저면 window node.js면 global)와 같이 미리 정의된 식별자(미리 정의된 전역객체)바인딩을 가질 수 있다. 코드가 실행될 때 전역객체에 다른 프로퍼티가 추가 될 수 도 있다.(예를 들어 글로벌 스코프에서 선언된 변수가 글로벌 객체에 추가 되는 경우)
