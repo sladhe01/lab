@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Environment Records.md",
+                "file": "JS/Execution Context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Environment Records"
+              "title": "Backlinks for Execution Context"
             }
           },
           {
@@ -207,11 +207,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5ec50885399958b7",
+  "active": "b9d32f197e707bdf",
   "lastOpenFiles": [
-    "JS/Execution Context.md",
-    "JS/Environment Records.md",
     "JS/Closure.md",
+    "JS/Environment Records.md",
+    "JS/Execution Context.md",
     "cs/Lexical.md",
     "JS/Scope.md",
     "cs/Stream.md",
