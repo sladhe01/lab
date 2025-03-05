@@ -12,4 +12,4 @@ Environment Record는 추상적인 클래스로 역할에 따라 아래와 같�
       \*top-level declaration이 아닌 경우로 함수 속의 if 블럭 속에 선언된 변수 등을 생각해 보면 된다.
     - Module Environment Record : 모듈의 최상위 선언을 위한 위한 바인딩을 포함하고 모듈에서 명시적으로  import한 것의 바인딩도 포함한다. 이 Record의 \[\[OuterEnv]]는 Global Environment Record다.
 - Object Environment Record : 객체(Object)와 관련된 바인딩을 저장하는 환경레코드다. with 문에서는 with의 타겟이 되는 객체의 프로퍼티가 Object Envrionment Record에 저장되고 globalThis 객체의 프로퍼티 또한 Object Envrionment Record에 저장된다.
-- Global Environment Record : 이 레코드는 스크립트의 전역 선언을 다루며 \[\[OuterEnv]]값이 null이다. 미리 정의된 식별자 바인딩을 가질 수 있다. 또 이 레코드는 글로벌 객체(브라우저면 window node.js면 global)를 포함한다. (예를 들어 글로벌 환경이 처음 생성될 때 이미 "window"라는 식별자에 window 객체가 바인딩 되어있다는 의미)
+- Global Environment Record : 이 레코드는 스크립트의 전역 선언을 다루며 \[\[OuterEnv]]값이 null이다. 미리 정의된 식별자 바인딩을 가질 수 있다. 또 이 레코드는 글로벌 객체(브라우저면 window node.js면 global)를 포함한다. (예를 들어 글로벌 환경이 처음 생성될 때 이미 "window"라는 식별자에 window 객체가 바인딩 되어있다는 의미) ***ECMAScript에는 여기까지 설명했지만 사실 Globla Envrionment Record에 하위로 Declarative Record와 
