@@ -5,10 +5,10 @@ Environment Record는 ECMAScript 코드의 [[Lexical|lexical]] netsing 구조에
 
 \*Environment Record는 ECMAScript 명세서 정의된 **기능적 메커니즘**일 뿐이고 특정 엔진에서 **구체적인 구현체**를 필요로 하지는 않습니다. 즉, ECMAScript 프로그램에서 **직접적으로 Environment Record에 접근하거나 이를 조작하는 것은 불가능**하다.
 
-#### 하위구조
-Environment Record는 추상적인 클래스로 아래와 같은 3가지 하위클래스를 가진다.
-- Declarative Environment Record : FunctionDeclarations, VariableDeclarations, Catch 절 등과 관련된 식별자 바인딩(binding)을 정의하는 데 사용된다.
-    - Function Environment Record : 함수 객체의 호출과 관련되어 있으며 함수 내부의 최상위 선언(top-level declaration)의 바인딩(binding)을 포함하고 있다. 새로운 this 바인딩을 설정할 수 있고 super 메서드 호출을 지원하기 위해 필요한 state도 캡쳐(capture)한다.
+#### 하위 클래스
+Environment Record는 추상적인 클래스로 역할에 따라 아래와 같은 3가지 종류의 하위클래스로 분류할 수 있다.(아래 3가지의 하위클래스는 Envrionmnet Record를 이루는 구성요소가 아니라 하나의 종류들이다.)
+- Declarative Environment Record : 함수선언, 변수선언(let, const, var 등) Catch 절 등과 관련된 식별자 바인딩(binding)을 정의하는 데 사용된다. 객체의 프로퍼티로 저장되지 않고 내부적으로 관리된다.(Object Environment Record처럼 어떤 객체의 프로퍼티로 저장되는 게 아니라 변수 자체가 내부 데이터 구조에 저장된다는 뜻이다.)
+    - Function Environment Record : 함수 호출과 관련되어 함수가 호출될 때 생성된다. 함수 내부의 최상위 선언(top-level declaration)의 바인딩(binding)을 포함하고 있다. 새로운 this 바인딩을 설정할 수 있고 super 메서드 호출을 지원하기 위해 필요한 정보를 포함하고 있다.
       \*top-level declaration이 아닌 경우로 함수 속의 if 블럭 속에 선언된 변수 등을 생각해 보면 된다.
     - Module Environment Record : 모듈의 최상위 선언을 위한 위한 바인딩을 포함하고 모듈에서 명시적으로  import한 바인딩도 포함한다. 이 Record의 \[\[OuterEnv]]는 Global Environment Record다.
 - Object Environment Record : with구문과 같은 문이 객체의 프로퍼티와 관련된 바인딩을 정의하는데 사용된다.
