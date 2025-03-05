@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Execution Context.md",
+                "file": "JS/실행순서에 관한 이야기(1) - Hoisting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Execution Context"
+              "title": "실행순서에 관한 이야기(1) - Hoisting"
             }
           },
           {
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/Execution Context.md",
+                "file": "JS/실행순서에 관한 이야기(1) - Hoisting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Execution Context"
+              "title": "Backlinks for 실행순서에 관한 이야기(1) - Hoisting"
             }
           },
           {
@@ -209,9 +209,9 @@
   },
   "active": "525f35b85fe53ef8",
   "lastOpenFiles": [
-    "JS/Environment Records.md",
-    "JS/Execution Context.md",
     "JS/JS 동작원리(event loop).md",
+    "JS/Execution Context.md",
+    "JS/Environment Records.md",
     "html, css/html,css memo.md",
     "JS/Constructor And 'new' operator.md",
     "JS/Closure.md",
