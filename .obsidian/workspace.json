@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Closure"
             }
+          },
+          {
+            "id": "1bb0e7840622a536",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -179,7 +191,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f257a550971e50ed",
+  "active": "1bb0e7840622a536",
   "lastOpenFiles": [
     "html, css/html,css memo.md",
     "JS/this.md",
