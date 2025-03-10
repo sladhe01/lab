@@ -27,28 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JS/Closure.md",
+                "file": "react/Blogged Answers - A (Mostly) Complete Guide to React Rendering Behavior (블로그 번역).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Closure"
-            }
-          },
-          {
-            "id": "1bb0e7840622a536",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.9"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.9"
+              "title": "Blogged Answers - A (Mostly) Complete Guide to React Rendering Behavior (블로그 번역)"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,8 +179,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1bb0e7840622a536",
+  "active": "5917ceb56f1f5b3d",
   "lastOpenFiles": [
+    "images/1_eFvdHDgxCM6C20Zt80I7Jg.webp",
+    "react/Blogged Answers - A (Mostly) Complete Guide to React Rendering Behavior (블로그 번역).md",
+    "JS/Closure.md",
     "html, css/html,css memo.md",
     "JS/this.md",
     "JS/Environment Records.md",
@@ -200,7 +191,6 @@
     "JS/JS 동작원리(event loop).md",
     "JS/Execution Context.md",
     "JS/Constructor And 'new' operator.md",
-    "JS/Closure.md",
     "JS/Array.prototype.sort().md",
     "JS/Array.prototype.reduce().md",
     "JS/Array.prototype.forEach().md",
@@ -213,15 +203,12 @@
     "JS/Record.md",
     "Untitled.md",
     "cs/Evaluate vs Execution.md",
-    "images/1_eFvdHDgxCM6C20Zt80I7Jg.webp",
     "html, css/images/cartesian-coordinate-system-three-dimensional-diagram-codesweetly-1.png",
     "Pasted image 20250214113127.png",
     "form 태그.md",
     "JS/Function.prototype.bind().md",
     "cs/Buffer.md",
     "cs/Cache.md",
-    "cs/Interpreted Language vs Compiled Language (+ Script Language).md",
-    "Todo 2.md",
     "images",
     "react/testing-library",
     "react/apollo-client",
