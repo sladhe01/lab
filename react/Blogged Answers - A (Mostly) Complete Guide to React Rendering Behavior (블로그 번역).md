@@ -17,7 +17,7 @@ return React.createElement(SomeComponent, {a: 42, b: "testing"}, "Text Here")
 ```
 전체 컴포넌트 트리에서 렌더 결과물을 모두 수집하고 나서, React는 새로운 객체 트리 ("가상 DOM"으로 자주 불리는 객체)와 비교할 것이다. 그러고는 의도한대로 보여지기 위해 실제 DOM에 적용시켜야 할 모든 변경 사항 목록을 수집한다. 이러한 비교 및 계산과정을 **재조정 (Reconcilation)** 이라고 한다.
 
-그러고 나서 React는 이렇게 계산된 모든 변경사항을 하나의 동기적 시퀀스(synchronous sequence)로 실제 DOM에 적용시킨다.
+그 후에 React는 이렇게 계산된 모든 변경사항을 하나의 동기적 시퀀스(synchronous sequence)로 실제 DOM에 적용시킨다.
 
 > Note : 최근에 React 팀은 "가상 DOM"이라는 용어가 그리 대단한게 아니라고 밝혔다. Dan Abramov는 최근에 다음과 같이 말했다.
 > _저는 "가상 DOM"이라는 용어를 폐기했으면 합니다. 이 용어는 2013년에는 말이 됐습니다. 왜냐하면 그때는 사람들이 React가 매번 렌더 할 때 마다 DOM 노드를 생성한다고 가정했기 때문입니다. 하지만 최근에는 이렇게 가정하는 사람이 거의 없습니다. "가상 DOM"은 마치 무슨 DOM 관련 이슈에 대한 임시방편 (Workaround)인 것 처럼 들립니다. 하지만 React는 그런게 아니에요.  
@@ -26,4 +26,6 @@ return React.createElement(SomeComponent, {a: 42, b: "testing"}, "Text Here")
 
 ### 렌더와 커밋 단계
 React 팀은  이 과정을 개념적으로 크게 2가지 단계로 나눴다.
-- 렌더 단계 : 컴포넌트를 렌더링하고 변경 사항을 
+- 렌더 단계 : 컴포넌트를 렌더링하고 변경 사항을 변경 사항을 계산하는 모든 과정이 이루어지는 단계
+- 커밋 단계 : 변경 사항을 실제 DOM에 적용하는 단계
+커밋 단계를 거쳐서 DOM을 업데이트하고 나면, React는 요청된 DOM 노드와 컴포넌트 인스턴스를 가리키도록 모든 참조사항들을 업데이트한다. 그 후에 `componentDidMount`와 `componentDidUpdate` 클래스 생명주기 메소드 또는 `useLayoutEffect` 훅을 동기적으로 실행한다.
