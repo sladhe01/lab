@@ -32,5 +32,11 @@ React 팀은  이 과정을 개념적으로 크게 2가지 단계로 나눴다.
 
 그 후 React는 짧은 타임아웃을 세팅하고, 타임아웃이 끝나면 모든 `useEffect`훅을 실행한다. 이 단계는 "Passive Effect"라고도 알려져 있다.
 
+>React 18부터 `useTransition`과 같은 "Concurrent Rendering(동시 렌더링)" 기능이 추가됐다. 이를 통해 React는 브라우저가 이벤트를 처리할 수 있도록 렌더 단계의 작업을 잠시 멈출 수 있다. React는 나중에 적절한 시점에 해당 작업을 재개하거나, 폐기하거나 또는 재계산할 수 있다. 렌더 패스(Render Pass)가 완료되면 React는 커밋 단계를 하나의 동기적인 단계로 실행할 것이다.
+
+여기서 가장 핵심적인 부분은 "렌더링"과 "DOM을 업데이트하는 것"은 같은 것이 아니며, 어떤 컴포넌트는 결과적으로 시각적 변화 없이도 렌더링 될 수 있다.
+- 그 컴포넌트는 가장 최근 렌더링 결과와 같은 결과물을 반환할 것이고, 그러므로 어떤 변화도 필요하지 않다.
+- Concurrent Rendering에서 React가 컴포넌트를 여러번 렌더링할 수 있겠지만, 현재 진행중인 작업을 무효화 한다면 매번 그 렌더링 결과물을 버릴 수 있다. 
+
 이 [React 생명 주기 메서드 다이어그램](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)을 통해 클래스 생명 주기를 시각적으로 볼 수 있다.
->["Concurrent Mode"](https://17.reactjs.org/docs/concurrent-mode-intro.html)에서는, 브라우저가 이벤트를 처리할 수 있도록 렌더 단계의 작업을 잠시 멈출 수 있게됩니다. React는 나중에 적절한 시점에 해당 작업을 재개하거나, 폐기하거나 또는 재계산할 수 있습니다. 렌더 패스 (Render Pass)가 완료되어도 React는 커밋 단계를 동기적으로 한 단계 진행할 것입니다.
+
