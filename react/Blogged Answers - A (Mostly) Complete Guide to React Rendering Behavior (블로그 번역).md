@@ -28,4 +28,9 @@ return React.createElement(SomeComponent, {a: 42, b: "testing"}, "Text Here")
 React 팀은  이 과정을 개념적으로 크게 2가지 단계로 나눴다.
 - 렌더 단계 : 컴포넌트를 렌더링하고 변경 사항을 변경 사항을 계산하는 모든 과정이 이루어지는 단계
 - 커밋 단계 : 변경 사항을 실제 DOM에 적용하는 단계
-커밋 단계를 거쳐서 DOM을 업데이트하고 나면, React는 요청된 DOM 노드와 컴포넌트 인스턴스를 가리키도록 모든 참조사항들을 업데이트한다. 그 후에 `componentDidMount`와 `componentDidUpdate` 클래스 생명주기 메소드 또는 `useLayoutEffect` 훅을 동기적으로 실행한다.
+커밋 단계를 거쳐서 DOM을 업데이트하고 나면, React는 요청된 DOM 노드와 컴포넌트 인스턴스를 가리키도록 모든 참조사항들을 업데이트한다. 그 후에 `componentDidMount`와 `componentDidUpdate` 클래스 생명주기 메서드와 `useLayoutEffect` 훅을 동기적으로 실행한다.
+
+그 후 React는 짧은 타임아웃을 세팅하고, 타임아웃이 끝나면 모든 `useEffect`훅을 실행한다. 이 단계는 "Passive Effect"라고도 알려져 있다.
+
+이 [React 생명 주기 메서드 다이어그램](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)을 통해 클래스 생명 주기를 시각적으로 볼 수 있다.
+>["Concurrent Mode"](https://17.reactjs.org/docs/concurrent-mode-intro.html)에서는, 브라우저가 이벤트를 처리할 수 있도록 렌더 단계의 작업을 잠시 멈출 수 있게됩니다. React는 나중에 적절한 시점에 해당 작업을 재개하거나, 폐기하거나 또는 재계산할 수 있습니다. 렌더 패스 (Render Pass)가 완료되어도 React는 커밋 단계를 동기적으로 한 단계 진행할 것입니다.
