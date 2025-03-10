@@ -1,5 +1,7 @@
 ## "렌더링"이란 무엇인가?
+
 **렌더링**이란 React가 컴포넌트에게  현재 Props와 State에 기반하여 UI에서 어떻게 보여지고 싶은지 알려달라고 요청하는 과정이다.
+
 
 ### 전체적인 렌더링 과정
 렌더링 과정동안, React는 컴포넌트 트리의 루트에서부터 시작하여 아래쪽으로 순환하며 업데이트가 필요하다고 표시된 컴포넌트를 전부 찾는다. 표시된 각각의 컴포넌트에 대해서, React는 클래스형 컴포넌트일 경우 `classComponentInstance.render()`또는 각 함수형 컴포넌트일 경우 FunctionComponent()`를 호출하고, 렌더결과물을 저장한다.
@@ -24,6 +26,7 @@ return React.createElement(SomeComponent, {a: 42, b: "testing"}, "Text Here")
 > React는 "value UI"입니다. React의 핵심 원칙은 UI는 문자열이나 배열처럼 그저 값 (value)이라는 겁니다. 여러분은 이 값을 변수에 저장하고, 어디든지 전달할 수 있으며, JavaScript의 제어 흐름 (Control Flow) 등등을 사용할 수 있습니다. 이러한 표현력 (expressiveness)이 핵심입니다. 변경 사항을 DOM에 적용하는 걸 막기 위한 비교 행위같은게 아닙니다.
 > 심지어 React는 항상 DOM을 대표하지도 않습니다. 예를 들어 `<Message recipientId={10} />` 같은 것은 DOM이 아닙니다. 개념적으로 React는 `Message.bind(null, { recipientId: 10 })`와 같은 게으른 함수 (Lazy Function) 호출을 대표합니다._
 
+
 ### 렌더와 커밋 단계
 React 팀은  이 과정을 개념적으로 크게 2가지 단계로 나눴다.
 - 렌더 단계 : 컴포넌트를 렌더링하고 변경 사항을 변경 사항을 계산하는 모든 과정이 이루어지는 단계
@@ -38,5 +41,53 @@ React 팀은  이 과정을 개념적으로 크게 2가지 단계로 나눴다.
 - 그 컴포넌트는 가장 최근 렌더링 결과와 같은 결과물을 반환할 것이고, 그러므로 어떤 변화도 필요하지 않다.
 - Concurrent Rendering에서 React가 컴포넌트를 여러번 렌더링할 수 있겠지만, 현재 진행중인 작업을 무효화 한다면 매번 그 렌더링 결과물을 버릴 수 있다. 
 
-이 [React 생명 주기 메서드 다이어그램](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)을 통해 클래스 생명 주기를 시각적으로 볼 수 있다.
+이 [React 생명 주기 다이어그램](https://julesblom.com/writing/react-hook-component-timeline)이 렌더링, 커밋, 훅 실행의 과정을 이해하는 데 도움을 줄 것이다.
 
+추가적인 시각자료가 필요하다면 아래의 링크를 참고하자:
+- [React hooks flow diagram](https://github.com/donavon/hook-flow)
+- [React hooks render/commit phase diagram](https://wavez.github.io/react-hooks-lifecycle/)
+- [React class lifecycle methods diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+
+
+
+## React는 어떻게 렌더를 다룰까?
+### Queing Renders
+
+최초 렌더가 끝난 후, React가 큐에 리렌더를 요청하는 몇가지 다른방법이 존재한다:
+- 함수 컴포넌트:
+    - `useState`의 setters 호출
+    - `useReducer`의 dispatch 호출
+- 클래스형 컴포넌트
+    - `this.setState()` 호출
+    - `this.forceUpdate()` 호출
+- 그 외:
+    - ReactDOM 최상위레벨의 `render(<App>)`메서드 재 호출(루트 컴포넌트에서 `forceUpdate()`를 호출하는것과 동일하다.)
+    - `useSyncExternalStore`훅을 통해 트리거되는 업데이트
+함수형 컴포넌트는 `forceUpdate`메서드가 없지만, `useReducer`훅의 카운터를 항상 증가시키는 방식으로 동일한 동작을 구현할 수 있다:
+```jsx
+const [, forceRender] = useReducer((c) => c + 1, 0);
+```
+
+
+### 표준적인 렌더 동작
+
+>이것만은 꼭 기억해야 한다: 
+>React는 기본적으로 부모 컴포넌트가 렌더링되면, 그 안의 모든 자식 컴포넌트를 재귀적으로 렌더링한다.
+
+예를 들어, A > B > C > D 구조로 되어있는 컴포넌트 트리가 있고, 이것들이 이미 페이지에 다 보여지고 있다. 이 때 유저가 B 컴포넌트의 카운터를 증가시키는 버튼을 누르는 경우를 가정해 보자:
+- B에서 `setState()`를 호출하고 B의 리렌더링을 예약한다.
+- React는 트리의 맨 위부터 렌더링을 시작한다.
+- React는 A의 업데이트가 필요없다는 표시를 보고 그냥 통과한다.
+- React는 B의 업데이트가 필요하다는 표시를 보고 렌더링을 한다. B는 이전과 같이 `<C />`를 반환한다.
+- React는 C의 업데이트가 필요하다는 표시는 없지만, B가 부모 컴포넌트이기 때문에 아래 단계의 C 또한 렌더링한다. C는 `<D />` 를 다시 반환한다.
+- D도 마찬가지로 업데이트가 필요하다는 표시가 없지만 부모 컴포넌트인 C가 렌더링 되었기 때문에 React는 아래 단계의 D도 렌더링한다.
+
+다시말하자면, 기본적으로 어떤 컴포넌트를 렌더링하면 그 컴포넌트안에 존재하는 모든 컴포넌트의 렌더링을 야기한다고 할 수 있다.
+
+여기서 또다른 주목해야할 점은 점은 보통의 렌더링에서 React는 prop의 변경되었는지 신경도 쓰지 않는다는 것이다. 단지 부모가 렌더링 되었기 때문에 무조건적으로 자식도 렌더링 되는 것이다.
+
+이는 즉, `<App>` 컴포넌트에서 `setState()`를 호출하면 컴포넌트 트리 안에 있는 모든 컴포넌트가 렌더링된다는 것을 의미한다. 결과적으로 React는 [매번 업데이트를 할 때마다 어플리케이션 전체를 다시 그리는 것](https://www.slideshare.net/floydophone/react-preso-v2)처럼 동작한다.
+
+이제 컴포넌트 트리 안에 있는 대부분의 컴포넌트는 직전과 똑같은 렌더링 결과물을 반환할 가능성이 높다. 따라서 React는 DOM에 변화를 줄 필요가 없다. 하지만 React는 계속해서 컴포넌트에게 렌더링을 요청하고 그 결과물을 비교해야만 할 것이다. 이 두 작업은 모두 시간과 노력이 꽤 든다.
+
+아무튼 기억해야할 점은, **렌더링은 절대로 나쁜게 아니라는 점이다. 렌더링은 React가 DOM에 변화를 줘야할지 여부를 파악하는 방법일 뿐이다.**
