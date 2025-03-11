@@ -1,7 +1,5 @@
-## "렌더링"이란 무엇인가?
-
+# "렌더링"이란 무엇인가?
 **렌더링**이란 React가 컴포넌트에게  현재 Props와 State에 기반하여 UI에서 어떻게 보여지고 싶은지 알려달라고 요청하는 과정이다.
-
 
 ### 전체적인 렌더링 과정
 렌더링 과정동안, React는 컴포넌트 트리의 루트에서부터 시작하여 아래쪽으로 순환하며 업데이트가 필요하다고 표시된 컴포넌트를 전부 찾는다. 표시된 각각의 컴포넌트에 대해서, React는 클래스형 컴포넌트일 경우 `classComponentInstance.render()`또는 각 함수형 컴포넌트일 경우 FunctionComponent()`를 호출하고, 렌더결과물을 저장한다.
@@ -26,7 +24,6 @@ return React.createElement(SomeComponent, {a: 42, b: "testing"}, "Text Here")
 > React는 "value UI"입니다. React의 핵심 원칙은 UI는 문자열이나 배열처럼 그저 값 (value)이라는 겁니다. 여러분은 이 값을 변수에 저장하고, 어디든지 전달할 수 있으며, JavaScript의 제어 흐름 (Control Flow) 등등을 사용할 수 있습니다. 이러한 표현력 (expressiveness)이 핵심입니다. 변경 사항을 DOM에 적용하는 걸 막기 위한 비교 행위같은게 아닙니다.
 > 심지어 React는 항상 DOM을 대표하지도 않습니다. 예를 들어 `<Message recipientId={10} />` 같은 것은 DOM이 아닙니다. 개념적으로 React는 `Message.bind(null, { recipientId: 10 })`와 같은 게으른 함수 (Lazy Function) 호출을 대표합니다._
 
-
 ### 렌더와 커밋 단계
 React 팀은  이 과정을 개념적으로 크게 2가지 단계로 나눴다.
 - 렌더 단계 : 컴포넌트를 렌더링하고 변경 사항을 변경 사항을 계산하는 모든 과정이 이루어지는 단계
@@ -48,11 +45,8 @@ React 팀은  이 과정을 개념적으로 크게 2가지 단계로 나눴다.
 - [React hooks render/commit phase diagram](https://wavez.github.io/react-hooks-lifecycle/)
 - [React class lifecycle methods diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-
-
-## React는 어떻게 렌더를 다룰까?
+# React는 어떻게 렌더를 다룰까?
 ### Queing Renders
-
 최초 렌더가 끝난 후, React가 큐에 리렌더를 요청하는 몇가지 다른방법이 존재한다:
 - 함수 컴포넌트:
     - `useState`의 setters 호출
@@ -68,9 +62,7 @@ React 팀은  이 과정을 개념적으로 크게 2가지 단계로 나눴다.
 const [, forceRender] = useReducer((c) => c + 1, 0);
 ```
 
-
 ### 표준적인 렌더 동작
-
 >이것만은 꼭 기억해야 한다: 
 >React는 기본적으로 부모 컴포넌트가 렌더링되면, 그 안의 모든 자식 컴포넌트를 재귀적으로 렌더링한다.
 
@@ -91,3 +83,8 @@ const [, forceRender] = useReducer((c) => c + 1, 0);
 이제 컴포넌트 트리 안에 있는 대부분의 컴포넌트는 직전과 똑같은 렌더링 결과물을 반환할 가능성이 높다. 따라서 React는 DOM에 변화를 줄 필요가 없다. 하지만 React는 계속해서 컴포넌트에게 렌더링을 요청하고 그 결과물을 비교해야만 할 것이다. 이 두 작업은 모두 시간과 노력이 꽤 든다.
 
 아무튼 기억해야할 점은, **렌더링은 절대로 나쁜게 아니라는 점이다. 렌더링은 React가 DOM에 변화를 줘야할지 여부를 파악하는 방법일 뿐이다.**
+
+### React의 렌더링 규칙
+렌더링은 "순수"해야만 하며 어떠한 사이드 이펙트를 가져서는 안된다는 React 렌더링의 핵심적 규칙 중 하나다.
+
+이 말이 이해가 안되고 아리송할 수 있다. 왜냐하면 수 많은 사이드 이펙트가 눈에 띄지 않고 결과물을 망가뜨리거나 하지 않기 때문이다. 몇가지 예시를 들어보자, 엄밀히 봤을 때 `console.log()`구문은 사이드 이펙트다. 하지만 이 구문이 실질적으로 아무것도 고장내지 않는다. prop을 변경하는 것 역시 명백한 사이드 이펙트지만 이것 또한 아무것도 고장내지 않을 것이다. 렌더링 중간에 AJAX 호출을 하는 것 또한 명백한 사이드 이펙트고 요청의 유형에 따라 앱의 예기치 못한 동작을 야기할 수 있다.
