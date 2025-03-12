@@ -100,7 +100,7 @@ Sebastian Markbage가 작성한 [[The Rules of React]]라는 훌륭한 문서가
     - 에러를 throw하는 것은 괜찮다.
     - 캐싱된 값과 같이 아직 생성되지 않은 데이터를 "Lazy initialize"하는 것은 괜찮다.
 
-## 컴포넌트 메타데이터와 Fibers
+### 컴포넌트 메타데이터와 Fibers
 React는 어플리케이션에 존재하는 모든 컴포넌트 인스턴스를 추적하는 내부 자료 구조를 갖고 있다. 이 내부 구조의 가장 핵심적인 조각인 객체를 "fiber"라고 부른다. "fiber"는 다음과 같은 것들을 나타내는 메타데이터 필드를 가지고 있다:
 - 특정 컴포넌트 트리의 시점에서 렌더링 해야 할 컴포넌트 타입
 - 이 컴포넌트와 관련된 현재 prop와 state
@@ -141,4 +141,9 @@ export type Fiber = {
 "fiber"는 실제 컴포넌트의 props와 state 값들을 저장하고 있다는 것을 명심해야 한다. 컴포넌트의 props나 state를 사용할 때 React는 실제로 fiber 객체에 저장된 값에 접근하여 제공한다. 특히 클래스 컴포넌트의 경우 React는 컴포넌트를 렌더링하기 직전에`componentInstance.props = newProps`와 같이 명시적으로 컴포넌트로 복사한다. 그래서 `this.props`가 존재하는 것은 React가 내부 데이터 구조에서 참조를 복사해왔기 때문이다. 그런 의미에서 컴포넌트는 React의 fiber 객체의 일종의 외관인 것이다.
 (실제로 props와 state는 fiber 객체 안에 저장되지만 컴포넌트는 그 값을 마치 자신의 것처럼 노출한다는 의미)
 
-비슷하게 React 훅이 동작하는 이유는 React가 컴포넌트에서 쓰는 모든 훅들을 컴포넌트의 fiber객체에 붙어있는 연결된 리스트를 저장했기 떄문이다.
+비슷하게 React 훅이 동작하는 이유는 React가 컴포넌트에서 쓰는 모든 훅들을 컴포넌트의 fiber객체와 연결된(attatched) 연결 리스트(linked list)형태로 저장하기 떄문이다. React가 함수형 컴포넌트를 렌더링할 때 fiber에서 해당 훅의 연결 리스트를 가져온다. 그리고 다른 훅을 호출할 때 마다, React는 fiber에 저장된 훅 정보 객체에서 해당 훅과 관련된 적절한 값을 반환한다.(예로 state나 `useReducer`에서 사용하는 dispatch 값을 들 수 있다.)
+
+부모 컴포넌트가 자식 컴포넌트를 처음으로 렌더링할 때, React는 컴포넌틑의 "인스턴스"를 추적하기 위해 fiber 객체를 생성한다. 클래스형 컴포넌트는 `const instance = new YourComponentType(props)`를 명시적으로 호출하여 컴포넌트 인스턴스를 fiber 객체에 저장한다. 함수형 컴포넌트에서 React는 `YourComponentType(porps)`를 함수로 호출한다.
+
+### 컴포넌트 타입과 재조정(Reconcilation)
+
