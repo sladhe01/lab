@@ -138,4 +138,7 @@ export type Fiber = {
 ```
 (React 18에 있는 Fiber의 타입에 대한 모든 정의는 [이곳](https://github.com/facebook/react/blob/v18.0.0/packages/react-reconciler/src/ReactInternalTypes.js#L64-L193)에서 볼 수 있다.)
 
-"fiber"는 실제 컴포넌트의 props와 state 값들을 저장하고 있다는 것을 명심해야 한다. 컴포넌트의 props나 state를 사용할 때 React는 실제로 fiber 객체에 저장된 값에 접근하여 제공한다. 특히 클래스 컴포넌트의 경우 React는 컴포넌트를 렌더링하기 직전에`componentInstance.props = newProps`와 같이 명시적으로 
+"fiber"는 실제 컴포넌트의 props와 state 값들을 저장하고 있다는 것을 명심해야 한다. 컴포넌트의 props나 state를 사용할 때 React는 실제로 fiber 객체에 저장된 값에 접근하여 제공한다. 특히 클래스 컴포넌트의 경우 React는 컴포넌트를 렌더링하기 직전에`componentInstance.props = newProps`와 같이 명시적으로 컴포넌트로 복사한다. 그래서 `this.props`가 존재하는 것은 React가 내부 데이터 구조에서 참조를 복사해왔기 때문이다. 그런 의미에서 컴포넌트는 React의 fiber 객체의 일종의 외관인 것이다.
+(실제로 props와 state는 fiber 객체 안에 저장되지만 컴포넌트는 그 값을 마치 자신의 것처럼 노출한다는 의미)
+
+비슷하게 React 훅이 동작하는 이유는 React가 컴포넌트에서 쓰는 모든 훅들을 컴포넌트의 fiber객체에 붙어있는 연결된 리스트를 저장했기 떄문이다.
