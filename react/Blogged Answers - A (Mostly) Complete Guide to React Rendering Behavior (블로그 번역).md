@@ -102,4 +102,39 @@ Sebastian Markbage가 작성한 [[The Rules of React]]라는 훌륭한 문서가
 
 ## 컴포넌트 메타데이터와 Fibers
 React는 어플리케이션에 존재하는 모든 컴포넌트 인스턴스를 추적하는 내부 자료 구조를 갖고 있다. 이 내부 구조의 가장 핵심적인 조각인 객체를 "fiber"라고 부른다. "fiber"는 다음과 같은 것들을 나타내는 메타데이터 필드를 가지고 있다:
-- 현재 시점 컴포넌트 트리에서 
+- 특정 컴포넌트 트리의 시점에서 렌더링 해야 할 컴포넌트 타입
+- 이 컴포넌트와 관련된 현재 prop와 state
+- 부모, 형제, 자식 컴포넌트를 향한 포인터
+- 렌더링 과정을 추적하기 위해 React가 사용하는 다른 내부 메타데이터
+```ts
+export type Fiber = {
+  // Tag identifying the type of fiber.
+  tag: WorkTag;
+
+  // Unique identifier of this child.
+  key: null | string;
+
+  // The resolved function/class/ associated with this fiber.
+  type: any;
+
+  // Singly Linked List Tree Structure.
+  child: Fiber | null;
+  sibling: Fiber | null;
+  index: number;
+
+  // Input is the data coming into this fiber (arguments/props)
+  pendingProps: any;
+  memoizedProps: any; // The props used to create the output.
+
+  // A queue of state updates and callbacks.
+  updateQueue: Array<State | StateUpdaters>;
+
+  // The state used to create the output
+  memoizedState: any;
+
+  // Dependencies (contexts, events) for this fiber, if any
+  dependencies: Dependencies | null;
+};
+```
+(React 18에 있는 Fiber의 타입에 대한 모든 정의는 [이곳](https://github.com/facebook/react/blob/v18.0.0/packages/react-reconciler/src/ReactInternalTypes.js#L64-L193)에서 볼 수 있다.)
+
