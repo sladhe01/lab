@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,10 +193,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e5a541257f89960a",
+  "active": "5917ceb56f1f5b3d",
   "lastOpenFiles": [
-    "react/Blogged Answers - A (Mostly) Complete Guide to React Rendering Behavior (블로그 번역).md",
     "react/The Rules of React.md",
+    "react/Blogged Answers - A (Mostly) Complete Guide to React Rendering Behavior (블로그 번역).md",
     "The Rules Of React(번역).md",
     "images/1_eFvdHDgxCM6C20Zt80I7Jg.webp",
     "JS/Closure.md",

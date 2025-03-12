@@ -95,3 +95,9 @@ Sebastian Markbage가 작성한 [[The Rules of React]]라는 훌륭한 문서가
     - `Math.raond()`또는 `Date.now()`와 같은 랜덤한 값을 생성하면 안된다.
     - 네트워크 요청을 만들면 안된다.
     - state 업데이트를 예약하면 안된다.
+- 해도 괜찮은 Render 규칙
+    - 렌더링 도중 생성된 객체를 변경하는 것은 괜찮다.
+    - 에러를 throw하는 것은 괜찮다.
+    - 캐싱된 값과 같이 아직 생성되지 않은 데이터를 "Lazy initialize"하는 것은 괜찮다.
+
+## 컴포넌트 메타데이터와 Fibers
