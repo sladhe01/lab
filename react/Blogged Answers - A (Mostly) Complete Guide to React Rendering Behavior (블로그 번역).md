@@ -138,3 +138,4 @@ export type Fiber = {
 ```
 (React 18에 있는 Fiber의 타입에 대한 모든 정의는 [이곳](https://github.com/facebook/react/blob/v18.0.0/packages/react-reconciler/src/ReactInternalTypes.js#L64-L193)에서 볼 수 있다.)
 
+"fiber"는 실제 컴포넌트의 props와 state 값들을 저장하고 있다는 것을 명심해야 한다. 컴포넌트의 props나 state를 사용할 때 React는 실제로 fiber 객체에 저장된 값에 접근하여 제공한다. 특히 클래스 컴포넌트의 경우 React는 컴포넌트를 렌더링하기 직전에`componentInstance.props = newProps`와 같이 명시적으로 
