@@ -147,3 +147,4 @@ export type Fiber = {
 
 ### 컴포넌트 타입과 재조정(Reconcilation)
 
+공식문서의 "Reconcilation" 페이지에 나와 있듯이, React는 이미 존재하는 컴포넌트 트리와 DOM 구조를 가능한 많이 재사용하여, 리렌더하는 과정을 효율적으로 하기위해 노력한다. 만약 트리의 똑같은 위치에 같은 타입의 컴포넌트나 HTML 노드를 렌더하라고 React에게 요청한다면 React는 
