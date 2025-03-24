@@ -34,20 +34,6 @@
               "icon": "lucide-file",
               "title": "Blogged Answers - A (Mostly) Complete Guide to React Rendering Behavior (블로그 번역)"
             }
-          },
-          {
-            "id": "e5a541257f89960a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "react/The Rules of React.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "The Rules of React"
-            }
           }
         ],
         "currentTab": 1
@@ -82,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "스코프",
+                "query": "reduce",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -193,10 +179,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5917ceb56f1f5b3d",
+  "active": "f257a550971e50ed",
   "lastOpenFiles": [
     "react/The Rules of React.md",
     "react/Blogged Answers - A (Mostly) Complete Guide to React Rendering Behavior (블로그 번역).md",
+    "JS/Array.prototype.reduce().md",
     "The Rules Of React(번역).md",
     "images/1_eFvdHDgxCM6C20Zt80I7Jg.webp",
     "JS/Closure.md",
@@ -208,7 +195,6 @@
     "JS/Execution Context.md",
     "JS/Constructor And 'new' operator.md",
     "JS/Array.prototype.sort().md",
-    "JS/Array.prototype.reduce().md",
     "JS/Array.prototype.forEach().md",
     "JS/실행순서에 관한 이야기(2) - express http method.md",
     "JS/module wrapper function.md",
