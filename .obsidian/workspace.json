@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Blogged Answers - A (Mostly) Complete Guide to React Rendering Behavior (블로그 번역)"
             }
+          },
+          {
+            "id": "63c502af7ccba0f3",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -179,7 +191,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5917ceb56f1f5b3d",
+  "active": "63c502af7ccba0f3",
   "lastOpenFiles": [
     "html, css/html,css memo.md",
     "react/Blogged Answers - A (Mostly) Complete Guide to React Rendering Behavior (블로그 번역).md",
